@@ -1,11 +1,10 @@
-// filepath: /home/quy-linux/web/ai_iot/dev/script.js
 // --- Configuration ---
 const AUTO_LOAD_FILENAME = "quiz.json"; 
 
 // --- State Variables ---
 let originalQuizData = []; 
 let quizData = []; 
-let lectureMap = new Map(); // Stores questions grouped by lecture
+let lectureMap = new Map(); 
 let currentQuestionIndex = 0;
 let score = 0;
 let isAnswered = false; 
@@ -84,7 +83,6 @@ function formatTime(totalSeconds) {
     const h = Math.floor(totalSeconds / 3600);
     const m = Math.floor((totalSeconds % 3600) / 60);
     const s = Math.floor(totalSeconds % 60);
-    
     const pad = (num) => String(num).padStart(2, '0');
     return `${pad(h)}:${pad(m)}:${pad(s)}`;
 }
@@ -108,13 +106,11 @@ function startTimer(limitInSeconds = 0) {
 
         if (timeLimitSeconds > 0) {
             const remainingSeconds = timeLimitSeconds - elapsedSeconds;
-
             if (remainingSeconds <= 0) {
                 displayElement.textContent = "TIME'S UP! (Overtime)";
                 displayElement.classList.remove('text-red-600');
                 displayElement.classList.add('text-yellow-600', 'font-extrabold');
                 isOvertime = true;
-                
                 if (mode === 'TEST') {
                      clearInterval(timerInterval);
                      handleSubmitTest(); 
@@ -144,7 +140,6 @@ function loadFileAutomatically() {
     statusMessage.textContent = `Fetching file: ${AUTO_LOAD_FILENAME}...`;
     statusMessage.className = 'mt-3 text-sm text-yellow-800';
     
-    // Hide all main areas
     hideAllAreas();
     statusArea.classList.remove('hidden');
 
@@ -168,23 +163,20 @@ function loadFileAutomatically() {
 function handleJsonData(jsonData) {
     try {
         const parsedData = [];
-        lectureMap.clear(); // Reset map
+        lectureMap.clear(); 
         let questionId = 1;
 
         if (!Array.isArray(jsonData)) {
             throw new Error("JSON file must contain a top-level array of lecture objects.");
         }
 
-        // Iterate through lectures
         jsonData.forEach((lecture, lectureIndex) => {
-            // Determine a usable lecture title
             let lectureTitle = '';
             if (lecture.title && String(lecture.title).trim().length > 0) {
                 lectureTitle = String(lecture.title).trim();
             } else if (lecture.lecture !== undefined && lecture.lecture !== null) {
                 const raw = String(lecture.lecture).trim();
                 if (/^\d+$/.test(raw)) {
-                    // numeric index in JSON -> convert to 1-based label
                     lectureTitle = `Lecture ${parseInt(raw, 10) + 1}`;
                 } else if (raw.length > 0) {
                     lectureTitle = raw;
@@ -195,13 +187,11 @@ function handleJsonData(jsonData) {
                 lectureTitle = `Lecture ${lectureIndex + 1}`;
             }
 
-            // Initialize array for this lecture
             if (!lectureMap.has(lectureTitle)) {
                 lectureMap.set(lectureTitle, []);
             }
 
             if (lecture.questions && Array.isArray(lecture.questions)) {
-                // Iterate through questions within the lecture
                 lecture.questions.forEach(q => {
                     if (q.question && q.options && q.correct_option) {
                         const questionObj = {
@@ -215,8 +205,6 @@ function handleJsonData(jsonData) {
                         };
                         parsedData.push(questionObj);
                         lectureMap.get(lectureTitle).push(questionObj);
-                    } else {
-                        console.warn(`[Parser Warning] Skipped question in lecture "${lectureTitle}" due to missing fields.`);
                     }
                 });
             }
@@ -235,7 +223,6 @@ function handleJsonData(jsonData) {
         lectureSelectionArea.classList.add('hidden');
 
         startFileInfo.textContent = `Ready to start ${originalQuizData.length} questions.`;
-
         maxQuestionsSpan.textContent = originalQuizData.length;
         questionCountInput.max = originalQuizData.length;
         
@@ -244,7 +231,6 @@ function handleJsonData(jsonData) {
             questionCountInput.value = Math.min(30, originalQuizData.length); 
         }
         
-        // Populate the lecture buttons for later use
         renderLectureButtons();
 
     } catch (error) {
@@ -269,9 +255,7 @@ function renderLectureButtons() {
             <span class="text-xs bg-blue-100 text-blue-800 py-1 px-2 rounded-full group-hover:bg-white group-hover:text-blue-600">${count} Qs</span>
         `;
         
-        // When clicked, start quiz with this specific lecture
         btn.addEventListener('click', () => startQuiz('NORMAL', title));
-        
         lectureButtonsContainer.appendChild(btn);
     });
 }
@@ -282,10 +266,9 @@ function showLectureSelection() {
 }
 
 function startQuiz(modeType, lectureFilter = null) {
-    mode = modeType; // 'NORMAL' or 'RANDOM'
+    mode = modeType; 
     
     if (mode === 'NORMAL' && lectureFilter) {
-        // Filter for specific lecture
         const lectureQuestions = lectureMap.get(lectureFilter);
         if (!lectureQuestions) {
             console.error("Lecture not found");
@@ -293,7 +276,6 @@ function startQuiz(modeType, lectureFilter = null) {
         }
         quizData = JSON.parse(JSON.stringify(lectureQuestions));
     } else {
-        // Random mode or fallback -> use all data
         quizData = JSON.parse(JSON.stringify(originalQuizData)); 
     }
 
@@ -311,8 +293,6 @@ function startQuiz(modeType, lectureFilter = null) {
     startTimer(0);
     loadQuestion();
 }
-
-// --- Functions for Study/Random Mode (Previous/Next Logic) ---
 
 function updateNavigationButtons() {
     previousButton.disabled = currentQuestionIndex === 0;
@@ -361,7 +341,6 @@ function loadQuestion() {
     let answerKeys = currentQuiz.shuffledKeys;
     
     if (!answerKeys) {
-        // The keys (A, B, C, D) come from the 'answers' object now
         answerKeys = Object.keys(currentQuiz.answers);
         
         if (mode === 'RANDOM' || mode === 'TEST') {

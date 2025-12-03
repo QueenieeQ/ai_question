@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Quiz</title>
-    <!-- FAVICON: Embedded SVG Checkmark -->
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzEwQjk4MSI+PHBhdGggZD0iTTkgMTYuMTdMNC44MyAxMmwtMS40MiAxLjQxTDkgMTkgMjEgN2wtMS40MS0xLjQxeiIvPjwvc3ZnPg==" type="image/svg+xml">
     
     <!-- Load Tailwind CSS -->
@@ -18,15 +17,12 @@
 
     <div class="container max-w-4xl bg-white rounded-xl shadow-2xl p-6 md:p-10 border border-gray-100">
 
-        <!-- HEADER BLOCK FOR ALIGNMENT -->
+        <!-- HEADER -->
         <div class="flex justify-between items-center pt-4">
-            <!-- Home Button (left aligned) -->
             <button id="return-home-button" 
                     class="px-4 py-2 bg-gray-200 text-gray-800 text-sm font-semibold rounded-lg shadow hover:bg-gray-300 transition">
                 🏠 Home
             </button>
-        
-            <!-- Search Button (right aligned) -->
             <button id="search-mode-button" 
                     class="px-4 py-2 bg-indigo-500 text-white text-sm font-semibold rounded-lg shadow hover:bg-indigo-600 transition">
                 🔍 Search
@@ -47,20 +43,18 @@
                     Search Questions
                 </button>
             </div>
-            
             <p id="search-validation-message" class="mt-2 text-red-500 font-medium hidden"></p>
-            
-            <div id="search-results-area" class="mt-4 p-4 bg-white rounded-lg border border-gray-100 hidden">
-                <h3 class="text-lg font-semibold text-gray-800 mb-3 border-b pb-2">Closest Results:</h3>
-                <!-- Results will be injected here -->
-            </div>
+            <div id="search-results-area" class="mt-4 p-4 bg-white rounded-lg border border-gray-100 hidden"></div>
         </div>
 
-        <!-- Lecture Selection Area (NEW) -->
+        <!-- Lecture Selection Area (FIXED: Added back button) -->
         <div id="lecture-selection-area" class="hidden p-6 bg-blue-50 rounded-xl border border-blue-200 mb-8">
             <div class="flex justify-between items-center mb-4">
-                <h2 class="text-xl font-bold text-blue-800">Select a Lecture to Study</h2>
-                <button id="back-to-start-btn" class="text-sm text-blue-600 hover:underline">Back to Menu</button>
+                <h2 class="text-xl font-bold text-blue-800">Select a Lecture</h2>
+                <!-- This button was missing, causing the crash -->
+                <button id="back-to-start-btn" class="text-sm text-blue-600 hover:underline font-semibold">
+                    ↩ Back to Menu
+                </button>
             </div>
             <p class="text-sm text-blue-600 mb-4">Click on a lecture below to start practicing questions from that specific chapter.</p>
             <div id="lecture-buttons-container" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto custom-scrollbar p-1">
@@ -85,7 +79,7 @@
             
             <p class="text-xl font-bold text-gray-800 mb-4">Choose a Mode</p>
 
-            <!-- Mode Buttons: Normal and Random -->
+            <!-- Mode Buttons -->
             <div class="flex justify-around space-x-4 mb-8 border-b pb-6">
                 <button id="normal-start-btn" class="flex-1 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition">
                     ▶️ Study Mode (By Lecture)
