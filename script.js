@@ -357,18 +357,17 @@ function loadQuestion() {
         currentQuiz.shuffledKeys = answerKeys; 
     }
 
-    let correctDisplayLetter = '';
+    // Calculate correct display letter (A, B, C...) based on the shuffled index
+    const correctIndex = answerKeys.indexOf(currentQuiz.correctAnswer);
+    const correctDisplayLetter = (correctIndex !== -1) ? String.fromCharCode(65 + correctIndex) : '?';
 
     answerKeys.forEach((originalKey, i) => {
         const answerText = currentQuiz.answers[originalKey];
         const button = document.createElement('button');
         
-        const displayLetter = originalKey; 
+        // NEW: Always display A, B, C, D sequentially regardless of content key
+        const displayLetter = String.fromCharCode(65 + i); 
         
-        if (originalKey === currentQuiz.correctAnswer) {
-             correctDisplayLetter = displayLetter; 
-        }
-
         button.classList.add('answer-btn');
         button.textContent = `${displayLetter}. ${answerText}`;
         button.dataset.answerKey = originalKey; 
@@ -399,7 +398,7 @@ function loadQuestion() {
     }
 
     updateNavigationButtons();
-    renderMath(); // <--- ADD THIS LINE
+    renderMath(); 
 }
 
 function handleAnswerClick(event) {
@@ -423,7 +422,8 @@ function handleAnswerClick(event) {
         
         if (key === correctKey) {
             btn.classList.add('correct');
-            correctDisplayLetter = key; 
+            // Extract the letter from the button text (e.g., "A. Answer")
+            correctDisplayLetter = btn.textContent.split('.')[0].trim(); 
         } else if (key === selectedKey) {
             btn.classList.add('incorrect');
         }
@@ -521,12 +521,14 @@ function renderTestQuestions() {
         
         q.shuffledKeys = answerKeys;
         
-        answerKeys.forEach(originalKey => { 
+        answerKeys.forEach((originalKey, i) => { 
             const answerText = q.answers[originalKey];
             const button = document.createElement('button');
 
             button.classList.add('answer-btn');
-            const displayLetter = originalKey; 
+            
+            // NEW: Always display A, B, C, D sequentially
+            const displayLetter = String.fromCharCode(65 + i); 
             
             button.textContent = `${displayLetter}. ${answerText}`;
             button.dataset.answerKey = originalKey; 
