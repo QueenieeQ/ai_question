@@ -755,7 +755,7 @@
         "options": {
           "A": "Data preparation → Data cleansing → Feature extraction/selection → Model training → Model evaluation → Deployment → Feedback & iteration",
           "B": "Model training Data cleansing → Feature selection Deployment → Feedback",
-          "C": "Data collection → Model training Immediate deployment",
+          "C": "Data collection → Model training → Immediate deployment",
           "D": "Only model training and evaluation"
         },
         "correct_option": "A"
@@ -3280,7 +3280,7 @@
         "C": "Is the problem linear?",
         "D": "Can humans do it manually?"
       },
-      "correct_option": "D"
+      "correct_option": "A"
     },
     {
       "id": 2,
