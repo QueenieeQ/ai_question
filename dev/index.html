@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Quiz</title>
+    <!-- FAVICON: Embedded SVG Checkmark -->
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzEwQjk4MSI+PHBhdGggZD0iTTkgMTYuMTdMNC44MyAxMmwtMS40MiAxLjQxTDkgMTkgMjEgN2wtMS40MS0xLjQxeiIvPjwvc3ZnPg==" type="image/svg+xml">
     
     <!-- Load Tailwind CSS -->
@@ -17,12 +18,14 @@
 
     <div class="container max-w-4xl bg-white rounded-xl shadow-2xl p-6 md:p-10 border border-gray-100">
 
-        <!-- HEADER -->
+        <!-- HEADER BLOCK FOR ALIGNMENT -->
         <div class="flex justify-between items-center pt-4">
+            <!-- Home Button (left aligned) -->
             <button id="return-home-button" 
                     class="px-4 py-2 bg-gray-200 text-gray-800 text-sm font-semibold rounded-lg shadow hover:bg-gray-300 transition">
                 🏠 Home
-            </button>
+            </button>       
+            <!-- Search Button (right aligned) -->
             <button id="search-mode-button" 
                     class="px-4 py-2 bg-indigo-500 text-white text-sm font-semibold rounded-lg shadow hover:bg-indigo-600 transition">
                 🔍 Search
@@ -37,12 +40,13 @@
         <div id="search-area" class="hidden p-6 bg-purple-50 rounded-xl border border-purple-200 mb-8">
             <h2 class="text-xl font-bold text-purple-800 mb-4">Question Search (Minimum 3 words)</h2>
             <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4">
-                <input type="text" id="search-input" placeholder="Enter keywords (e.g., 'in a BLE device')" 
+                <input type="text" id="search-input" placeholder="Enter keywords" 
                        class="flex-grow p-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500">
                 <button id="execute-search-btn" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 transition">
                     Search Questions
                 </button>
             </div>
+            
             <p id="search-validation-message" class="mt-2 text-red-500 font-medium hidden"></p>
             <div id="search-results-area" class="mt-4 p-4 bg-white rounded-lg border border-gray-100 hidden"></div>
         </div>
@@ -52,11 +56,11 @@
             <div class="flex justify-between items-center mb-4">
                 <h2 class="text-xl font-bold text-blue-800">Select a Lecture</h2>
                 <!-- This button was missing, causing the crash -->
-                <button id="back-to-start-btn" class="text-sm text-blue-600 hover:underline font-semibold">
+                <button id="back-to-start-btn" class="text-sm rounded-lg hover:underline font-semibold">
                     ↩ Back to Menu
                 </button>
             </div>
-            <p class="text-sm text-blue-600 mb-4">Click on a lecture below to start practicing questions from that specific chapter.</p>
+            <!-- <p class="text-sm text-blue-600 mb-4">Click on a lecture below to start practicing questions from that specific chapter.</p> -->
             <div id="lecture-buttons-container" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto custom-scrollbar p-1">
                 <!-- Buttons injected here via JS -->
             </div>
@@ -178,6 +182,12 @@
             </div>
         </div>
 
+        <!-- Footer -->
+        <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+            <a href="../docs/AI_course_revision.pdf" target="_blank" class="text-xs text-gray-400 hover:text-blue-600 transition-colors">
+                all the question is taken from this revised file thank dr. Shima
+            </a>
+        </div>
     </div>
 
     <!-- Load Custom JS -->

@@ -252,7 +252,7 @@ function renderLectureButtons() {
         
         btn.innerHTML = `
             <span class="font-semibold text-sm md:text-base">${title}</span>
-            <span class="text-xs bg-blue-100 text-blue-800 py-1 px-2 rounded-full group-hover:bg-white group-hover:text-blue-600">${count} Qs</span>
+            <span class="text-xs bg-blue-100 text-blue-800 py-1 px-2 rounded-lg group-hover:bg-white group-hover:text-blue-600">${count} Q</span>
         `;
         
         btn.addEventListener('click', () => startQuiz('NORMAL', title));
