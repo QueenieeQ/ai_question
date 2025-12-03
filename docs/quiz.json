@@ -1,0 +1,4755 @@
+[
+  {
+    "lecture": "Lecture 2: Core Concepts of Artificial Intelligence",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Which of these best describes Artificial Intelligence (AI)?",
+        "options": {
+          "A": "The field that builds systems to simulate or extend human intelligence in real-world tasks",
+          "B": "Only computer vision applications",
+          "C": "Just another name for programming",
+          "D": "Hardware design for smart devices"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 2,
+        "question": "What is Machine Learning (ML)?",
+        "options": {
+          "A": "Algorithms that learn from data to improve performance without explicit programming",
+          "B": "Traditional rule-based programming",
+          "C": "Only deep neural networks",
+          "D": "Manual data analysis techniques"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 3,
+        "question": "How is Deep Learning (DL) related to Machine Learning and AI?",
+        "options": {
+          "A": "Deep Learning ⊂ Machine Learning ⊂ AI",
+          "B": "AI ⊂ Machine Learning ⊂ Deep Learning",
+          "C": "Machine Learning ⊂ AI ⊂ Deep Learning",
+          "D": "They are completely separate fields"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 4,
+        "question": "Which statement about Deep Learning is correct?",
+        "options": {
+          "A": "A subset of ML that uses multi-layer neural networks to learn rich representations",
+          "B": "Another name for traditional programming",
+          "C": "Only used for computer vision tasks",
+          "D": "Doesn't require data to learn"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 5,
+        "question": "What is the correct hierarchical relationship among these fields?",
+        "options": {
+          "A": "AI (broadest) → ML (subset) → DL (subset of ML)",
+          "B": "ML (broadest) → DL→ AI (most specific)",
+          "C": "DL (broadest) → AI → ML (most specific)",
+          "D": "All three are independent fields"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 6,
+        "question": "What characterizes Narrow or Weak AI?",
+        "options": {
+          "A": "Specialized in performing a single task",
+          "B": "Has human-level intelligence across all domains",
+          "C": "Possesses consciousness and self-awareness",
+          "D": "Can perform any intellectual task a human can"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 7,
+        "question": "Which of these is an example of Narrow AI?",
+        "options": {
+          "A": "Siri or Alexa voice assistants",
+          "B": "A hypothetical system with human-level general intelligence",
+          "C": "Superintelligent AI from science fiction",
+          "D": "Self-aware robots"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 8,
+        "question": "What does General or Strong AI refer to?",
+        "options": {
+          "A": "Hypothetical systems with human-level intelligence across all intellectual tasks",
+          "B": "Current specialized AI systems",
+          "C": "Basic rule-based systems",
+          "D": "AI with physical bodies"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 9,
+        "question": "Superintelligent AI is best described as:",
+        "options": {
+          "A": "A theoretical AI that surpasses human intelligence across all domains",
+          "B": "Current AI systems we use daily",
+          "C": "AI specialized in one task",
+          "D": "AI that can only react to current inputs"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 10,
+        "question": "Which capability-based AI type describes most current AI systems?",
+        "options": {
+          "A": "Narrow or Weak AI",
+          "B": "General or Strong AI",
+          "C": "Superintelligent AI",
+          "D": "Reactive AI"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 11,
+        "question": "What characterizes Reactive Machines?",
+        "options": {
+          "A": "Basic AI with no memory, only responding to current input",
+          "B": "AI that uses past data to make decisions",
+          "C": "AI that understands human emotions",
+          "D": "AI with self-awareness"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 12,
+        "question": "Which AI functionality type uses past data to make decisions?",
+        "options": {
+          "A": "Limited Memory AI",
+          "B": "Reactive Machines",
+          "C": "Theory of Mind AI",
+          "D": "Self-aware AI"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 13,
+        "question": "Where is Limited Memory AI commonly found?",
+        "options": {
+          "A": "Self-driving cars",
+          "B": "Basic chess programs",
+          "C": "Simple thermostats",
+          "D": "Calculators"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 14,
+        "question": "What is Theory of Mind AI (still in development)?",
+        "options": {
+          "A": "AI that understands emotions, beliefs, and intentions of others",
+          "B": "AI with no memory",
+          "C": "AI that only reacts to current inputs",
+          "D": "AI with physical bodies"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 15,
+        "question": "Which functionality-based AI type is purely hypothetical?",
+        "options": {
+          "A": "Self-aware AI",
+          "B": "Limited Memory AI",
+          "C": "Reactive Machines",
+          "D": "Theory of Mind AI"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 16,
+        "question": "Which school of AI is based on rules, logic, and symbols?",
+        "options": {
+          "A": "Symbolism (Symbolic AI)",
+          "B": "Connectionism",
+          "C": "Behaviorism",
+          "D": "Empiricism"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 17,
+        "question": "What is an example of Symbolism?",
+        "options": {
+          "A": "Expert systems and rule-based reasoning",
+          "B": "Deep learning and neural networks",
+          "C": "Reinforcement learning",
+          "D": "Genetic algorithms"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 18,
+        "question": "Which school is inspired by the human brain and learns from data using interconnected nodes?",
+        "options": {
+          "A": "Connectionism",
+          "B": "Symbolism",
+          "C": "Behaviorism",
+          "D": "Functionalism"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 19,
+        "question": "What are examples of Connectionism?",
+        "options": {
+          "A": "Deep learning, ANN, CNN, RNN",
+          "B": "Expert systems",
+          "C": "Rule-based programming",
+          "D": "Logical reasoning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 20,
+        "question": "Which school focuses on agent behavior and responses to the environment (stimulus-action)?",
+        "options": {
+          "A": "Behaviorism",
+          "B": "Symbolism",
+          "C": "Connectionism",
+          "D": "Structuralism"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 21,
+        "question": "What is an example of Behaviorism?",
+        "options": {
+          "A": "Reinforcement learning, robotics",
+          "B": "Neural networks",
+          "C": "Expert systems",
+          "D": "Genetic algorithms"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 22,
+        "question": "What does NLP stand for and what does it do?",
+        "options": {
+          "A": "Natural Language Processing - enables computers to understand and generate human languages",
+          "B": "Neural Language Programming - creates neural networks",
+          "C": "Natural Learning Process - learns from nature",
+          "D": "Network Language Protocol - manages network communications"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 23,
+        "question": "Which of these is NOT an NLP application?",
+        "options": {
+          "A": "Sentiment analysis",
+          "B": "Machine translation",
+          "C": "Image recognition",
+          "D": "Chatbots"
+        },
+        "correct_option": "C"
+      },
+      {
+        "id": 24,
+        "question": "What is Computer Vision (CV)?",
+        "options": {
+          "A": "Technology that gives machines the ability to 'see' and understand visual information",
+          "B": "Making computers understand speech",
+          "C": "Hardware for visual displays",
+          "D": "Programming visual interfaces"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 25,
+        "question": "Which CV task involves partitioning an image into multiple segments?",
+        "options": {
+          "A": "Image Segmentation",
+          "B": "Object Detection",
+          "C": "Object Tracking",
+          "D": "OCR"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 26,
+        "question": "What does Object Detection do?",
+        "options": {
+          "A": "Detects and locates objects in images",
+          "B": "Tracks objects across video frames",
+          "C": "Reads text from images",
+          "D": "Classifies entire images"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 27,
+        "question": "What is the process of following a specific object's movement across video frames?",
+        "options": {
+          "A": "Object Tracking",
+          "B": "Object Detection",
+          "C": "Image Segmentation",
+          "D": "Optical Character Recognition"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 28,
+        "question": "What does OCR stand for and what does it do?",
+        "options": {
+          "A": "Optical Character Recognition - recognizes text in images and converts to editable text",
+          "B": "Optical Computer Recognition - recognizes computers in images",
+          "C": "Optical Color Recognition - identifies colors",
+          "D": "Optical Character Reading - reads aloud text"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 29,
+        "question": "What are the three key elements needed for AI development according to the lecture?",
+        "options": {
+          "A": "Data, Algorithms, Computing Power",
+          "B": "Hardware, Software, Users",
+          "C": "Input, Processing, Output",
+          "D": "Sensors, Processors, Actuators"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 30,
+        "question": "Which industry applications were mentioned for AI technologies?",
+        "options": {
+          "A": "Healthcare, Finance, Transportation, Entertainment",
+          "B": "Only manufacturing",
+          "C": "Only scientific research",
+          "D": "Only military applications"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 31,
+        "question": "What development stages were mentioned for NLP?",
+        "options": {
+          "A": "Rules/linguistics → ML/DL → Large Language Models (LLMs)",
+          "B": "Only deep learning",
+          "C": "Hardware improvements only",
+          "D": "From simple to complex hardware"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 32,
+        "question": "Which of these is a Computer Vision task that helps in medical imaging to isolate tumors?",
+        "options": {
+          "A": "Image Segmentation",
+          "B": "Object Detection",
+          "C": "OCR",
+          "D": "Object Tracking"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 33,
+        "question": "In autonomous driving, which CV task helps understand exact road boundaries?",
+        "options": {
+          "A": "Image Segmentation",
+          "B": "Object Detection",
+          "C": "Face Recognition",
+          "D": "Text Recognition"
+        },
+        "correct_option": "A"
+      }
+    ]
+  },
+  {
+    "lecture": "Lecture 3: Machine Learning Concepts and Algorithms",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the main difference between traditional rule-based methods and machine learning?",
+        "options": {
+          "A": "ML learns patterns from data automatically, while rule-based methods require explicit programming",
+          "B": "ML is slower but more accurate",
+          "C": "Rule-based methods can handle more complex problems",
+          "D": "ML doesn't require data at all"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 2,
+        "question": "When should you consider using machine learning instead of traditional programming?",
+        "options": {
+          "A": "When rules are complex, change over time, or data distribution changes",
+          "B": "When problems are simple and well-defined",
+          "C": "When you have very little data",
+          "D": "When you need 100% deterministic results"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 3,
+        "question": "Which scenario is ideal for machine learning application?",
+        "options": {
+          "A": "Speech recognition where rules are complex to describe",
+          "B": "Adding two numbers",
+          "C": "Sorting a list alphabetically",
+          "D": "Calculating tax based on fixed percentages"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 4,
+        "question": "What happens when 'task rules change over time' that makes ML suitable?",
+        "options": {
+          "A": "ML models can adapt to new data and changing patterns",
+          "B": "ML models become obsolete quickly",
+          "C": "ML requires less maintenance than rule-based systems",
+          "D": "ML doesn't need to be updated"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 5,
+        "question": "Why is ML better than rule-based systems when data distribution changes?",
+        "options": {
+          "A": "ML can adapt to new data patterns through retraining",
+          "B": "ML systems never need updating",
+          "C": "Rule-based systems are always better",
+          "D": "ML works perfectly without new data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 6,
+        "question": "Which type of learning uses labeled data where each input has a known correct output?",
+        "options": {
+          "A": "Supervised Learning",
+          "B": "Unsupervised Learning",
+          "C": "Reinforcement Learning",
+          "D": "Semi-supervised Learning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 7,
+        "question": "What characterizes Unsupervised Learning?",
+        "options": {
+          "A": "Works with unlabeled data, finding hidden patterns without correct answers provided",
+          "B": "Uses only labeled data with known outputs",
+          "C": "Learns from rewards and penalties",
+          "D": "Combines labeled and unlabeled data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 8,
+        "question": "In Reinforcement Learning, how does the agent learn?",
+        "options": {
+          "A": "Through trial and error, receiving rewards for good actions and penalties for bad ones",
+          "B": "From labeled examples provided by a teacher",
+          "C": "By finding patterns in unlabeled data",
+          "D": "By following explicit programming rules"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 9,
+        "question": "What is Semi-supervised Learning?",
+        "options": {
+          "A": "Uses a small amount of labeled data combined with a large amount of unlabeled data",
+          "B": "Uses only unlabeled data",
+          "C": "Uses only labeled data",
+          "D": "Doesn't use any data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 10,
+        "question": "Which learning type would you use to predict whether an email is spam?",
+        "options": {
+          "A": "Supervised Learning",
+          "B": "Unsupervised Learning",
+          "C": "Reinforcement Learning",
+          "D": "Active Learning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 11,
+        "question": "What type of problem is 'predicting house prices based on features'?",
+        "options": {
+          "A": "Regression (predicting continuous values)",
+          "B": "Classification (predicting categories)",
+          "C": "Clustering (grouping similar items)",
+          "D": "Reinforcement (maximizing rewards)"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 12,
+        "question": "Which problem type assigns inputs to one of k categories?",
+        "options": {
+          "A": "Classification",
+          "B": "Regression",
+          "C": "Clustering",
+          "D": "Dimensionality reduction"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 13,
+        "question": "What does Clustering do?",
+        "options": {
+          "A": "Groups unlabeled data by similarity",
+          "B": "Predicts continuous values",
+          "C": "Assigns categories to labeled data",
+          "D": "Maximizes reward signals"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 14,
+        "question": "What's the main difference between Classification and Regression outputs?",
+        "options": {
+          "A": "Classification outputs discrete classes, Regression outputs continuous values",
+          "B": "Classification is faster than Regression",
+          "C": "Regression only works with numbers, Classification with text",
+          "D": "Classification requires more data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 15,
+        "question": "Which is an example of a Regression problem?",
+        "options": {
+          "A": "Predicting stock prices next week",
+          "B": "Detecting spam emails",
+          "C": "Grouping customers by buying behavior",
+          "D": "Learning to play chess"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 16,
+        "question": "In supervised learning, what is the 'teacher'?",
+        "options": {
+          "A": "The labeled data that provides correct answers",
+          "B": "The programmer who writes the rules",
+          "C": "The test data used for evaluation",
+          "D": "The algorithm itself"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 17,
+        "question": "What does the model do during supervised learning?",
+        "options": {
+          "A": "Learns by comparing predictions with correct answers and improves over time",
+          "B": "Finds patterns without any guidance",
+          "C": "Explores the environment through trial and error",
+          "D": "Only works with perfect data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 18,
+        "question": "Which is an example of supervised learning for classification?",
+        "options": {
+          "A": "Determining if an email is spam based on labeled examples",
+          "B": "Grouping similar news articles together",
+          "C": "Recommending movies based on user behavior",
+          "D": "Learning to drive through trial and error"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 19,
+        "question": "What is the output of a regression model?",
+        "options": {
+          "A": "A continuous numerical value",
+          "B": "A category or class label",
+          "C": "A group or cluster",
+          "D": "A reward signal"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 20,
+        "question": "In the patient clinic example from lecture, what type of supervised learning was shown?",
+        "options": {
+          "A": "Classification (healthy vs sick)",
+          "B": "Regression (predicting temperature)",
+          "C": "Clustering (grouping patients)",
+          "D": "Reinforcement (treating patients)"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 21,
+        "question": "What is the main challenge in unsupervised learning?",
+        "options": {
+          "A": "No correct answers are provided, so evaluation is harder",
+          "B": "Too much labeled data is required",
+          "C": "It's slower than supervised learning",
+          "D": "It can't find any patterns"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 22,
+        "question": "Which algorithm is commonly used for clustering?",
+        "options": {
+          "A": "K-means",
+          "B": "Linear Regression",
+          "C": "Decision Tree",
+          "D": "Support Vector Machine"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 23,
+        "question": "What does 'intra-cluster similarity' mean in clustering?",
+        "options": {
+          "A": "Items within the same cluster are more similar to each other",
+          "B": "Items in different clusters are similar",
+          "C": "All clusters are equally similar",
+          "D": "No similarity measures are used"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 24,
+        "question": "Which is an example of unsupervised learning application?",
+        "options": {
+          "A": "Recommending movies for users based on viewing patterns",
+          "B": "Predicting house prices",
+          "C": "Classifying emails as spam",
+          "D": "Playing chess against a computer"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 25,
+        "question": "How does unsupervised learning handle new data?",
+        "options": {
+          "A": "Calculates similarity with existing samples and classifies by similarity",
+          "B": "Compares with known labels",
+          "C": "Asks for user feedback",
+          "D": "Randomly assigns to clusters"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 26,
+        "question": "What is the key characteristic of Reinforcement Learning?",
+        "options": {
+          "A": "Learns through interaction with environment using rewards/penalties",
+          "B": "Requires large amounts of labeled data",
+          "C": "Finds patterns in unlabeled data",
+          "D": "Works only with static environments"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 27,
+        "question": "What does the 'reward function' do in RL?",
+        "options": {
+          "A": "Provides feedback to guide learning towards desired behavior",
+          "B": "Labels data for training",
+          "C": "Groups similar states together",
+          "D": "Initializes the model parameters"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 28,
+        "question": "What does the agent try to maximize in RL?",
+        "options": {
+          "A": "Cumulative reward over time",
+          "B": "Training accuracy",
+          "C": "Number of correct predictions",
+          "D": "Speed of learning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 31,
+        "question": "Why is semi-supervised learning useful?",
+        "options": {
+          "A": "Labeled data is often expensive/time-consuming to obtain",
+          "B": "It's always more accurate than supervised learning",
+          "C": "It doesn't require any data",
+          "D": "It's simpler to implement"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 32,
+        "question": "What proportion of data is typically labeled in semi-supervised learning?",
+        "options": {
+          "A": "Small amount of labeled, large amount of unlabeled",
+          "B": "All data is labeled",
+          "C": "All data is unlabeled",
+          "D": "Equal amounts of labeled and unlabeled"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 33,
+        "question": "Which learning types does semi-supervised combine?",
+        "options": {
+          "A": "Supervised and Unsupervised Learning",
+          "B": "Reinforcement and Supervised",
+          "C": "Reinforcement and Unsupervised",
+          "D": "Only unsupervised techniques"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 34,
+        "question": "Why is RL good for robotics and gaming?",
+        "options": {
+          "A": "These involve sequential decisions where actions affect future states",
+          "B": "They have lots of labeled data",
+          "C": "They are simple classification problems",
+          "D": "They don't require learning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 35,
+        "question": "What type of learning would you use for 'defining fish of the same species' without labels?",
+        "options": {
+          "A": "Clustering (Unsupervised Learning)",
+          "B": "Classification (Supervised Learning)",
+          "C": "Regression",
+          "D": "Reinforcement Learning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 36,
+        "question": "For 'recommending movies for users' based on viewing history without explicit ratings, which learning type?",
+        "options": {
+          "A": "Unsupervised Learning (finding patterns in viewing behavior)",
+          "B": "Supervised Learning",
+          "C": "Reinforcement Learning",
+          "D": "Semi-supervised Learning"
+        },
+        "correct_option": "A"
+      }
+    ]
+  },
+  {
+    "lecture": "Lecture 4: The Machine Learning Process: From Raw Data to Effective Models",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the complete machine learning process sequence?",
+        "options": {
+          "A": "Data preparation → Data cleansing → Feature extraction/selection → Model training → Model evaluation → Deployment → Feedback & iteration",
+          "B": "Model training Data cleansing → Feature selection Deployment → Feedback",
+          "C": "Data collection → Model training Immediate deployment",
+          "D": "Only model training and evaluation"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 2,
+        "question": "What is the purpose of the feedback and iteration step in ML?",
+        "options": {
+          "A": "Gather real-world feedback and use it to improve the model iteratively",
+          "B": "Stop the process once deployed",
+          "C": "Only collect more data without model changes",
+          "D": "Wait for the model to improve automatically"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 3,
+        "question": "Which step comes immediately after data cleansing?",
+        "options": {
+          "A": "Feature extraction and selection",
+          "B": "Model deployment",
+          "C": "Model evaluation",
+          "D": "Data collection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 4,
+        "question": "What is a 'dataset' in machine learning?",
+        "options": {
+          "A": "A collection of data used in ML tasks, where each piece is called a sample",
+          "B": "A single algorithm",
+          "C": "Only the training data",
+          "D": "The final model"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 5,
+        "question": "What are 'features' in a dataset?",
+        "options": {
+          "A": "Items or attributes that reflect the nature of a sample in a particular aspect",
+          "B": "Only the output labels",
+          "C": "The algorithms used",
+          "D": "The evaluation metrics"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 6,
+        "question": "What is the difference between a training set and a test set?",
+        "options": {
+          "A": "Training set: used for building the model; Test set: used for evaluating the learned model",
+          "B": "Both are used for training",
+          "C": "Training set: for evaluation; Test set: for building",
+          "D": "They are the same thing"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 7,
+        "question": "What does 'learning' or 'training' refer to in ML?",
+        "options": {
+          "A": "The process of building a model from data",
+          "B": "The process of testing a model",
+          "C": "The process of collecting data",
+          "D": "The process of deploying the model"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 8,
+        "question": "In the typical dataset composition diagram, what are the components?",
+        "options": {
+          "A": "Feature 1, Feature 2, Feature 3, Label",
+          "B": "Only features without labels",
+          "C": "Only labels without features",
+          "D": "Model parameters"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 9,
+        "question": "Why is data processing crucial in machine learning?",
+        "options": {
+          "A": "Data determines the scope of model capabilities; all good models require good data",
+          "B": "It's optional and can be skipped",
+          "C": "Only needed for complex models",
+          "D": "It only affects training speed"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 10,
+        "question": "What is the 'curse of dimensionality'?",
+        "options": {
+          "A": "Having too many features (dimensions) compared with the amount of data",
+          "B": "Having too few features",
+          "C": "Having too much data",
+          "D": "Having too few samples"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 12,
+        "question": "What are the common operations in data preprocessing?",
+        "options": {
+          "A": "Data filtering, handling data loss, handling errors/abnormal values, merging data from multiple sources, data consolidation",
+          "B": "Only training the model",
+          "C": "Only collecting more data",
+          "D": "Only feature selection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 13,
+        "question": "What does 'dirty data' typically contain?",
+        "options": {
+          "A": "Incompleteness, noise, inconsistency",
+          "B": "Too many features",
+          "C": "Perfect structure",
+          "D": "Already cleaned information"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 14,
+        "question": "What is 'incompleteness' in data quality problems?",
+        "options": {
+          "A": "Incomplete data or lack of relevant attributes/values",
+          "B": "Too much data",
+          "C": "Correct records",
+          "D": "Consistent data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 15,
+        "question": "What is 'noise' in data quality problems?",
+        "options": {
+          "A": "Data contains incorrect records or abnormal points",
+          "B": "Missing values",
+          "C": "Consistent formatting",
+          "D": "Too many features"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 16,
+        "question": "What is 'inconsistency' in data quality problems?",
+        "options": {
+          "A": "Data contains conflicting records",
+          "B": "Missing data",
+          "C": "Too much data",
+          "D": "Perfect formatting"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 17,
+        "question": "What operations are typically used to convert data for ML models?",
+        "options": {
+          "A": "Encoding categorical data, converting numeric to categorical, word embedding, image processing, feature engineering",
+          "B": "Only using raw data as is",
+          "C": "Only collecting more data",
+          "D": "Only removing data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 18,
+        "question": "What is feature engineering?",
+        "options": {
+          "A": "Normalizing/standardizing features and creating new features from existing ones",
+          "B": "Only selecting features",
+          "C": "Only removing features",
+          "D": "Only collecting data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 19,
+        "question": "Why might you convert numeric data into categorical data?",
+        "options": {
+          "A": "To reduce the number of variable values (e.g., segmenting age data)",
+          "B": "To increase complexity",
+          "C": "To make data more random",
+          "D": "To remove all patterns"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 20,
+        "question": "Why is feature selection necessary?",
+        "options": {
+          "A": "Some features may be unnecessary or irrelevant to the values to be predicted",
+          "B": "To always increase model complexity",
+          "C": "To remove all features",
+          "D": "To make training slower"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 21,
+        "question": "What are the three main types of feature selection methods?",
+        "options": {
+          "A": "Filter methods, Wrapper methods, Embedded methods",
+          "B": "Only statistical methods",
+          "C": "Only manual selection",
+          "D": "Only automatic selection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 22,
+        "question": "How do Filter methods work?",
+        "options": {
+          "A": "Select features based on statistical tests, evaluating each feature independently with target variable",
+          "B": "Use model performance to score feature subsets",
+          "C": "Build feature selection into model training",
+          "D": "Only use domain knowledge"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 23,
+        "question": "How do Wrapper methods work?",
+        "options": {
+          "A": "Use a prediction model to score feature subsets based on model performance",
+          "B": "Use statistical tests only",
+          "C": "Don't use any models",
+          "D": "Only consider one feature at a time"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 24,
+        "question": "How do Embedded methods work?",
+        "options": {
+          "A": "Treat feature selection as part of the modeling process itself",
+          "B": "Work independently of models",
+          "C": "Only use statistical tests",
+          "D": "Require manual intervention"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 25,
+        "question": "What is a limitation of Filter methods?",
+        "options": {
+          "A": "Tend to select redundant variables because they don't consider relationships between features",
+          "B": "Too slow",
+          "C": "Don't use any statistics",
+          "D": "Always pick the best features"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 26,
+        "question": "What is a limitation of Wrapper methods?",
+        "options": {
+          "A": "Computationally intensive because they train a new model for each feature subset",
+          "B": "Too simple",
+          "C": "Don't use models at all",
+          "D": "Always give perfect results"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 27,
+        "question": "Which feature selection method combines benefits of both filter and wrapper methods?",
+        "options": {
+          "A": "Embedded methods",
+          "B": "Only filter methods",
+          "C": "Only wrapper methods",
+          "D": "Manual selection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 28,
+        "question": "What are the 6 steps in building an AI model according to the lecture?",
+        "options": {
+          "A": "Split data → Train model → Validate model → Tune model → Deploy model Test model",
+          "B": "Only train and test",
+          "C": "Collect data Train Deploy",
+          "D": "Clean data → Train → Evaluate"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 29,
+        "question": "What is the purpose of splitting data into training, validation, and test sets?",
+        "options": {
+          "A": "Training: build model; Validation: tune model; Test: evaluate generalization capability",
+          "B": "All for training",
+          "C": "All for testing",
+          "D": "Only for data collection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 30,
+        "question": "What is the validation set used for?",
+        "options": {
+          "A": "To evaluate model effectiveness and tune the model",
+          "B": "Only for final testing",
+          "C": "Only for training",
+          "D": "To collect more data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 31,
+        "question": "What is the test set used for?",
+        "options": {
+          "A": "To evaluate the generalization capability of the model",
+          "B": "For training the model",
+          "C": "For tuning parameters",
+          "D": "For data cleaning"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 34,
+        "question": "What is 'generalization' in machine learning?",
+        "options": {
+          "A": "The model's ability to perform well on new, unseen samples",
+          "B": "Performing well only on training data",
+          "C": "Being very complex",
+          "D": "Having many features"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 35,
+        "question": "What is training error?",
+        "options": {
+          "A": "Error of the model on the training set",
+          "B": "Error on new samples",
+          "C": "Error during deployment",
+          "D": "Error in data collection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 36,
+        "question": "What is generalization error?",
+        "options": {
+          "A": "Error of the model on new samples",
+          "B": "Error on training data",
+          "C": "Error during model training",
+          "D": "Error in algorithm selection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 37,
+        "question": "What is underfitting?",
+        "options": {
+          "A": "When training error is large (model too simple)",
+          "B": "When training error is small but generalization error is large",
+          "C": "When model is perfectly balanced",
+          "D": "When model has too many parameters"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 38,
+        "question": "What is overfitting?",
+        "options": {
+          "A": "When training error is small but generalization error is large (model too complex)",
+          "B": "When training error is large",
+          "C": "When model is too simple",
+          "D": "When data is perfectly clean"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 39,
+        "question": "What is model capacity (complexity)?",
+        "options": {
+          "A": "The capability of the model to fit various functions",
+          "B": "The speed of training",
+          "C": "The number of features",
+          "D": "The amount of data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 40,
+        "question": "What happens with insufficient model capacity?",
+        "options": {
+          "A": "Underfitting may occur (can't handle complex tasks)",
+          "B": "Overfitting occurs",
+          "C": "Perfect fit always",
+          "D": "Model trains faster"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 41,
+        "question": "What happens with excessive model capacity?",
+        "options": {
+          "A": "Overfitting may occur (learns noise)",
+          "B": "Underfitting occurs",
+          "C": "Perfect generalization",
+          "D": "No training needed"
+        },
+        "correct_option": "A"
+      }
+    ]
+  },
+  {
+    "lecture": "Lecture 5: Machine Learning Model Evaluation - Comprehensive Revision Questions",
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is the primary goal of machine learning?",
+        "options": {
+          "A": "Ensure models perform well on new, unseen samples (generalization)",
+          "B": "Achieve perfect performance on training data only",
+          "C": "Create the most complex model possible",
+          "D": "Use all available features without selection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 2,
+        "question": "What does \"error\" in machine learning refer to?",
+        "options": {
+          "A": "The difference between the model's prediction and the actual result",
+          "B": "The number of features used",
+          "C": "The training time required",
+          "D": "The model's complexity"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 3,
+        "question": "What is training error?",
+        "options": {
+          "A": "The error of the model on the training set",
+          "B": "The error on new, unseen samples",
+          "C": "The error during model deployment",
+          "D": "The error in data collection"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 4,
+        "question": "What is generalization error?",
+        "options": {
+          "A": "The error of the model on new samples",
+          "B": "The error on training data",
+          "C": "The error during parameter tuning",
+          "D": "The error in algorithm implementation"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 5,
+        "question": "Which type of error should we aim to minimize in practical applications?",
+        "options": {
+          "A": "Generalization error",
+          "B": "Training error only",
+          "C": "Both equally",
+          "D": "Neither we want maximum error"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 6,
+        "question": "What happens when model capacity is too large?",
+        "options": {
+          "A": "Overfitting occurs (model learns noise)",
+          "B": "Underfitting occurs",
+          "C": "Both errors become zero",
+          "D": "Model cannot train"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 11,
+        "question": "In binary classification, what are the possible model outputs?",
+        "options": {
+          "A": "Correct or incorrect predictions",
+          "B": "Continuous values",
+          "C": "Multiple categories",
+          "D": "Probability distributions only"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 12,
+        "question": "What is the typical number of classes in binary classification?",
+        "options": {
+          "A": "Two possible classes (e.g., Dog or Cat)",
+          "B": "Three or more classes",
+          "C": "Only one class",
+          "D": "Unlimited classes"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 13,
+        "question": "What happens in the supervised learning process for classification?",
+        "options": {
+          "A": "Train on labeled training data \u2192 Test on testing data \u2192 Compare predictions with ground truth",
+          "B": "Only train without testing",
+          "C": "Test first then train",
+          "D": "Use only unlabeled data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 14,
+        "question": "After training, what does the model predict?",
+        "options": {
+          "A": "Labels for X_test (testing data)",
+          "B": "Labels for training data only",
+          "C": "Random labels",
+          "D": "Only the most common class"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 15,
+        "question": "What are \"ground truth labels\" (y values)?",
+        "options": {
+          "A": "The actual correct labels for the test data",
+          "B": "The predicted labels",
+          "C": "The feature values",
+          "D": "The model parameters"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 16,
+        "question": "What metrics can be derived from a confusion matrix?",
+        "options": {
+          "A": "Recall, Precision, Specificity, Accuracy, AUC-ROC",
+          "B": "Only training error",
+          "C": "Only model size",
+          "D": "Only data collection rate"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 17,
+        "question": "What is the formula for accuracy?",
+        "options": {
+          "A": "$(TP+TN)/(TP+TN+FP+FN)$",
+          "B": "$TP/(TP+FN)$",
+          "C": "$TP/ (TP + FP)$",
+          "D": "$TN/(TN+FP)$"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 18,
+        "question": "What does accuracy measure?",
+        "options": {
+          "A": "Overall correctness: total correct predictions divided by total predictions",
+          "B": "How well we catch positive cases",
+          "C": "How accurate positive predictions are",
+          "D": "How well we identify negative cases"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 21,
+        "question": "What is the formula for Recall?",
+        "options": {
+          "A": "$TP/(TP+FN)$",
+          "B": "$TP/(TP+FP)$",
+          "C": "$(TP + TN) / total$",
+          "D": "$TN/(TN+FP)$"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 22,
+        "question": "What does Precision measure?",
+        "options": {
+          "A": "\"Out of everything predicted as Positive, how many were actually correct?\"",
+          "B": "\"Out of actual positives, how many were caught?\"",
+          "C": "Overall accuracy",
+          "D": "Error rate"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 23,
+        "question": "What is the formula for Precision?",
+        "options": {
+          "A": "$TP/(TP+FP)$",
+          "B": "$TP/(TP+FN)$",
+          "C": "$TN/(TN+FP)$",
+          "D": "$(TP + TN) / total$"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 24,
+        "question": "What is the F1-score (F-score)?",
+        "options": {
+          "A": "Harmonic mean of Precision and Recall",
+          "B": "Arithmetic mean of Precision and Recall",
+          "C": "Difference between Precision and Recall",
+          "D": "Sum of Precision and Recall"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 25,
+        "question": "When is F1-score particularly useful?",
+        "options": {
+          "A": "When we need to balance catching positives (Recall) and avoiding false alarms (Precision)",
+          "B": "When we only care about accuracy",
+          "C": "When we have unlimited data",
+          "D": "When model is very simple"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 26,
+        "question": "What is the formula for F1-score?",
+        "options": {
+          "A": "$2 \\times (Precision \\times Recall) / (Precision + Recall)$",
+          "B": "$(Precision + Recall) / 2$",
+          "C": "$Precision \\times Recall$",
+          "D": "$Precision - Recall$"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 30,
+        "question": "What does AUC measure?",
+        "options": {
+          "A": "Overall performance of binary classifier across all thresholds",
+          "B": "Training time",
+          "C": "Model size",
+          "D": "Data collection rate"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 31,
+        "question": "What is a perfect classifier's AUC value?",
+        "options": {
+          "A": "1.0",
+          "B": "0.5",
+          "C": "0.0",
+          "D": "0.75"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 32,
+        "question": "What does an AUC of 0.5 indicate?",
+        "options": {
+          "A": "Random classifier (no discriminative power)",
+          "B": "Perfect classifier",
+          "C": "Good classifier",
+          "D": "Overfitted classifier"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 37,
+        "question": "What is underfitting?",
+        "options": {
+          "A": "When training error is large (model too simple)",
+          "B": "When training error is small but generalization error is large",
+          "C": "When model is perfectly balanced",
+          "D": "When model has too many parameters"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 38,
+        "question": "What is overfitting?",
+        "options": {
+          "A": "When training error is small but generalization error is large (model too complex)",
+          "B": "When training error is large",
+          "C": "When model is too simple",
+          "D": "When data is perfectly clean"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 39,
+        "question": "What is model capacity (complexity)?",
+        "options": {
+          "A": "The capability of the model to fit various functions",
+          "B": "The speed of training",
+          "C": "The number of features",
+          "D": "The amount of data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 40,
+        "question": "What happens with insufficient model capacity?",
+        "options": {
+          "A": "Underfitting may occur (can't handle complex tasks)",
+          "B": "Overfitting occurs",
+          "C": "Perfect fit always",
+          "D": "Model trains faster"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 41,
+        "question": "What happens with excessive model capacity?",
+        "options": {
+          "A": "Overfitting may occur (learns noise)",
+          "B": "Underfitting occurs",
+          "C": "Perfect generalization",
+          "D": "No training needed"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 46,
+        "question": "What are model parameters?",
+        "options": {
+          "A": "Automatically learned by models from data (e.g., weights, biases)",
+          "B": "Manually set before training",
+          "C": "Only related to data preprocessing",
+          "D": "Only for model evaluation"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 47,
+        "question": "What are hyperparameters?",
+        "options": {
+          "A": "Manually set before training to control learning process",
+          "B": "Learned automatically from data",
+          "C": "Only for data cleaning",
+          "D": "Only for model deployment"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 48,
+        "question": "What do hyperparameters control?",
+        "options": {
+          "A": "Learning rate, number of layers, batch size, regularization strength",
+          "B": "Model predictions",
+          "C": "Data collection",
+          "D": "Feature values"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 49,
+        "question": "How do we typically find good hyperparameters?",
+        "options": {
+          "A": "Through hyperparameter search (grid search, random search)",
+          "B": "They are fixed for all models",
+          "C": "Guessed randomly",
+          "D": "Only from theoretical calculation"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 50,
+        "question": "What is cross-validation?",
+        "options": {
+          "A": "A statistical method to check classifier performance by splitting data",
+          "B": "A type of neural network",
+          "C": "A feature selection method",
+          "D": "A data collection technique"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 51,
+        "question": "How does basic cross-validation work?",
+        "options": {
+          "A": "Split data into training and validation sets, train on one, test on other",
+          "B": "Use all data for both training and testing",
+          "C": "Only use test data",
+          "D": "Ignore validation sets"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 52,
+        "question": "What is k-fold cross-validation?",
+        "options": {
+          "A": "Split dataset into K equal parts, train on K-1 folds, test on remaining fold, repeat K times",
+          "B": "Use only one fold for everything",
+          "C": "Train and test on same data",
+          "D": "Only use validation data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 53,
+        "question": "What is a common choice for K in k-fold CV?",
+        "options": {
+          "A": "5 or 10",
+          "B": "1 or 2",
+          "C": "100",
+          "D": "Same as number of samples"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 54,
+        "question": "What does k-fold CV help reduce?",
+        "options": {
+          "A": "Bias (overfitting to one particular train/test split)",
+          "B": "Training time",
+          "C": "Model size",
+          "D": "Data collection effort"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 55,
+        "question": "What do we do with the k-fold CV results?",
+        "options": {
+          "A": "Average them to get a more stable estimate of performance",
+          "B": "Use only the best fold",
+          "C": "Ignore variations",
+          "D": "Only report minimum"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 56,
+        "question": "Why is cross-validation particularly useful?",
+        "options": {
+          "A": "More reliable evaluation using all data for both training and testing",
+          "B": "Faster training",
+          "C": "Simpler implementation",
+          "D": "Requires less data"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 57,
+        "question": "In 5-fold CV with 100 samples, how many samples in each fold?",
+        "options": {
+          "A": "20 samples per fold",
+          "B": "100 samples",
+          "C": "5 samples",
+          "D": "50 samples"
+        },
+        "correct_option": "A"
+      },
+      {
+        "id": 58,
+        "question": "What does cross-validation help us choose?",
+        "options": {
+          "A": "The best model that generalizes well",
+          "B": "Only the fastest model",
+          "C": "Only the simplest model",
+          "D": "Only models with most parameters"
+        },
+        "correct_option": "A"
+      }
+    ]
+  },
+  {
+  "lecture": "Lecture 6: Linear Regression and Model Evaluation in Machine Learning - Comprehensive Revision Questions",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does linear regression predict?",
+      "options": {
+        "A": "Continuous values",
+        "B": "Categories/classes",
+        "C": "Clusters/groups",
+        "D": "Sequences"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question": "What type of machine learning is linear regression?",
+      "options": {
+        "A": "Supervised learning",
+        "B": "Unsupervised learning",
+        "C": "Reinforcement learning",
+        "D": "Semi-supervised learning"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question": "What does linear regression assume?",
+      "options": {
+        "A": "A linear relationship between input (independent) and output (dependent) variables",
+        "B": "No relationship between variables",
+        "C": "Complex non-linear relationships",
+        "D": "Random relationships"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 4,
+      "question": "What is the independent variable in linear regression?",
+      "options": {
+        "A": "The predictor variable (X)",
+        "B": "The target variable (Y)",
+        "C": "The error term",
+        "D": "The intercept"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question": "What is the dependent variable in linear regression?",
+      "options": {
+        "A": "The target variable we want to predict (Y)",
+        "B": "The predictor variable (X)",
+        "C": "The coefficient",
+        "D": "The learning rate"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 6,
+      "question": "Which term represents the predicted value in linear regression?",
+      "options": {
+        "A": "ŷ (y-hat)",
+        "B": "x",
+        "C": "ε (epsilon)",
+        "D": "ẞ (beta)"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 7,
+      "question": "What is the simplest form of linear regression?",
+      "options": {
+        "A": "Simple linear regression: $y=b0+b1^{*}x$",
+        "B": "Multiple regression with many variables",
+        "C": "Polynomial regression",
+        "D": "Logistic regression"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 27,
+      "question": "What is the regression line?",
+      "options": {
+        "A": "The best-fitting line through the data points that minimizes error",
+        "B": "Any line through the data",
+        "C": "A curved line",
+        "D": "A horizontal line"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 28,
+      "question": "In the salary vs. experience example, what does the regression line show?",
+      "options": {
+        "A": "How salary changes with experience",
+        "B": "Random relationship",
+        "C": "No relationship",
+        "D": "Categorical differences"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 29,
+      "question": "What is a residual?",
+      "options": {
+        "A": "The difference between actual value and predicted value",
+        "B": "The slope of the line",
+        "C": "The intercept",
+        "D": "The independent variable"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 30,
+      "question": "What does  (epsilon) represent in regression?",
+      "options": {
+        "A": "The error term (difference between actual and predicted)",
+        "B": "The slope coefficient",
+        "C": "The intercept",
+        "D": "The learning rate"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 31,
+      "question": "What is the \"point estimate\" of the error term called?",
+      "options": {
+        "A": "Residual",
+        "B": "Coefficient",
+        "C": "Intercept",
+        "D": "Variance"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 32,
+      "question": "What method does linear regression use to find the best-fitting line?",
+      "options": {
+        "A": "Least Squares Method",
+        "B": "Gradient Descent only",
+        "C": "Random selection",
+        "D": "Maximum likelihood"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 33,
+      "question": "What does the Least Squares method minimize?",
+      "options": {
+        "A": "Sum of squared differences between actual and predicted values",
+        "B": "Sum of absolute differences",
+        "C": "Number of errors",
+        "D": "Model complexity"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 34,
+      "question": "What are the \"squared differences\" being minimized?",
+      "options": {
+        "A": "Residuals squared",
+        "B": "Features squared",
+        "C": "Coefficients squared",
+        "D": "Inputs squared"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 35,
+      "question": "What is the hypothesis (model) in linear regression?",
+      "options": {
+        "A": "$\\hat{y}=b0+b1^{*}x$ (for simple regression)",
+        "B": "$y=mx+c$",
+        "C": "$y=ax^{2}+bx+c$",
+        "D": "$y=e^{\\wedge}x$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 36,
+      "question": "What is the error for each data point?",
+      "options": {
+        "A": "$(\\hat{y}-y)$ or $(y-\\hat{y})$",
+        "B": "$(x-\\hat{y})$",
+        "C": "(b0-b1)",
+        "D": "$(x-y)$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 37,
+      "question": "What cost function is commonly used in linear regression?",
+      "options": {
+        "A": "Mean Squared Error (MSE)",
+        "B": "Cross-entropy",
+        "C": "Accuracy",
+        "D": "Precision"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 38,
+      "question": "What is the formula for Mean Squared Error?",
+      "options": {
+        "A": "$(1/n)^{*}\\Sigma(\\hat{y}-y)^{2}$",
+        "B": "$(1/n)^{*}\\Sigma|\\hat{y}-y|$",
+        "C": "$\\Sigma(\\hat{y}-y)$",
+        "D": "$(\\hat{y}-y)^{2}/n^{2}$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 39,
+      "question": "What does MSE measure?",
+      "options": {
+        "A": "Average of squared differences between predicted and actual values",
+        "B": "Number of correct predictions",
+        "C": "Model complexity",
+        "D": "Training time"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 42,
+      "question": "What is simple linear regression?",
+      "options": {
+        "A": "One independent variable predicting one dependent variable: $y=b0+b1^{*}x$",
+        "B": "Multiple variables predicting one output",
+        "C": "One variable predicting multiple outputs",
+        "D": "No variables"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 43,
+      "question": "What is multiple linear regression?",
+      "options": {
+        "A": "Multiple independent variables predicting one dependent variable: $y=b0+b1^{*}\\times1+b2^{*}\\times2+...$",
+        "B": "One variable predicting one output",
+        "C": "Multiple variables predicting multiple outputs",
+        "D": "No clear relationship"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 44,
+      "question": "In multiple regression equation $y=b0+b1^{*}\\times1+b2^{*}\\times2$, what is b0?",
+      "options": {
+        "A": "Constant (intercept)",
+        "B": "Coefficient for x1",
+        "C": "Coefficient for x2",
+        "D": "Error term"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 45,
+      "question": "In multiple regression equation $y=b0+b1^{*}\\times1+b2^{*}\\times2$, what is b1?",
+      "options": {
+        "A": "Coefficient for variable x1",
+        "B": "Constant term",
+        "C": "Coefficient for x2",
+        "D": "Dependent variable"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 46,
+      "question": "How does adding more independent variables affect regression?",
+      "options": {
+        "A": "Can capture more complex relationships but risks overfitting",
+        "B": "Always improves accuracy",
+        "C": "Makes model simpler",
+        "D": "Reduces training time"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 47,
+      "question": "What happens if we use linear regression for non-linear data?",
+      "options": {
+        "A": "Poor predictions due to incorrect model assumption",
+        "B": "Perfect predictions",
+        "C": "No predictions possible",
+        "D": "Random results"
+      },
+      "correct_option": "A"
+    }
+  ]
+    },
+    {
+  "lecture": "Lecture 8: Random Forest and Ensemble Learning Algorithms",
+  "questions": [
+    {
+      "id": 1,
+      "question": "How is a decision tree oriented?",
+      "options": {
+        "A": "Upside down with root at the top",
+        "B": "Left to right",
+        "C": "Circular",
+        "D": "Diagonal"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question": "What type of questions does a decision tree ask?",
+      "options": {
+        "A": "True/False questions at each node",
+        "B": "Multiple choice questions",
+        "C": "Essay questions",
+        "D": "No questions"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question": "What is the goal of decision tree questions?",
+      "options": {
+        "A": "To un-mix the data or reduce uncertainty",
+        "B": "To make the tree look complex",
+        "C": "To use all features equally",
+        "D": "To confuse the user"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 4,
+      "question": "How does a decision tree split data?",
+      "options": {
+        "A": "Into two or more subsets based on answers to questions",
+        "B": "Into equal parts randomly",
+        "C": "Into fixed number of parts",
+        "D": "Doesn't split data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question": "What algorithm step calculates how well features split data?",
+      "options": {
+        "A": "Using Gini Impurity (GI)",
+        "B": "Using accuracy only",
+        "C": "Using random selection",
+        "D": "Using human intuition"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 6,
+      "question": "What is Random Forest?",
+      "options": {
+        "A": "A machine learning algorithm that uses many decision trees to make better predictions",
+        "B": "A single decision tree",
+        "C": "A type of linear regression",
+        "D": "A clustering algorithm"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 7,
+      "question": "How does Random Forest combine tree results for classification?",
+      "options": {
+        "A": "Majority voting",
+        "B": "Averaging",
+        "C": "Multiplication",
+        "D": "Using the first tree only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 8,
+      "question": "How does Random Forest combine tree results for regression?",
+      "options": {
+        "A": "Averaging",
+        "B": "Majority voting",
+        "C": "Random selection",
+        "D": "Weighted sum"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 9,
+      "question": "What helps Random Forest avoid overfitting?",
+      "options": {
+        "A": "Using random data and features for each tree",
+        "B": "Making all trees identical",
+        "C": "Using only one tree",
+        "D": "Using all features all the time"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 10,
+      "question": "What makes Random Forest predictions more trustworthy?",
+      "options": {
+        "A": "Combining multiple trees reduces individual errors",
+        "B": "Using only the best tree",
+        "C": "Ignoring some trees",
+        "D": "Always choosing the simplest answer"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 11,
+      "question": "What is the first step in Random Forest algorithm?",
+      "options": {
+        "A": "Bootstrap Sampling: creating random subsets with replacement",
+        "B": "Training all trees on same data",
+        "C": "Selecting features manually",
+        "D": "Pruning trees first"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 12,
+      "question": "What does \"sampling with replacement\" mean in bootstrap?",
+      "options": {
+        "A": "Same sample can appear multiple times in a subset",
+        "B": "Each sample appears exactly once",
+        "C": "No samples are repeated",
+        "D": "Only unique samples are used"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 13,
+      "question": "How are trees constructed in Random Forest?",
+      "options": {
+        "A": "Each tree considers only random subset of features at each split",
+        "B": "All trees use all features",
+        "C": "Trees use same features as each other",
+        "D": "No feature selection occurs"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 14,
+      "question": "What happens after all trees are built?",
+      "options": {
+        "A": "Predictions are aggregated using voting (classification) or averaging (regression)",
+        "B": "Only best tree is kept",
+        "C": "All trees are discarded",
+        "D": "Trees are combined into one big tree"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 15,
+      "question": "What does Random Forest specifically help reduce?",
+      "options": {
+        "A": "Overfitting and improves model accuracy",
+        "B": "Training time only",
+        "C": "Model interpretability",
+        "D": "Feature importance"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 16,
+      "question": "Is Random Forest a supervised or unsupervised algorithm?",
+      "options": {
+        "A": "Supervised algorithm",
+        "B": "Unsupervised algorithm",
+        "C": "Semi-supervised",
+        "D": "Reinforcement learning"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 17,
+      "question": "What happens when you increase number of trees in Random Forest?",
+      "options": {
+        "A": "Improves model stability and accuracy (up to a point)",
+        "B": "Always decreases accuracy",
+        "C": "No effect on performance",
+        "D": "Makes model less stable"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 18,
+      "question": "How does Random Forest differ from a single decision tree?",
+      "options": {
+        "A": "Introduces randomness in data and feature selection",
+        "B": "Uses same dataset and rules",
+        "C": "Is simpler to interpret",
+        "D": "Has fewer parameters"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 19,
+      "question": "What assumptions does Random Forest make?",
+      "options": {
+        "A": "Each tree makes its own decisions, uses random data parts, needs enough data",
+        "B": "All trees should agree perfectly",
+        "C": "Only one tree is needed",
+        "D": "Features are perfectly independent"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 20,
+      "question": "What is bootstrapping?",
+      "options": {
+        "A": "Taking random samples from data with replacement many times",
+        "B": "Sampling without replacement",
+        "C": "Using entire dataset always",
+        "D": "Manual selection of samples"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 21,
+      "question": "What is created through bootstrapping?",
+      "options": {
+        "A": "New \"fake\" datasets that are slightly different",
+        "B": "Exact copies of original data",
+        "C": "Completely unrelated datasets",
+        "D": "Only one dataset"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 22,
+      "question": "What do we calculate for each bootstrap dataset?",
+      "options": {
+        "A": "Results like average to understand reliability",
+        "B": "Nothing - just store them",
+        "C": "Only maximum value",
+        "D": "Random numbers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 23,
+      "question": "What does bootstrapping help us understand?",
+      "options": {
+        "A": "How stable or reliable our original result is",
+        "B": "Only the mean value",
+        "C": "Only the variance",
+        "D": "Nothing useful"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 24,
+      "question": "When is bootstrapping particularly useful?",
+      "options": {
+        "A": "When we have small dataset",
+        "B": "Only with large datasets",
+        "C": "Never useful",
+        "D": "Only for classification"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 25,
+      "question": "Where is bootstrapping used in machine learning?",
+      "options": {
+        "A": "In Random Forests to make models more reliable",
+        "B": "Only in linear regression",
+        "C": "Only in neural networks",
+        "D": "Not used in ML"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 26,
+      "question": "What is ensemble learning?",
+      "options": {
+        "A": "Combining multiple models to improve performance",
+        "B": "Using single best model",
+        "C": "Training models sequentially",
+        "D": "Only using similar models"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 27,
+      "question": "What problem do individual models often have?",
+      "options": {
+        "A": "May overfit training data or underperform on unseen instances",
+        "B": "Always perfect performance",
+        "C": "Never overfit",
+        "D": "Too simple"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 28,
+      "question": "How do ensembles solve individual model problems?",
+      "options": {
+        "A": "By aggregating models and balancing their errors",
+        "B": "By using only one model",
+        "C": "By making all models identical",
+        "D": "By ignoring errors"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 29,
+      "question": "In the ensemble diagram, how are individual model predictions combined?",
+      "options": {
+        "A": "Through aggregation to produce final ensemble classifier",
+        "B": "By selecting only one",
+        "C": "By averaging only",
+        "D": "By discarding some"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 30,
+      "question": "Why do ensembles often work better than individual models?",
+      "options": {
+        "A": "Different models make different errors, ensemble averages them out",
+        "B": "All models always agree",
+        "C": "Ensembles are always simpler",
+        "D": "Requires less computation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 31,
+      "question": "What are the two main ways to build ensemble models?",
+      "options": {
+        "A": "Independent construction and coordinated construction",
+        "B": "Only sequential building",
+        "C": "Only parallel building",
+        "D": "Random building"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 32,
+      "question": "How does independent ensemble construction work?",
+      "options": {
+        "A": "Each model trained separately, randomness added, results combined",
+        "B": "Models built one after another",
+        "C": "Only one model trained",
+        "D": "No randomness added"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 33,
+      "question": "What is an example of independent ensemble construction?",
+      "options": {
+        "A": "Random Forest (each tree built independently)",
+        "B": "AdaBoost",
+        "C": "Gradient Boosting",
+        "D": "Neural networks"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 34,
+      "question": "How does coordinated ensemble construction work?",
+      "options": {
+        "A": "Models built one after another, each learns from previous mistakes",
+        "B": "All models trained at same time",
+        "C": "Models don't communicate",
+        "D": "Random training order"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 36,
+      "question": "What are the three main types of ensemble classifiers?",
+      "options": {
+        "A": "Bagging, Boosting, Stacking",
+        "B": "Only voting",
+        "C": "Only averaging",
+        "D": "Only weighting"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 37,
+      "question": "What does \"Bagging\" stand for?",
+      "options": {
+        "A": "Bootstrap Aggregating",
+        "B": "Best Aggregating",
+        "C": "Binary Aggregating",
+        "D": "Basic Aggregating"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 38,
+      "question": "How does Bagging work?",
+      "options": {
+        "A": "Trains multiple models independently in parallel using bootstrap samples",
+        "B": "Trains models sequentially",
+        "C": "Uses only original dataset",
+        "D": "No bootstrap sampling"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 39,
+      "question": "What does Bagging specifically reduce?",
+      "options": {
+        "A": "Variance and helps prevent overfitting",
+        "B": "Only bias",
+        "C": "Only training time",
+        "D": "Model accuracy"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 40,
+      "question": "What is an advantage of Bagging?",
+      "options": {
+        "A": "Models trained in parallel, making it efficient",
+        "B": "Always highest accuracy",
+        "C": "Simplest to implement",
+        "D": "No need for multiple models"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 41,
+      "question": "How are bootstrap datasets created in Bagging?",
+      "options": {
+        "A": "By randomly sampling with replacement",
+        "B": "By sampling without replacement",
+        "C": "By manual selection",
+        "D": "By using all data unchanged"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 42,
+      "question": "What type of base learner is often used in Bagging?",
+      "options": {
+        "A": "Decision tree",
+        "B": "Linear regression",
+        "C": "Neural network",
+        "D": "Support vector machine"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 43,
+      "question": "How are predictions combined in Bagging?",
+      "options": {
+        "A": "Averaging (regression) or majority voting (classification)",
+        "B": "Only using best model",
+        "C": "Weighted average",
+        "D": "Random selection"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 44,
+      "question": "What problem does Bagging specifically address?",
+      "options": {
+        "A": "High variance in unstable models like decision trees",
+        "B": "High bias",
+        "C": "Small datasets only",
+        "D": "Feature selection"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 45,
+      "question": "What is Boosting?",
+      "options": {
+        "A": "Builds models sequentially so each learns from errors of previous ones",
+        "B": "Builds models in parallel",
+        "C": "Uses only one model",
+        "D": "Random model building"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 46,
+      "question": "How does Boosting improve models?",
+      "options": {
+        "A": "Improving bias and accuracy by focusing on difficult instances",
+        "B": "Only reducing variance",
+        "C": "Only increasing speed",
+        "D": "Simplifying models"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 47,
+      "question": "What happens to misclassified samples in Boosting?",
+      "options": {
+        "A": "Receive higher weights in subsequent iterations",
+        "B": "Are ignored",
+        "C": "Are removed",
+        "D": "Get lower weights"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 48,
+      "question": "How long does the Boosting process continue?",
+      "options": {
+        "A": "For multiple iterations/specified number of models",
+        "B": "Until perfect accuracy",
+        "C": "Only one iteration",
+        "D": "Random number of iterations"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 49,
+      "question": "What is an advantage of Boosting?",
+      "options": {
+        "A": "Can turn weak learners into strong ones",
+        "B": "Always fastest",
+        "C": "Simplest to implement",
+        "D": "Never overfits"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 50,
+      "question": "Where does Boosting work particularly well?",
+      "options": {
+        "A": "With structured data, provides high accuracy",
+        "B": "Only with images",
+        "C": "Only with text",
+        "D": "Only with small datasets"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 51,
+      "question": "What type of model does Boosting typically start with?",
+      "options": {
+        "A": "Weak base model (e.g., shallow decision tree)",
+        "B": "Complex neural network",
+        "C": "Perfect classifier",
+        "D": "Random guesser"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 52,
+      "question": "What happens to sample weights after each iteration in Boosting?",
+      "options": {
+        "A": "Increased for misclassified samples",
+        "B": "Decreased for all samples",
+        "C": "Stay same",
+        "D": "Only correct samples get weights"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 53,
+      "question": "How are predictions combined in Boosting?",
+      "options": {
+        "A": "Combine predictions of all models",
+        "B": "Use only last model",
+        "C": "Random selection",
+        "D": "Average of first and last"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 54,
+      "question": "What is Stacking?",
+      "options": {
+        "A": "Combines multiple models of different types using a meta-model",
+        "B": "Only uses same type models",
+        "C": "No meta-model used",
+        "D": "Simple averaging"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 55,
+      "question": "How are base models trained in Stacking?",
+      "options": {
+        "A": "Independently, then outputs used as inputs to meta-learner",
+        "B": "Sequentially",
+        "C": "Only one model trained",
+        "D": "With same data and features"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 56,
+      "question": "What does the meta-learner do?",
+      "options": {
+        "A": "Learns best way to merge base model predictions",
+        "B": "Makes initial predictions",
+        "C": "Selects features",
+        "D": "Cleans data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 57,
+      "question": "What is commonly used as the meta-learner?",
+      "options": {
+        "A": "Logistic regression",
+        "B": "Deep neural network",
+        "C": "Decision tree",
+        "D": "Random forest"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 58,
+      "question": "What type of models can Stacking combine?",
+      "options": {
+        "A": "Different types (e.g., decision trees, SVMs, neural networks)",
+        "B": "Only identical models",
+        "C": "Only two models",
+        "D": "Only regression models"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 59,
+      "question": "What advantage does Stacking provide?",
+      "options": {
+        "A": "Leverages strengths of various models, often improving accuracy",
+        "B": "Always simplest solution",
+        "C": "Fastest training",
+        "D": "Most interpretable"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 60,
+      "question": "What is the key idea behind all ensemble methods?",
+      "options": {
+        "A": "Wisdom of crowds - multiple models better than one",
+        "B": "Simplicity is best",
+        "C": "One perfect model enough",
+        "D": "More data always better"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 61,
+      "question": "How do Bagging and Boosting differ in model training?",
+      "options": {
+        "A": "Bagging: parallel, independent; Boosting: sequential, dependent",
+        "B": "Both are sequential",
+        "C": "Both are parallel",
+        "D": "No difference"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 62,
+      "question": "Which ensemble method reduces variance primarily?",
+      "options": {
+        "A": "Bagging",
+        "B": "Boosting",
+        "C": "Stacking",
+        "D": "All equally"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 63,
+      "question": "Which ensemble method reduces bias primarily?",
+      "options": {
+        "A": "Boosting",
+        "B": "Bagging",
+        "C": "Stacking",
+        "D": "All equally"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 64,
+      "question": "Which ensemble method can combine different model types?",
+      "options": {
+        "A": "Stacking",
+        "B": "Bagging",
+        "C": "Boosting",
+        "D": "None can"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 65,
+      "question": "What is a common characteristic of all ensemble methods?",
+      "options": {
+        "A": "They combine multiple models to improve performance",
+        "B": "They use only one model",
+        "C": "They are always complex",
+        "D": "They don't need training data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 66,
+      "question": "When would you choose Random Forest over single Decision Tree?",
+      "options": {
+        "A": "When you need better accuracy and reduced overfitting",
+        "B": "When interpretability is most important",
+        "C": "When you have very little data",
+        "D": "When training time must be minimized"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 67,
+      "question": "What problem does ensemble learning solve that single models struggle with?",
+      "options": {
+        "A": "Balancing bias-variance tradeoff",
+        "B": "Data collection",
+        "C": "Feature engineering",
+        "D": "Model interpretation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 68,
+      "question": "What does \"weak learner\" mean in Boosting context?",
+      "options": {
+        "A": "A model that performs slightly better than random guessing",
+        "B": "A perfect classifier",
+        "C": "A very complex model",
+        "D": "A model that always fails"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 69,
+      "question": "How does Random Forest's feature randomness help?",
+      "options": {
+        "A": "Makes trees more diverse, reducing correlation between them",
+        "B": "Makes all trees identical",
+        "C": "Reduces training time only",
+        "D": "Increases overfitting"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 70,
+      "question": "What is the trade-off with ensemble methods?",
+      "options": {
+        "A": "Improved performance but increased complexity and computation",
+        "B": "Always simpler and faster",
+        "C": "Never any trade-off",
+        "D": "Worse performance but more interpretable"
+      },
+      "correct_option": "A"
+    }
+  ]
+    },
+{
+  "lecture": "Lecture 9: K-Nearest Neighbors, Naïve Bayes & Neural Networks Introduction",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is K-Nearest Neighbors (KNN)?",
+      "options": {
+        "A": "An algorithm that classifies based on majority class of k nearest neighbors",
+        "B": "A deep neural network architecture",
+        "C": "A clustering algorithm only",
+        "D": "A linear regression model"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question": "For regression tasks, how does KNN make predictions?",
+      "options": {
+        "A": "Predicts the average of the k nearest neighbors' values",
+        "B": "Uses majority voting",
+        "C": "Always predicts the same value",
+        "D": "Uses a linear combination"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question": "What does the parameter \"k\" represent in KNN?",
+      "options": {
+        "A": "Number of neighbors to consider",
+        "B": "Number of features",
+        "C": "Number of classes",
+        "D": "Number of training samples"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 4,
+      "question": "How does KNN determine which neighbors are \"nearest\"?",
+      "options": {
+        "A": "Using distance metrics like Euclidean distance",
+        "B": "Random selection",
+        "C": "Feature importance",
+        "D": "Time-based ordering"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question": "What is a major disadvantage of KNN?",
+      "options": {
+        "A": "Computationally expensive for large datasets (needs to store all data)",
+        "B": "Cannot handle non-linear data",
+        "C": "Always overfits",
+        "D": "Only works with categorical data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 6,
+      "question": "What is the fundamental assumption of Naïve Bayes?",
+      "options": {
+        "A": "Features are conditionally independent given the class",
+        "B": "All features are perfectly correlated",
+        "C": "Features have no relationship with class",
+        "D": "Only one feature matters"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 7,
+      "question": "Which theorem is Naïve Bayes based on?",
+      "options": {
+        "A": "Bayes' Theorem",
+        "B": "Central Limit Theorem",
+        "C": "Pythagorean Theorem",
+        "D": "Law of Large Numbers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 8,
+      "question": "What does \"naïve\" refer to in Naïve Bayes?",
+      "options": {
+        "A": "The assumption that features are independent (which is often naive)",
+        "B": "That it's a simple algorithm",
+        "C": "That it always makes naive predictions",
+        "D": "That it only works with simple data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 9,
+      "question": "Which type of data distribution is commonly assumed in Gaussian Naïve Bayes?",
+      "options": {
+        "A": "Normal (Gaussian) distribution",
+        "B": "Uniform distribution",
+        "C": "Exponential distribution",
+        "D": "No distribution assumed"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 10,
+      "question": "What is a key advantage of Naïve Bayes?",
+      "options": {
+        "A": "Fast training and prediction, works well with high-dimensional data",
+        "B": "Always achieves highest accuracy",
+        "C": "No need for any data",
+        "D": "Perfect for all problem types"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 11,
+      "question": "What is a neural network?",
+      "options": {
+        "A": "A composition of simple neurons into several layers",
+        "B": "A single mathematical formula",
+        "C": "Only input and output without hidden layers",
+        "D": "A database system"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 12,
+      "question": "What does each neuron compute?",
+      "options": {
+        "A": "Linear combination of inputs plus bias, passed through activation function",
+        "B": "Only the average of inputs",
+        "C": "Random function of inputs",
+        "D": "Direct copy of input"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of hidden layers in neural networks?",
+      "options": {
+        "A": "To learn new representations/features of the data",
+        "B": "To store training data",
+        "C": "To make the network slower",
+        "D": "To increase input size"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 14,
+      "question": "What is the final output of a neural network?",
+      "options": {
+        "A": "The target variable $y=f(x)$",
+        "B": "The input data",
+        "C": "Random noise",
+        "D": "Intermediate features only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 15,
+      "question": "What are neurons in neural networks?",
+      "options": {
+        "A": "Basic units that receive inputs, governed by threshold and activation function",
+        "B": "Only output devices",
+        "C": "Data storage units",
+        "D": "Connection points only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 16,
+      "question": "What do connections between neurons carry?",
+      "options": {
+        "A": "Information, regulated by weights and biases",
+        "B": "Only electricity",
+        "C": "Random signals",
+        "D": "No information"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 17,
+      "question": "What is the role of weights and biases?",
+      "options": {
+        "A": "Determine strength and influence of connections",
+        "B": "Store training data",
+        "C": "Measure accuracy",
+        "D": "Count layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 18,
+      "question": "What are propagation functions?",
+      "options": {
+        "A": "Mechanisms that process and transfer data across layers",
+        "B": "Learning algorithms",
+        "C": "Activation functions only",
+        "D": "Error calculations"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 19,
+      "question": "What is the learning rule?",
+      "options": {
+        "A": "Method that adjusts weights and biases to improve accuracy",
+        "B": "Fixed mathematical formula",
+        "C": "Data preprocessing step",
+        "D": "Output calculation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 20,
+      "question": "What activation function is used for multi-class classification output layer?",
+      "options": {
+        "A": "Softmax",
+        "B": "Sigmoid",
+        "C": "ReLU",
+        "D": "Linear"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 21,
+      "question": "What activation function is used for binary classification output layer?",
+      "options": {
+        "A": "Sigmoid",
+        "B": "Softmax",
+        "C": "ReLU",
+        "D": "Tanh"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 22,
+      "question": "What activation function is used for regression output layer?",
+      "options": {
+        "A": "Linear",
+        "B": "Sigmoid",
+        "C": "Softmax",
+        "D": "ReLU"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the loss function?",
+      "options": {
+        "A": "Evaluates error by comparing predicted output with actual values",
+        "B": "Activates neurons",
+        "C": "Initializes weights",
+        "D": "Counts layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 24,
+      "question": "What happens during forward propagation?",
+      "options": {
+        "A": "Network produces output based on current weights and biases",
+        "B": "Weights are updated",
+        "C": "Error is calculated backward",
+        "D": "Data is collected"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 25,
+      "question": "What is the general neuron equation?",
+      "options": {
+        "A": "Output = activation_function( (weight * input) + bias)",
+        "B": "Output =  (input)",
+        "C": "Output = weight × input",
+        "D": "Output = activation_function(input)"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 26,
+      "question": "What do activation functions decide?",
+      "options": {
+        "A": "Whether a neuron should fire/activate",
+        "B": "Only the input values",
+        "C": "Only the learning rate",
+        "D": "The data source"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 27,
+      "question": "Why do we need activation functions?",
+      "options": {
+        "A": "To introduce non-linearity, allowing network to learn complex patterns",
+        "B": "To make network linear",
+        "C": "To reduce number of neurons",
+        "D": "To increase training speed"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 28,
+      "question": "What happens if all layers use linear activation functions?",
+      "options": {
+        "A": "Whole network becomes just a linear model",
+        "B": "Network becomes more powerful",
+        "C": "Network cannot train at all",
+        "D": "Network becomes non-linear"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 29,
+      "question": "Why can't linear functions solve problems like image recognition?",
+      "options": {
+        "A": "Real-world data is not linear",
+        "B": "Linear functions are too complex",
+        "C": "Linear functions require too much data",
+        "D": "Linear functions are always wrong"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 30,
+      "question": "What is the range of the Sigmoid function?",
+      "options": {
+        "A": "$(0, 1)$",
+        "B": "$(-1, 1)$",
+        "C": "$(-\\infty, \\infty)$",
+        "D": "$(0,\\infty)$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 31,
+      "question": "What is a problem with Sigmoid activation?",
+      "options": {
+        "A": "Vanishing gradient problem",
+        "B": "Exploding gradients",
+        "C": "Linear outputs",
+        "D": "Too simple"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 32,
+      "question": "What is the range of the Tanh function?",
+      "options": {
+        "A": "$(-1, 1)$",
+        "B": "$(0, 1)$",
+        "C": "$(-\\infty, \\infty)$",
+        "D": "$(0,\\infty)$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 33,
+      "question": "Why is Tanh sometimes preferred over Sigmoid in hidden layers?",
+      "options": {
+        "A": "Zero-centered output facilitates easier learning",
+        "B": "Simpler to compute",
+        "C": "Always gives better accuracy",
+        "D": "No vanishing gradient"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 34,
+      "question": "What is the ReLU function formula?",
+      "options": {
+        "A": "$f(x)=max(0,x)$",
+        "B": "$f(x)=1/(1+e^{\\wedge}(-x))$",
+        "C": "$f(x)=(e^{\\wedge}x-e^{\\wedge}(-x))/(e^{\\wedge}x+e^{\\wedge}(-x))$",
+        "D": "$f(x)=x$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 35,
+      "question": "What problem does Leaky ReLU address compared to standard ReLU?",
+      "options": {
+        "A": "\"Dying ReLU\" problem (neurons that never activate)",
+        "B": "Vanishing gradient",
+        "C": "Exploding gradient",
+        "D": "Too much computation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 36,
+      "question": "What happens after the forward pass in neural network training?",
+      "options": {
+        "A": "Network computes loss (error between predicted and true value)",
+        "B": "Network stops training",
+        "C": "Weights are randomly changed",
+        "D": "Data is collected again"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 37,
+      "question": "How does backpropagation find how much each weight contributed to error?",
+      "options": {
+        "A": "Using gradient calculation (chain rule)",
+        "B": "Random guessing",
+        "C": "Asking the user",
+        "D": "Using fixed rules"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 38,
+      "question": "How are weights and biases updated in backpropagation?",
+      "options": {
+        "A": "In opposite direction of gradient using optimizer",
+        "B": "Randomly",
+        "C": "Always increased",
+        "D": "Only at output layer"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 39,
+      "question": "What does the learning rate control?",
+      "options": {
+        "A": "How big each weight update step is",
+        "B": "Number of layers",
+        "C": "Activation function type",
+        "D": "Input data size"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 40,
+      "question": "What is the ultimate goal of backpropagation?",
+      "options": {
+        "A": "Continuously reduce loss and improve predictions",
+        "B": "Increase training time",
+        "C": "Make network more complex",
+        "D": "Store more data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 41,
+      "question": "What is a perceptron?",
+      "options": {
+        "A": "A single neuron receiving multiple inputs, producing one output",
+        "B": "Deep neural network",
+        "C": "Clustering algorithm",
+        "D": "Regression model"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 42,
+      "question": "What problem demonstrates the limitation of single-layer perceptrons?",
+      "options": {
+        "A": "XOR problem",
+        "B": "AND problem",
+        "C": "OR problem",
+        "D": "Linear regression"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 43,
+      "question": "Why can't a single-layer perceptron solve XOR?",
+      "options": {
+        "A": "XOR is not linearly separable",
+        "B": "XOR requires too much data",
+        "C": "XOR is too simple",
+        "D": "XOR requires non-binary inputs"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 44,
+      "question": "How is the XOR problem solved?",
+      "options": {
+        "A": "Using multi-layer perceptron with non-linear activation",
+        "B": "Using single-layer perceptron",
+        "C": "Using linear regression",
+        "D": "Using KNN only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 46,
+      "question": "What are the three main parts of an MLP?",
+      "options": {
+        "A": "Input layer, hidden layers, output layer",
+        "B": "Only input and output",
+        "C": "Multiple output layers only",
+        "D": "No hidden layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 47,
+      "question": "How does an MLP learn non-linear patterns?",
+      "options": {
+        "A": "Thanks to non-linear activation functions",
+        "B": "Through linear combinations only",
+        "C": "By ignoring non-linearity",
+        "D": "Through data preprocessing only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 48,
+      "question": "What is the source of non-linearity in MLP?",
+      "options": {
+        "A": "Non-linear activation functions",
+        "B": "Linear weights",
+        "C": "Number of layers only",
+        "D": "Input data size"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 49,
+      "question": "Why are MLPs widely used?",
+      "options": {
+        "A": "For classification, regression, and pattern recognition tasks",
+        "B": "Only for simple linear problems",
+        "C": "Only for data storage",
+        "D": "Only for visualization"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 61,
+      "question": "What does the Softmax function do?",
+      "options": {
+        "A": "Converts vector of real numbers into probability distribution",
+        "B": "Makes all values negative",
+        "C": "Returns binary outputs",
+        "D": "Increases vector size"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 62,
+      "question": "What is the range of Softmax outputs?",
+      "options": {
+        "A": "$(0,1)$ and sum of all elements $=1$",
+        "B": "$(-1, 1)$",
+        "C": "$(-\\infty, \\infty)$",
+        "D": "$(0,\\infty)$"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 63,
+      "question": "Why is Softmax used for multi-class classification?",
+      "options": {
+        "A": "Output can be interpreted as probabilities of different classes",
+        "B": "It's the simplest function",
+        "C": "It always gives highest accuracy",
+        "D": "It works only with two classes"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 64,
+      "question": "When would you choose KNN over a neural network?",
+      "options": {
+        "A": "When you need simple implementation and interpretability",
+        "B": "When you have huge dataset and need fast training",
+        "C": "When you need to learn complex non-linear patterns",
+        "D": "When you have limited memory"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 65,
+      "question": "What is a key difference between Naïve Bayes and neural networks?",
+      "options": {
+        "A": "Naïve Bayes is probabilistic with independence assumption; neural networks learn hierarchical features",
+        "B": "Both are exactly the same",
+        "C": "Neural networks are always better",
+        "D": "Naïve Bayes is more complex"
+      },
+      "correct_option": "A"
+    }
+  ]
+    },
+    {
+  "lecture 10": "Functions, and Backpropagation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the key question that distinguishes traditional ML from automated procedures?",
+      "options": {
+        "A": "Can you use an algorithm to automatically execute the procedure?",
+        "B": "Do you have enough data?",
+        "C": "Is the problem linear?",
+        "D": "Can humans do it manually?"
+      },
+      "correct_option": "D"
+    },
+    {
+      "id": 2,
+      "question": "What are neural networks inspired by?",
+      "options": {
+        "A": "How the human brain learns",
+        "B": "Traditional programming logic",
+        "C": "Mathematical formulas only",
+        "D": "Database systems"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question": "What do neural networks consist of?",
+      "options": {
+        "A": "Interconnected layers of nodes (neurons) that process information",
+        "B": "Single mathematical equations",
+        "C": "Only input and output without processing",
+        "D": "Random connections"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 4,
+      "question": "What does each neuron in a neural network do?",
+      "options": {
+        "A": "Receives inputs, applies weights, and passes result through activation function",
+        "B": "Only stores data",
+        "C": "Only outputs random values",
+        "D": "Doesn't process information"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question": "How do neural networks learn patterns?",
+      "options": {
+        "A": "By adjusting weights during training",
+        "B": "By memorizing all data",
+        "C": "By asking users questions",
+        "D": "By following fixed rules"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 6,
+      "question": "Where are neural networks widely used?",
+      "options": {
+        "A": "Image classification, speech recognition, recommendation systems",
+        "B": "Only simple calculations",
+        "C": "Only data storage",
+        "D": "Only text editing"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 7,
+      "question": "What is essential for mastering deep learning?",
+      "options": {
+        "A": "Understanding forward propagation and backpropagation",
+        "B": "Only knowing activation functions",
+        "C": "Only collecting data",
+        "D": "Only using pre-trained models"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 8,
+      "question": "What are neurons in neural networks?",
+      "options": {
+        "A": "Basic processing units that receive inputs and produce outputs",
+        "B": "Only data storage units",
+        "C": "Connection points without processing",
+        "D": "Output devices only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 9,
+      "question": "What do connections between neurons do?",
+      "options": {
+        "A": "Pass information, controlled by weights",
+        "B": "Store data permanently",
+        "C": "Create noise",
+        "D": "Don't affect information flow"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 10,
+      "question": "What do weights and biases determine?",
+      "options": {
+        "A": "How strongly inputs affect a neuron",
+        "B": "Only the learning speed",
+        "C": "Only the data source",
+        "D": "Only the output format"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 11,
+      "question": "What are propagation functions?",
+      "options": {
+        "A": "The process of moving information forward through the network",
+        "B": "Only weight updates",
+        "C": "Only error calculations",
+        "D": "Data collection methods"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 12,
+      "question": "What is the learning rule?",
+      "options": {
+        "A": "How the network updates weights using error feedback",
+        "B": "Fixed mathematical formula",
+        "C": "Data preprocessing step",
+        "D": "User input method"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 13,
+      "question": "What does the output layer generate?",
+      "options": {
+        "A": "The final prediction",
+        "B": "Intermediate features",
+        "C": "Input data",
+        "D": "Random noise"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 14,
+      "question": "What activation function is used for multi-class classification output?",
+      "options": {
+        "A": "Softmax",
+        "B": "Sigmoid",
+        "C": "Linear",
+        "D": "ReLU"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 15,
+      "question": "What activation function is used for binary classification output?",
+      "options": {
+        "A": "Sigmoid",
+        "B": "Softmax",
+        "C": "Linear",
+        "D": "Tanh"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 16,
+      "question": "What activation function is used for regression output?",
+      "options": {
+        "A": "Linear",
+        "B": "Sigmoid",
+        "C": "Softmax",
+        "D": "ReLU"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 17,
+      "question": "What does the network produce during prediction?",
+      "options": {
+        "A": "Output based on current weights and biases",
+        "B": "Random guesses",
+        "C": "Always same output",
+        "D": "User-defined values"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 18,
+      "question": "What evaluates the error in predictions?",
+      "options": {
+        "A": "The loss function",
+        "B": "The activation function",
+        "C": "The input data",
+        "D": "The learning rate"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 19,
+      "question": "What characterizes supervised learning?",
+      "options": {
+        "A": "Learns from labeled data, compares prediction with true label",
+        "B": "Learns without any guidance",
+        "C": "Learns from rewards only",
+        "D": "Doesn't use data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 20,
+      "question": "What does supervised learning adjust to reduce error?",
+      "options": {
+        "A": "Weights",
+        "B": "Input data",
+        "C": "Output labels",
+        "D": "Learning type"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 21,
+      "question": "What characterizes unsupervised learning?",
+      "options": {
+        "A": "Learns from unlabeled data, finds patterns or clusters",
+        "B": "Needs correct answers",
+        "C": "Uses reward signals",
+        "D": "Only works with images"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 22,
+      "question": "What is missing in unsupervised learning?",
+      "options": {
+        "A": "Teacher or correct output",
+        "B": "Data",
+        "C": "Algorithms",
+        "D": "Computation power"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 23,
+      "question": "What characterizes reinforcement learning?",
+      "options": {
+        "A": "Learns by interacting with environment, gets rewards or penalties",
+        "B": "Needs labeled examples",
+        "C": "Finds clusters in data",
+        "D": "Only works with text"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 24,
+      "question": "What does reinforcement learning try to maximize?",
+      "options": {
+        "A": "Reward",
+        "B": "Training speed",
+        "C": "Data amount",
+        "D": "Model complexity"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 25,
+      "question": "What are the main training steps in neural networks?",
+      "options": {
+        "A": "Forward pass",
+        "B": "Only forward pass",
+        "C": "Random updates",
+        "D": "Data collection only"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 26,
+      "question": "What happens in the forward pass?",
+      "options": {
+        "A": "Information flows from input to output, making predictions",
+        "B": "Weights are updated",
+        "C": "Errors are calculated backward",
+        "D": "Data is collected"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 27,
+      "question": "What happens after forward pass?",
+      "options": {
+        "A": "Loss is calculated",
+        "B": "Training stops",
+        "C": "New data is loaded",
+        "D": "Network structure changes"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 28,
+      "question": "What happens during backward pass?",
+      "options": {
+        "A": "Error is propagated back to update weights",
+        "B": "New predictions are made",
+        "C": "Data is preprocessed",
+        "D": "Network expands"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 29,
+      "question": "What is the final step in the training loop?",
+      "options": {
+        "A": "Weight update",
+        "B": "Data collection",
+        "C": "Network design",
+        "D": "User evaluation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 30,
+      "question": "What is the general neuron equation?",
+      "options": {
+        "A": "Output = activation_function( (weight * input) + bias)",
+        "B": "Output = (input)",
+        "C": "Output = weight * input",
+        "D": "Output = activation_function(input)"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 31,
+      "question": "What do activation functions decide?",
+      "options": {
+        "A": "Whether a neuron should fire",
+        "B": "Input data values",
+        "C": "Learning rate",
+        "D": "Number of layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 32,
+      "question": "What do activation functions introduce?",
+      "options": {
+        "A": "Non-linearity",
+        "B": "Linearity only",
+        "C": "Randomness",
+        "D": "Data storage"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 33,
+      "question": "What happens without activation functions?",
+      "options": {
+        "A": "Network becomes just a linear model",
+        "B": "Network becomes more powerful",
+        "C": "Network stops working",
+        "D": "Network becomes faster"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 34,
+      "question": "What do activation functions help the network understand?",
+      "options": {
+        "A": "Curves, edges, images, language, non-linear boundaries",
+        "B": "Only linear relationships",
+        "C": "Only simple patterns",
+        "D": "Only mathematical formulas"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 35,
+      "question": "Why are activation functions needed?",
+      "options": {
+        "A": "Real-world data is not linear",
+        "B": "To make networks slower",
+        "C": "To reduce data requirements",
+        "D": "To simplify programming"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 36,
+      "question": "What happens if all layers use linear activation?",
+      "options": {
+        "A": "Whole network becomes just a linear model",
+        "B": "Network becomes more powerful",
+        "C": "Network cannot learn at all",
+        "D": "Network becomes non-linear"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 37,
+      "question": "What can't a network with only linear activation learn?",
+      "options": {
+        "A": "Complex or non-linear patterns",
+        "B": "Simple patterns",
+        "C": "Linear relationships",
+        "D": "Any patterns"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 38,
+      "question": "What problem is associated with Sigmoid activation?",
+      "options": {
+        "A": "Vanishing gradient problem",
+        "B": "Exploding gradient",
+        "C": "Linear outputs",
+        "D": "Too fast learning"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 39,
+      "question": "What is Tanh function?",
+      "options": {
+        "A": "Hyperbolic tangent function, shifted version of sigmoid",
+        "B": "Linear function",
+        "C": "Step function",
+        "D": "Constant function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 40,
+      "question": "What is the range of Tanh outputs?",
+      "options": {
+        "A": "-1 to +1",
+        "B": "0 to 1",
+        "C": "-∞ to +08",
+        "D": " to co"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 41,
+      "question": "Why is Tanh non-linear?",
+      "options": {
+        "A": "Enables modeling of complex data patterns",
+        "B": "Makes everything linear",
+        "C": "Simplifies calculations",
+        "D": "Reduces accuracy"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 42,
+      "question": "Where is Tanh commonly used?",
+      "options": {
+        "A": "Hidden layers",
+        "B": "Output layer only",
+        "C": "Input layer only",
+        "D": "Never used"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 43,
+      "question": "Why is Tanh preferred in hidden layers?",
+      "options": {
+        "A": "Zero-centered output facilitates easier learning",
+        "B": "Always gives best accuracy",
+        "C": "Simplest to compute",
+        "D": "No gradient problems"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 44,
+      "question": "What happens around 0 in Tanh function?",
+      "options": {
+        "A": "Curve is steep, function very sensitive to input changes",
+        "B": "Function is flat",
+        "C": "Function is discontinuous",
+        "D": "Function is random"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 45,
+      "question": "What is ReLU function?",
+      "options": {
+        "A": "Rectified Linear Unit: max(0, x)",
+        "B": "Sigmoid function",
+        "C": "Linear function",
+        "D": "Tanh function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 46,
+      "question": "What is Leaky ReLU?",
+      "options": {
+        "A": "Enhanced ReLU with non-zero slope for negative values",
+        "B": "Same as standard ReLU",
+        "C": "Linear function",
+        "D": "Sigmoid variant"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 47,
+      "question": "What is Exponential Linear Unit (ELU)?",
+      "options": {
+        "A": "Another non-linear activation with smooth curve",
+        "B": "Linear activation",
+        "C": "Step function",
+        "D": "Constant function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 48,
+      "question": "What does Softmax function transform input values into?",
+      "options": {
+        "A": "Probabilities",
+        "B": "Binary outputs",
+        "C": "Random numbers",
+        "D": "Input copies"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 49,
+      "question": "What happens to very small (negative) input values in Softmax?",
+      "options": {
+        "A": "Output close to zero",
+        "B": "Output becomes 1",
+        "C": "Output becomes random",
+        "D": "No change"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 50,
+      "question": "What happens as input value becomes larger in Softmax?",
+      "options": {
+        "A": "Output increases sharply",
+        "B": "Output decreases",
+        "C": "Output becomes zero",
+        "D": "Output becomes negative"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 51,
+      "question": "What does Softmax demonstrate about bigger scores?",
+      "options": {
+        "A": "Become bigger probabilities",
+        "B": "Become smaller probabilities",
+        "C": "Become zero",
+        "D": "Become negative"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 52,
+      "question": "What does Softmax demonstrate about smaller scores?",
+      "options": {
+        "A": "Become very small probabilities",
+        "B": "Become large probabilities",
+        "C": "Become 1",
+        "D": "Become random"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 53,
+      "question": "What helps the model choose the most likely class in multi-class classification?",
+      "options": {
+        "A": "Softmax giving higher probability to largest input value",
+        "B": "Random selection",
+        "C": "Always choosing first class",
+        "D": "User input"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 54,
+      "question": "What do different activation functions affect?",
+      "options": {
+        "A": "Model performance and learning characteristics",
+        "B": "Only training speed",
+        "C": "Only model size",
+        "D": "Only input data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 55,
+      "question": "What does the network compute after forward pass?",
+      "options": {
+        "A": "Loss (error between predicted and true value)",
+        "B": "New input data",
+        "C": "Network structure",
+        "D": "Learning rate"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 56,
+      "question": "How does backpropagation find weight contributions to error?",
+      "options": {
+        "A": "Using gradient calculation",
+        "B": "Random guessing",
+        "C": "Asking user",
+        "D": "Fixed formulas"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 57,
+      "question": "How are weights and biases updated?",
+      "options": {
+        "A": "In opposite direction of gradient using optimizer",
+        "B": "Randomly",
+        "C": "Always increased",
+        "D": "Only at output layer"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 58,
+      "question": "What does learning rate control?",
+      "options": {
+        "A": "How big each update step is",
+        "B": "Number of layers",
+        "C": "Activation function type",
+        "D": "Data size"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 59,
+      "question": "What does backpropagation continuously do?",
+      "options": {
+        "A": "Reduces loss and improves predictions",
+        "B": "Increases error",
+        "C": "Changes network structure",
+        "D": "Collects more data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 60,
+      "question": "How is error calculated?",
+      "options": {
+        "A": "Error = predicted output - actual output",
+        "B": "Random number",
+        "C": "Always zero",
+        "D": "Input value"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 61,
+      "question": "What is a common way to measure error?",
+      "options": {
+        "A": "Mean Squared Error (MSE)",
+        "B": "Random selection",
+        "C": "User judgment",
+        "D": "Fixed value"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 62,
+      "question": "How is error sent through the network?",
+      "options": {
+        "A": "Backward through network layer by layer",
+        "B": "Forward only",
+        "C": "Random direction",
+        "D": "Not sent at all"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 63,
+      "question": "What are computed to see how each weight affected error?",
+      "options": {
+        "A": "Gradients",
+        "B": "Inputs",
+        "C": "Outputs",
+        "D": "Layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 64,
+      "question": "In what direction are weights updated?",
+      "options": {
+        "A": "Direction that reduces error",
+        "B": "Random direction",
+        "C": "Always increase",
+        "D": "Always decrease"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 65,
+      "question": "What is used to calculate gradients?",
+      "options": {
+        "A": "Derivative of activation function",
+        "B": "Input data only",
+        "C": "Output data only",
+        "D": "Random numbers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 66,
+      "question": "What does forward propagation compute?",
+      "options": {
+        "A": "Predictions using current weights",
+        "B": "New weights",
+        "C": "Error values",
+        "D": "Learning rates"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 67,
+      "question": "What function is applied at each neuron during forward propagation?",
+      "options": {
+        "A": "Activation function",
+        "B": "Loss function",
+        "C": "Gradient function",
+        "D": "Data function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 68,
+      "question": "How are individual neuron outputs computed?",
+      "options": {
+        "A": "Weighted sum of inputs plus bias, passed through activation",
+        "B": "Random values",
+        "C": "Copy of input",
+        "D": "Fixed values"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 69,
+      "question": "How is final output computed?",
+      "options": {
+        "A": "From last layer's activations",
+        "B": "From first layer only",
+        "C": "Random selection",
+        "D": "User input"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 70,
+      "question": "What is compared to calculate error?",
+      "options": {
+        "A": "Predicted output vs true output",
+        "B": "Input vs output",
+        "C": "Weights vs biases",
+        "D": "Layers vs neurons"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 71,
+      "question": "What are gradients used for in weight updates?",
+      "options": {
+        "A": "Determine how much to adjust each weight",
+        "B": "Change input data",
+        "C": "Modify network structure",
+        "D": "Select activation functions"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 72,
+      "question": "What is hidden unit error?",
+      "options": {
+        "A": "Error propagated back to hidden layers",
+        "B": "Error at input layer",
+        "C": "Error at output only",
+        "D": "Random error"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 73,
+      "question": "How does backpropagation update each weight?",
+      "options": {
+        "A": "Multiply neuron's error with input, shift weights slightly",
+        "B": "Random changes",
+        "C": "Large fixed changes",
+        "D": "Only at output layer"
+      },
+      "correct_option": "A"
+    }
+  ]
+},
+{
+  "lecture": "Lecture 11: Multilayer Perceptron (MLP) and Backpropagation",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does MLP stand for?",
+      "options": {
+        "A": "Multilayer Perceptron",
+        "B": "Multiple Linear Programming",
+        "C": "Multi-Level Processing",
+        "D": "Machine Learning Protocol"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 2,
+      "question": "What is an MLP?",
+      "options": {
+        "A": "One of the simplest and most fundamental neural network architectures",
+        "B": "A type of decision tree",
+        "C": "A clustering algorithm",
+        "D": "A linear regression model"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 3,
+      "question": "How many layers does an MLP have at minimum?",
+      "options": {
+        "A": "At least three layers",
+        "B": "Only one layer",
+        "C": "Exactly two layers",
+        "D": "Four or more layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 4,
+      "question": "What are the three required layers in an MLP?",
+      "options": {
+        "A": "Input layer, Hidden layer(s), Output layer",
+        "B": "Only input and output layers",
+        "C": "Multiple output layers",
+        "D": "Only hidden layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 5,
+      "question": "What does the input layer receive?",
+      "options": {
+        "A": "The feature vector (e.g., $x_{1}$, $x_{2}$, $x_{3}...$)",
+        "B": "The output predictions",
+        "C": "The error values",
+        "D": "The weight updates"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 6,
+      "question": "What do hidden layer neurons apply?",
+      "options": {
+        "A": "Weighted sum + activation function",
+        "B": "Only linear transformations",
+        "C": "Random operations",
+        "D": "Only data storage"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 7,
+      "question": "What does the output layer produce?",
+      "options": {
+        "A": "Final prediction (class, number, probability)",
+        "B": "Intermediate features",
+        "C": "Input data",
+        "D": "Error calculations"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 8,
+      "question": "How does information flow in an MLP?",
+      "options": {
+        "A": "One way: Input → Hidden Layers → Output",
+        "B": "Circular flow",
+        "C": "Backward only",
+        "D": "Random flow"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 9,
+      "question": "What is the \"feedforward\" characteristic?",
+      "options": {
+        "A": "Information flows forward without cycles",
+        "B": "Information flows backward",
+        "C": "Information flows in both directions",
+        "D": "No information flow"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 10,
+      "question": "When is a single layer perceptron insufficient?",
+      "options": {
+        "A": "When data requires non-linear separation",
+        "B": "Always insufficient",
+        "C": "For simple linear problems",
+        "D": "For any classification task"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 11,
+      "question": "What do multilayer perceptrons introduce?",
+      "options": {
+        "A": "Hidden layers and non-linearity",
+        "B": "Only more input features",
+        "C": "Only linear functions",
+        "D": "Simpler models"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 12,
+      "question": "What does the multilayer version enable?",
+      "options": {
+        "A": "Approximation of complex functions",
+        "B": "Only linear approximations",
+        "C": "Only data storage",
+        "D": "Only simple calculations"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 13,
+      "question": "What problem demonstrates the need for MLP?",
+      "options": {
+        "A": "XOR problem",
+        "B": "AND problem",
+        "C": "OR problem",
+        "D": "Simple addition"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 14,
+      "question": "What is XOR?",
+      "options": {
+        "A": "Exclusive OR - outputs 1 only when inputs are different",
+        "B": "Always outputs 1",
+        "C": "Outputs 1 when inputs are same",
+        "D": "Simple addition function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 15,
+      "question": "What does XOR output when inputs are same?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "Depends on values",
+        "D": "Random output"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 16,
+      "question": "What can't separate XOR classes?",
+      "options": {
+        "A": "Single straight line",
+        "B": "Multiple lines",
+        "C": "Curved lines",
+        "D": "Any separator"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 17,
+      "question": "What is needed to classify XOR points correctly?",
+      "options": {
+        "A": "MLP with non-linearity",
+        "B": "Single layer perceptron",
+        "C": "Linear regression",
+        "D": "Simple threshold"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 18,
+      "question": "What happens during forward propagation?",
+      "options": {
+        "A": "Information flows forward to make prediction",
+        "B": "Weights are updated",
+        "C": "Error is calculated backward",
+        "D": "Network structure changes"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 19,
+      "question": "What is the result of forward propagation?",
+      "options": {
+        "A": "Network output/prediction",
+        "B": "Weight updates",
+        "C": "Error values",
+        "D": "New input data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 20,
+      "question": "What does a loss function measure?",
+      "options": {
+        "A": "How far the model's prediction is from true label",
+        "B": "Network complexity",
+        "C": "Training speed",
+        "D": "Number of layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 21,
+      "question": "What is backpropagation's relationship to loss function?",
+      "options": {
+        "A": "Uses loss to update weights",
+        "B": "Ignores loss",
+        "C": "Increases loss",
+        "D": "Creates loss function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 22,
+      "question": "Which loss function is most common for classification?",
+      "options": {
+        "A": "Cross-Entropy Loss",
+        "B": "Mean Squared Error",
+        "C": "Absolute Error",
+        "D": "Hinge Loss"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 23,
+      "question": "What does Cross-Entropy Loss do?",
+      "options": {
+        "A": "Penalizes wrong predictions strongly",
+        "B": "Only measures small errors",
+        "C": "Always gives zero loss",
+        "D": "Only for regression"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 24,
+      "question": "What works well with Cross-Entropy?",
+      "options": {
+        "A": "Softmax (multi-class) or Sigmoid (binary)",
+        "B": "Linear activation",
+        "C": "ReLU only",
+        "D": "No activation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 25,
+      "question": "Which loss function is good for regression?",
+      "options": {
+        "A": "Mean Squared Error (MSE)",
+        "B": "Cross-Entropy",
+        "C": "Hinge Loss",
+        "D": "Log Loss"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 26,
+      "question": "What characterizes MSE?",
+      "options": {
+        "A": "Simple and intuitive",
+        "B": "Complex and obscure",
+        "C": "Only for classification",
+        "D": "Always perfect"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 27,
+      "question": "What happens after forward pass?",
+      "options": {
+        "A": "Output compared to true value to calculate error",
+        "B": "Training stops",
+        "C": "Network expands",
+        "D": "Data is collected"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 28,
+      "question": "How is error propagated?",
+      "options": {
+        "A": "Backward through network (backpropagation)",
+        "B": "Forward only",
+        "C": "Not propagated",
+        "D": "Random direction"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 29,
+      "question": "What is adjusted during backpropagation?",
+      "options": {
+        "A": "Weights and biases to minimize error",
+        "B": "Input data",
+        "C": "Output labels",
+        "D": "Network structure"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 30,
+      "question": "What algorithms are typically used for optimization?",
+      "options": {
+        "A": "Gradient descent (SGD) and variants",
+        "B": "Random guessing",
+        "C": "Fixed rules",
+        "D": "User input"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 31,
+      "question": "What is the relationship between forward and backpropagation?",
+      "options": {
+        "A": "Forward makes prediction, backpropagation learns from mistake",
+        "B": "Both make predictions",
+        "C": "Both update weights",
+        "D": "No relationship"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 32,
+      "question": "What does the network compute after forward pass?",
+      "options": {
+        "A": "Loss (error between predicted and true)",
+        "B": "New input",
+        "C": "Network size",
+        "D": "Learning rate"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 33,
+      "question": "How does it find weight contributions to error?",
+      "options": {
+        "A": "Using gradient calculation",
+        "B": "Random assignment",
+        "C": "Asking user",
+        "D": "Fixed formulas"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 34,
+      "question": "How are weights and biases updated?",
+      "options": {
+        "A": "Opposite direction of gradient using optimizer",
+        "B": "Random direction",
+        "C": "Always increase",
+        "D": "Only at output"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 35,
+      "question": "What controls update step size?",
+      "options": {
+        "A": "Learning rate",
+        "B": "Number of layers",
+        "C": "Input size",
+        "D": "Output value"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 36,
+      "question": "What does backpropagation continuously do?",
+      "options": {
+        "A": "Reduces loss and improves predictions",
+        "B": "Increases error",
+        "C": "Changes network structure",
+        "D": "Collects data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 37,
+      "question": "What is a common way to measure error?",
+      "options": {
+        "A": "Mean Squared Error (MSE)",
+        "B": "Random number",
+        "C": "Fixed value",
+        "D": "User judgment"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 38,
+      "question": "How is error sent through network?",
+      "options": {
+        "A": "Backward layer by layer",
+        "B": "Forward only",
+        "C": "Randomly",
+        "D": "Not sent"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 39,
+      "question": "What are computed to see weight effects on error?",
+      "options": {
+        "A": "Gradients",
+        "B": "Inputs",
+        "C": "Outputs",
+        "D": "Layers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 40,
+      "question": "In what direction are weights updated?",
+      "options": {
+        "A": "Direction that reduces error",
+        "B": "Random direction",
+        "C": "Always increase",
+        "D": "Always decrease"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 41,
+      "question": "What is used to calculate gradients?",
+      "options": {
+        "A": "Derivative of activation function",
+        "B": "Input data only",
+        "C": "Output data only",
+        "D": "Random numbers"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 42,
+      "question": "What does forward propagation compute?",
+      "options": {
+        "A": "Predictions using current weights",
+        "B": "New weights",
+        "C": "Error values",
+        "D": "Learning rates"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 43,
+      "question": "What function is applied at each neuron?",
+      "options": {
+        "A": "Activation function",
+        "B": "Loss function",
+        "C": "Gradient function",
+        "D": "Data function"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 44,
+      "question": "Which activation function might be used in hidden layers?",
+      "options": {
+        "A": "ReLU, Sigmoid, or Tanh",
+        "B": "Only linear",
+        "C": "Only Softmax",
+        "D": "No activation"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 45,
+      "question": "What does activation function determine?",
+      "options": {
+        "A": "Whether neuron fires and non-linearity",
+        "B": "Only input values",
+        "C": "Only learning rate",
+        "D": "Only data source"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 46,
+      "question": "How are individual neuron outputs computed?",
+      "options": {
+        "A": "Weighted sum of inputs + bias, through activation",
+        "B": "Random values",
+        "C": "Copy of input",
+        "D": "Fixed values"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 47,
+      "question": "How is final output computed?",
+      "options": {
+        "A": "From last layer's activations",
+        "B": "From first layer only",
+        "C": "Random selection",
+        "D": "User input"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 48,
+      "question": "What is compared to calculate error?",
+      "options": {
+        "A": "Predicted output vs true output",
+        "B": "Input vs output",
+        "C": "Weights vs biases",
+        "D": "Layers vs neurons"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 49,
+      "question": "What is typical error calculation for regression?",
+      "options": {
+        "A": "MSE = (predicted - true)²",
+        "B": "Random formula",
+        "C": "Always zero",
+        "D": "From input data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 50,
+      "question": "What are gradients used for?",
+      "options": {
+        "A": "Determine how much to adjust each weight",
+        "B": "Change input data",
+        "C": "Modify network structure",
+        "D": "Select activation functions"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 51,
+      "question": "What is chain rule used for?",
+      "options": {
+        "A": "Computing derivatives through multiple layers",
+        "B": "Adding numbers",
+        "C": "Multiplying matrices",
+        "D": "Initializing weights"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 52,
+      "question": "What is hidden unit error?",
+      "options": {
+        "A": "Error propagated back to hidden layers",
+        "B": "Error at input layer",
+        "C": "Error at output only",
+        "D": "Random error"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 53,
+      "question": "How is hidden layer error calculated?",
+      "options": {
+        "A": "Based on errors from subsequent layers",
+        "B": "Random values",
+        "C": "Fixed percentages",
+        "D": "From input data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 54,
+      "question": "How does backpropagation update each weight?",
+      "options": {
+        "A": "Multiply neuron's error with input, shift weights slightly",
+        "B": "Random changes",
+        "C": "Large fixed changes",
+        "D": "Only at output layer"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 55,
+      "question": "What is the weight update formula?",
+      "options": {
+        "A": "$\\Delta w=$ learning_rate $\\times$ error $\\times$ input",
+        "B": "$\\Delta w=$ random value",
+        "C": "$\\Delta w=$ fixed value",
+        "D": "$\\Delta w=$ input $\\times$ output"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 56,
+      "question": "What is the purpose of weight updates?",
+      "options": {
+        "A": "Reduce future errors",
+        "B": "Increase errors",
+        "C": "Change network structure",
+        "D": "Store more data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 57,
+      "question": "How are weights \"slightly shifted\"?",
+      "options": {
+        "A": "Small changes in direction that reduces error",
+        "B": "Large random changes",
+        "C": "Always set to zero",
+        "D": "Only positive changes"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 58,
+      "question": "What does forward pass compute?",
+      "options": {
+        "A": "Predictions using current weights",
+        "B": "New network structure",
+        "C": "Data collection",
+        "D": "User preferences"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 59,
+      "question": "How is loss calculated?",
+      "options": {
+        "A": "e.g., MSE = (y_pred - y_true)²",
+        "B": "Random formula",
+        "C": "Always zero",
+        "D": "From input data"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 60,
+      "question": "How is error sent through network?",
+      "options": {
+        "A": "Backward through network",
+        "B": "Forward only",
+        "C": "Random direction",
+        "D": "Not sent"
+      },
+      "correct_option": "A"
+    },
+    {
+      "id": 61,
+      "question": "How are gradients computed?",
+      "options": {
+        "A": "Using chain rule",
+        "B": "Random numbers",
+        "C": "Fixed values",
+        "D": "User input"
+      },
+      "correct_option": "A"
+    }
+  ]
+}
+]
