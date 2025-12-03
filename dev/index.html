@@ -190,7 +190,7 @@
 
             <!-- Test Mode Inputs -->
             <div class="p-6 bg-red-100 rounded-lg shadow-inner">
-                <h3 class="text-xl font-bold text-red-800 mb-4">⏱️ Test Mode (Timed & Limited)</h3>
+                <h3 class="text-xl font-bold text-red-800 mb-4">⏱️ Test Mode</h3>
                 <div class="flex justify-between space-x-4 mb-4">
                     <div class="flex-1 text-left">
                         <label for="question-count-input" class="block text-sm font-medium text-gray-700">Number of Questions (Max: <span id="max-questions">0</span>)</label>
@@ -464,8 +464,29 @@
                     throw new Error("JSON file must contain a top-level array of lecture objects.");
                 }
 
-                jsonData.forEach(lecture => {
-                    const lectureTitle = lecture.lecture.trim();
+                jsonData.forEach((lecture, lectureIndex) => {
+                    // Determine a usable lecture title:
+                    // Priority: lecture.title (if present), then lecture.lecture (string or number).
+                    // If lecture.lecture is a numeric index (e.g. 0..8) convert to "Lecture N" (1-based).
+                    // Fallback: "Lecture {index+1}" based on the array position.
+                    let lectureTitle = '';
+
+                    if (lecture.title && String(lecture.title).trim().length > 0) {
+                        lectureTitle = String(lecture.title).trim();
+                    } else if (lecture.lecture !== undefined && lecture.lecture !== null) {
+                        const raw = String(lecture.lecture).trim();
+                        if (/^\d+$/.test(raw)) {
+                            // numeric index in JSON -> convert to 1-based label
+                            lectureTitle = `Lecture ${parseInt(raw, 10) + 1}`;
+                        } else if (raw.length > 0) {
+                            lectureTitle = raw;
+                        } else {
+                            lectureTitle = `Lecture ${lectureIndex + 1}`;
+                        }
+                    } else {
+                        lectureTitle = `Lecture ${lectureIndex + 1}`;
+                    }
+
                     lectureMap.set(lectureTitle, []);
                     
                     if (lecture.questions && Array.isArray(lecture.questions)) {
@@ -479,10 +500,10 @@
                                     userAnswer: null, 
                                     answered: false,  
                                     shuffledKeys: null,
-                                    lecture: lectureTitle // Store the lecture title with the question
+                                    lecture: lectureTitle // Store the resolved lecture title with the question
                                 };
                                 parsedData.push(questionObject);
-                                lectureMap.get(lectureTitle).push(questionObject); // Map questions to lecture
+                                lectureMap.get(lectureTitle).push(questionObject);
                             } else {
                                 console.warn(`[Parser Warning] Skipped question in lecture "${lectureTitle}" due to missing fields.`);
                             }
