@@ -13,6 +13,20 @@
     
     <!-- Load Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- MathJax Configuration -->
+    <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+    </script>
+    <!-- Load MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body class="p-4 md:p-8">
 
@@ -185,7 +199,7 @@
         <!-- Footer -->
         <div class="mt-8 pt-6 border-t border-gray-100 text-center">
             <a href="../ai_question/docs/AI_course_revision.pdf" target="_blank" class="text-xs text-gray-400 hover:text-blue-600 transition-colors">
-                    All questions were taken from this revised file provided by Dr. Shimaa. Thank you.
+                All questions were taken from this revised file provided by Dr. Shimaa. Thank you.
             </a>
         </div>
     </div>

@@ -72,6 +72,13 @@ const backToStartBtn = document.getElementById('back-to-start-btn');
 
 // --- Utility Functions ---
 
+// NEW: Function to trigger MathJax rendering
+function renderMath() {
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetPromise().catch((err) => console.log('MathJax error:', err));
+    }
+}
+
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -392,6 +399,7 @@ function loadQuestion() {
     }
 
     updateNavigationButtons();
+    renderMath(); // <--- ADD THIS LINE
 }
 
 function handleAnswerClick(event) {
@@ -535,6 +543,7 @@ function renderTestQuestions() {
         questionElement.appendChild(answersDiv);
         testQuestionsContainer.appendChild(questionElement);
     });
+    renderMath(); // <--- ADD THIS LINE
 }
 
 function handleTestAnswerClick(event) {
@@ -621,9 +630,9 @@ function showResults(isTestMode) {
 
         let detailsText = `You needed ${passThreshold} correct answers (50%) to pass. You got ${score} (${percentage}%).`;
         if (isOvertime) {
-            detailsText += ` You FAILED due to Time Overflow (Limit was ${formatTime(timeLimitSeconds)}).`;
+            detailsText += ` You **FAILED** due to **Time Overflow** (Limit was ${formatTime(timeLimitSeconds)}).`;
         } else if (score < passThreshold) {
-            detailsText += ` You FAILED due to Insufficient Score.`;
+            detailsText += ` You **FAILED** due to **Insufficient Score**.`;
         } else {
             detailsText += ` You finished within the time limit.`;
         }
