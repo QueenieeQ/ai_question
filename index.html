@@ -10,85 +10,9 @@
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7fafc;
-        }
-        .container {
-            max-width: 90%;
-            margin: 0 auto;
-        }
-        /* Custom styles for the interactive buttons */
-        .answer-btn {
-            display: block;
-            width: 100%;
-            padding: 0.75rem 1.25rem;
-            margin-bottom: 0.5rem;
-            text-align: left;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border-radius: 0.5rem;
-            transition: all 0.2s;
-            cursor: pointer;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-            border: 1px solid #e2e8f0;
-            background-color: white;
-            color: #1a202c;
-        }
-        /* State for selected answer (Test Mode - deferred result) */
-        .answer-btn.selected {
-            background-color: #93c5fd; /* Blue 300 */
-            color: white;
-            border-color: #60a5fa; /* Blue 400 */
-        }
-        
-        /* Final Result States (applied only after submission/timeout) */
-        .answer-btn.correct {
-            background-color: #10b981; /* Green 500 */
-            color: white;
-            border-color: #059669;
-        }
-        .answer-btn.incorrect {
-            background-color: #ef4444; /* Red 500 */
-            color: white;
-            border-color: #dc2626;
-        }
-        .answer-btn:disabled {
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-        /* Styles for Test Mode single-page display */
-        .question-item {
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 0.75rem;
-            background-color: white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-        .question-text-test {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #1a202c;
-            margin-bottom: 1rem;
-        }
-        
-        /* Ensure buttons are in the flow but aligned */
-        #return-home-button, #search-mode-button {
-            position: static; 
-            top: auto; 
-            left: auto; 
-            z-index: auto;
-        }
-        
-        /* Keep feedback message visible in the flow */
-        #feedback-message {
-            flex-grow: 1; 
-            text-align: center;
-        }
-    </style>
+    
+    <!-- Load Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="p-4 md:p-8">
 
@@ -98,11 +22,9 @@
         <div class="flex justify-between items-center pt-4">
             <!-- Home Button (left aligned) -->
             <button id="return-home-button" 
-                    class="px-4 py-2 bg-gray-200 text-gray-800 text-sm font-semibold rounded-lg shadow hover:bg-gray-300 transition"
-                    onclick="restartQuiz()">
+                    class="px-4 py-2 bg-gray-200 text-gray-800 text-sm font-semibold rounded-lg shadow hover:bg-gray-300 transition">
                 🏠 Home
-            </button>
-        
+            </button>       
             <!-- Search Button (right aligned) -->
             <button id="search-mode-button" 
                     class="px-4 py-2 bg-indigo-500 text-white text-sm font-semibold rounded-lg shadow hover:bg-indigo-600 transition">
@@ -114,11 +36,11 @@
             AI Quiz
         </h1>
         
-        <!-- Search Area (NEW) -->
+        <!-- Search Area -->
         <div id="search-area" class="hidden p-6 bg-purple-50 rounded-xl border border-purple-200 mb-8">
             <h2 class="text-xl font-bold text-purple-800 mb-4">Question Search (Minimum 3 words)</h2>
             <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4">
-                <input type="text" id="search-input" placeholder="Enter keywords (e.g., 'in a BLE device')" 
+                <input type="text" id="search-input" placeholder="Enter keywords" 
                        class="flex-grow p-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500">
                 <button id="execute-search-btn" class="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 transition">
                     Search Questions
@@ -126,14 +48,25 @@
             </div>
             
             <p id="search-validation-message" class="mt-2 text-red-500 font-medium hidden"></p>
-            
-            <div id="search-results-area" class="mt-4 p-4 bg-white rounded-lg border border-gray-100 hidden">
-                <h3 class="text-lg font-semibold text-gray-800 mb-3 border-b pb-2">Closest Results:</h3>
-                <!-- Results will be injected here -->
+            <div id="search-results-area" class="mt-4 p-4 bg-white rounded-lg border border-gray-100 hidden"></div>
+        </div>
+
+        <!-- Lecture Selection Area (FIXED: Added back button) -->
+        <div id="lecture-selection-area" class="hidden p-6 bg-blue-50 rounded-xl border border-blue-200 mb-8">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-blue-800">Select a Lecture</h2>
+                <!-- This button was missing, causing the crash -->
+                <button id="back-to-start-btn" class="text-sm rounded-lg hover:underline font-semibold">
+                    ↩ Back to Menu
+                </button>
+            </div>
+            <!-- <p class="text-sm text-blue-600 mb-4">Click on a lecture below to start practicing questions from that specific chapter.</p> -->
+            <div id="lecture-buttons-container" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-96 overflow-y-auto custom-scrollbar p-1">
+                <!-- Buttons injected here via JS -->
             </div>
         </div>
 
-        <!-- File Load Status Area - Configured for Automatic Loading -->
+        <!-- File Load Status Area -->
         <div id="status-area" class="text-center text-sm mb-4 p-5 rounded-lg bg-indigo-50 border border-indigo-200">
             <h2 class="block text-xl font-semibold text-indigo-700 mb-2">
                 Automatic Data Load
@@ -150,13 +83,13 @@
             
             <p class="text-xl font-bold text-gray-800 mb-4">Choose a Mode</p>
 
-            <!-- Mode Buttons: Normal and Random -->
+            <!-- Mode Buttons -->
             <div class="flex justify-around space-x-4 mb-8 border-b pb-6">
                 <button id="normal-start-btn" class="flex-1 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition">
-                    ▶️ Study Mode (Linear)
+                    ▶️ Study Mode (By Lecture)
                 </button>
                 <button id="random-start-btn" class="flex-1 py-3 px-6 bg-yellow-600 text-white font-bold rounded-lg shadow-md hover:bg-yellow-700 transition">
-                    🔀 Random Mode
+                    🔀 Random Mode (All)
                 </button>
             </div>
 
@@ -166,7 +99,7 @@
                 <div class="flex justify-between space-x-4 mb-4">
                     <div class="flex-1 text-left">
                         <label for="question-count-input" class="block text-sm font-medium text-gray-700">Number of Questions (Max: <span id="max-questions">0</span>)</label>
-                        <input type="number" id="question-count-input" min="1" value="30" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+                        <input type="number" id="question-count-input" min="1" value="50" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
                     </div>
                     <div class="flex-1 text-left">
                         <label for="time-limit-input" class="block text-sm font-medium text-gray-700">Time Limit (Minutes)</label>
@@ -249,734 +182,15 @@
             </div>
         </div>
 
+        <!-- Footer -->
+        <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+            <a href="../docs/AI_course_revision.pdf" target="_blank" class="text-xs text-gray-400 hover:text-blue-600 transition-colors">
+                All the questions were taken from this revised file. Thank you, Dr. Shimaa
+            </a>
+        </div>
     </div>
 
-    <script>
-        // --- Configuration ---
-        // CHANGED from quiz.xlsx to quiz.json
-        const AUTO_LOAD_FILENAME = "quiz.json"; 
-
-        // --- State Variables ---
-        let originalQuizData = []; 
-        let quizData = []; 
-        let currentQuestionIndex = 0;
-        let score = 0;
-        let isAnswered = false; 
-        let mode = 'NORMAL'; 
-        
-        // --- Timer Variables ---
-        let startTime = 0;
-        let timerInterval = null;
-        let timeLimitSeconds = 0;
-        let isOvertime = false;
-
-        // --- DOM Elements ---
-        const statusArea = document.getElementById('status-area');
-        const statusMessage = document.getElementById('status-message');
-        const startArea = document.getElementById('start-area');
-        const startFileInfo = document.getElementById('start-file-info');
-        const maxQuestionsSpan = document.getElementById('max-questions');
-        const normalStartBtn = document.getElementById('normal-start-btn');
-        const randomStartBtn = document.getElementById('random-start-btn');
-        const testStartBtn = document.getElementById('test-start-btn');       
-        const questionCountInput = document.getElementById('question-count-input'); 
-        const timeLimitInput = document.getElementById('time-limit-input');     
-        
-        const quizArea = document.getElementById('quiz-area');
-        const questionCount = document.getElementById('question-count');
-        const scoreDisplay = document.getElementById('score-display');
-        const timerDisplay = document.getElementById('timer-display');
-        const questionText = document.getElementById('question-text');
-        const answersContainer = document.getElementById('answers-container');
-        const previousButton = document.getElementById('previous-button'); 
-        const nextButton = document.getElementById('next-button');
-        const feedbackMessage = document.getElementById('feedback-message');
-        
-        const testQuizArea = document.getElementById('test-quiz-area');
-        const testTimerDisplay = document.getElementById('test-timer-display');
-        const testQuestionCount = document.getElementById('test-question-count');
-        const testScoreDisplay = document.getElementById('test-score-display');
-        const testQuestionsContainer = document.getElementById('test-questions-container');
-        const submitTestBtn = document.getElementById('submit-test-btn');
-        
-        const resultsArea = document.getElementById('results-area');
-        const resultTitle = document.getElementById('result-title');
-        const finalScore = document.getElementById('final-score');
-        const finalTime = document.getElementById('final-time');
-        const testResultDetails = document.getElementById('test-result-details'); 
-        const testModeStatus = document.getElementById('test-mode-status');      
-        const testModeDetails = document.getElementById('test-mode-details');    
-        const restartButton = document.getElementById('restart-button');
-        const reviewTestButton = document.getElementById('review-test-button');
-        
-        // --- New Search Elements ---
-        const searchModeButton = document.getElementById('search-mode-button');
-        const searchArea = document.getElementById('search-area');
-        const searchInput = document.getElementById('search-input');
-        const executeSearchBtn = document.getElementById('execute-search-btn');
-        const searchResultsArea = document.getElementById('search-results-area');
-        const searchValidationMessage = document.getElementById('search-validation-message');
-
-
-        // --- Utility Functions ---
-        
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-        
-        function formatTime(totalSeconds) {
-            const h = Math.floor(totalSeconds / 3600);
-            const m = Math.floor((totalSeconds % 3600) / 60);
-            const s = Math.floor(totalSeconds % 60);
-            
-            const pad = (num) => String(num).padStart(2, '0');
-            return `${pad(h)}:${pad(m)}:${pad(s)}`;
-        }
-        
-        function startTimer(limitInSeconds = 0) {
-            stopTimer(); 
-            startTime = Date.now();
-            timeLimitSeconds = limitInSeconds;
-            isOvertime = false;
-
-            const displayElement = mode === 'TEST' ? testTimerDisplay : timerDisplay;
-            
-            if (timeLimitSeconds > 0) {
-                displayElement.textContent = formatTime(timeLimitSeconds);
-            } else {
-                displayElement.textContent = '00:00:00';
-            }
-
-            timerInterval = setInterval(() => {
-                const elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-
-                if (timeLimitSeconds > 0) {
-                    const remainingSeconds = timeLimitSeconds - elapsedSeconds;
-
-                    if (remainingSeconds <= 0) {
-                        displayElement.textContent = "TIME'S UP! (Overtime)";
-                        displayElement.classList.remove('text-red-600');
-                        displayElement.classList.add('text-yellow-600', 'font-extrabold');
-                        isOvertime = true;
-                        
-                        if (mode === 'TEST') {
-                             clearInterval(timerInterval);
-                             handleSubmitTest(); 
-                        }
-                    } else {
-                        displayElement.textContent = formatTime(remainingSeconds);
-                        displayElement.classList.remove('text-yellow-600', 'font-extrabold');
-                        displayElement.classList.add('text-red-600');
-                    }
-                } else {
-                    displayElement.textContent = formatTime(elapsedSeconds);
-                }
-            }, 1000);
-        }
-        
-        function stopTimer() {
-            if (timerInterval) {
-                clearInterval(timerInterval);
-            }
-            const elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-            return formatTime(elapsedSeconds);
-        }
-
-        // --- Core Quiz Logic Functions ---
-
-        function loadFileAutomatically() {
-            statusMessage.textContent = `Fetching file: ${AUTO_LOAD_FILENAME}...`;
-            statusMessage.className = 'mt-3 text-sm text-yellow-800';
-            
-            // Hide all main areas
-            hideAllAreas();
-
-            fetch(AUTO_LOAD_FILENAME)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! Status: ${response.status}. Please ensure **${AUTO_LOAD_FILENAME}** is correctly uploaded.`);
-                    }
-                    // CHANGED: Use response.json() for JSON file
-                    return response.json(); 
-                })
-                .then(data => {
-                    // CHANGED: Call the JSON data handler
-                    handleJsonData(data);
-                })
-                .catch(error => {
-                    console.error('Error fetching/processing JSON data:', error);
-                    statusMessage.textContent = `❌ AUTO-LOAD ERROR: ${error.message}`;
-                    statusMessage.className = 'mt-3 text-sm text-red-800 font-bold';
-                });
-        }
-        
-        // NEW function to process the nested JSON data structure
-        function handleJsonData(jsonData) {
-            try {
-                const parsedData = [];
-                let questionId = 1;
-
-                if (!Array.isArray(jsonData)) {
-                    throw new Error("JSON file must contain a top-level array of lecture objects.");
-                }
-
-                // Iterate through lectures
-                jsonData.forEach(lecture => {
-                    if (lecture.questions && Array.isArray(lecture.questions)) {
-                        // Iterate through questions within the lecture
-                        lecture.questions.forEach(q => {
-                            // Validate minimum required fields based on the new structure
-                            if (q.question && q.options && q.correct_option) {
-                                parsedData.push({
-                                    // Use a global counter for ID since the original IDs might restart per lecture
-                                    id: questionId++, 
-                                    question: String(q.question).trim(), 
-                                    // Map 'options' to 'answers'
-                                    answers: q.options, 
-                                    // Map 'correct_option' to 'correctAnswer'
-                                    correctAnswer: String(q.correct_option).trim().toUpperCase(),
-                                    userAnswer: null, 
-                                    answered: false,  
-                                    shuffledKeys: null 
-                                });
-                            } else {
-                                console.warn(`[Parser Warning] Skipped question in lecture "${lecture.lecture}" due to missing fields.`);
-                            }
-                        });
-                    }
-                });
-                
-                originalQuizData = parsedData; 
-                quizData = parsedData; 
-
-                if (originalQuizData.length === 0) {
-                    throw new Error('No valid quiz questions were parsed from the JSON file.');
-                }
-
-                statusArea.classList.add('hidden');
-                startArea.classList.remove('hidden');
-                searchArea.classList.add('hidden'); 
-                startFileInfo.textContent = `Ready to start ${originalQuizData.length} questions.`;
-
-                maxQuestionsSpan.textContent = originalQuizData.length;
-                questionCountInput.max = originalQuizData.length;
-                
-                if (originalQuizData.length > 0) {
-                    testStartBtn.disabled = false;
-                    questionCountInput.value = Math.min(30, originalQuizData.length); 
-                }
-
-            } catch (error) {
-                console.error('Error processing JSON data:', error);
-                statusMessage.textContent = `❌ ERROR: Could not process file. Check JSON data format. (${error.message})`;
-                statusMessage.className = 'mt-3 text-sm text-red-800';
-            }
-        }
-        
-        function startQuiz(isRandom) {
-            mode = isRandom ? 'RANDOM' : 'NORMAL'; 
-            // Deep clone the quiz data to reset state
-            quizData = JSON.parse(JSON.stringify(originalQuizData)); 
-
-            hideAllAreas();
-            quizArea.classList.remove('hidden');
-            
-            if (isRandom) {
-                shuffleArray(quizData); 
-            }
-            
-            currentQuestionIndex = 0;
-            score = 0;
-            isAnswered = false; 
-            
-            startTimer(0);
-            loadQuestion();
-        }
-
-        // --- Functions for Study/Random Mode (Previous/Next Logic) ---
-
-        function updateNavigationButtons() {
-            previousButton.disabled = currentQuestionIndex === 0;
-
-            if (currentQuestionIndex === quizData.length - 1) {
-                if (quizData[currentQuestionIndex].answered) {
-                    nextButton.textContent = 'Show Results 🏆';
-                    nextButton.disabled = false;
-                    nextButton.classList.remove('bg-blue-600');
-                    nextButton.classList.add('bg-green-600');
-                } else {
-                    nextButton.textContent = 'Next Question ➡️';
-                    nextButton.disabled = !isAnswered;
-                    nextButton.classList.add('bg-blue-600');
-                    nextButton.classList.remove('bg-green-600');
-                }
-            } else {
-                nextButton.textContent = 'Next Question ➡️';
-                nextButton.disabled = !quizData[currentQuestionIndex].answered;
-                nextButton.classList.add('bg-blue-600');
-                nextButton.classList.remove('bg-green-600');
-            }
-        }
-        
-        function loadQuestion() {
-            hideAllAreas();
-            quizArea.classList.remove('hidden');
-
-            if (currentQuestionIndex >= quizData.length) {
-                showResults(false);
-                return;
-            }
-
-            const currentQuiz = quizData[currentQuestionIndex];
-            
-            isAnswered = currentQuiz.answered;
-            
-            questionText.textContent = currentQuiz.question;
-            questionCount.textContent = `Question ${currentQuestionIndex + 1} / ${quizData.length}`;
-            
-            score = quizData.filter(q => q.answered && q.userAnswer === q.correctAnswer).length;
-            scoreDisplay.textContent = `Score: ${score}`;
-
-            answersContainer.innerHTML = ''; 
-            
-            let answerKeys = currentQuiz.shuffledKeys;
-            
-            if (!answerKeys) {
-                // The keys (A, B, C, D) come from the 'answers' object now
-                answerKeys = Object.keys(currentQuiz.answers);
-                
-                if (mode === 'RANDOM' || mode === 'TEST') {
-                    shuffleArray(answerKeys); 
-                }
-                
-                currentQuiz.shuffledKeys = answerKeys; 
-            }
-
-            let correctDisplayLetter = '';
-
-            answerKeys.forEach((originalKey, i) => {
-                const answerText = currentQuiz.answers[originalKey];
-                const button = document.createElement('button');
-                
-                const displayLetter = originalKey; // Use the actual key (A, B, C, D) as the display letter
-                
-                if (originalKey === currentQuiz.correctAnswer) {
-                     correctDisplayLetter = displayLetter; 
-                }
-
-                button.classList.add('answer-btn');
-                button.textContent = `${displayLetter}. ${answerText}`;
-                button.dataset.answerKey = originalKey; 
-                button.addEventListener('click', handleAnswerClick);
-
-                // Apply existing state if answered (Review Mode)
-                if (currentQuiz.answered) {
-                    button.disabled = true;
-                    if (originalKey === currentQuiz.correctAnswer) {
-                        button.classList.add('correct');
-                        feedbackMessage.textContent = '✅ Review: Correct!';
-                        feedbackMessage.classList.add('text-green-600');
-                        feedbackMessage.classList.remove('text-red-500');
-                    } else if (originalKey === currentQuiz.userAnswer) {
-                        button.classList.add('incorrect');
-                        feedbackMessage.textContent = '❌ Review: Incorrect. The correct answer is ' + correctDisplayLetter + '.';
-                        feedbackMessage.classList.add('text-red-500');
-                        feedbackMessage.classList.remove('text-green-600');
-                    }
-                }
-                
-                answersContainer.appendChild(button);
-            });
-            
-            if (!currentQuiz.answered) {
-                feedbackMessage.textContent = '';
-                feedbackMessage.classList.remove('text-green-600', 'text-red-500');
-            }
-
-            updateNavigationButtons();
-        }
-
-        function handleAnswerClick(event) {
-            if (isAnswered) return;
-
-            const selectedButton = event.target;
-            const selectedKey = selectedButton.dataset.answerKey; 
-            const currentQuiz = quizData[currentQuestionIndex];
-            const correctKey = currentQuiz.correctAnswer;
-            const allButtons = answersContainer.querySelectorAll('.answer-btn');
-            
-            currentQuiz.userAnswer = selectedKey; 
-            currentQuiz.answered = true;
-            isAnswered = true; 
-            
-            let correctDisplayLetter = ''; 
-
-            allButtons.forEach((btn) => { 
-                btn.disabled = true;
-                const key = btn.dataset.answerKey;
-                
-                if (key === correctKey) {
-                    btn.classList.add('correct');
-                    correctDisplayLetter = key; 
-                } else if (key === selectedKey) {
-                    btn.classList.add('incorrect');
-                }
-            });
-
-            if (selectedKey === correctKey) {
-                feedbackMessage.textContent = '✅ Correct!';
-                feedbackMessage.classList.remove('text-red-500');
-                feedbackMessage.classList.add('text-green-600');
-            } else {
-                feedbackMessage.textContent = '❌ Incorrect. The correct answer is ' + correctDisplayLetter + '.';
-                feedbackMessage.classList.remove('text-green-600');
-                feedbackMessage.classList.add('text-red-500');
-            }
-            
-            score = quizData.filter(q => q.answered && q.userAnswer === q.correctAnswer).length;
-            scoreDisplay.textContent = `Score: ${score}`;
-            
-            updateNavigationButtons();
-        }
-
-        function nextQuestion() {
-            if (currentQuestionIndex === quizData.length - 1) {
-                if (quizData[currentQuestionIndex].answered) {
-                    showResults(false);
-                }
-            } else {
-                currentQuestionIndex++;
-                loadQuestion();
-            }
-        }
-        
-        function previousQuestion() {
-            if (currentQuestionIndex > 0) {
-                currentQuestionIndex--;
-                loadQuestion();
-            }
-        }
-
-        // --- Functions for Test Mode ---
-        
-        function startTestMode() {
-            const qCount = parseInt(questionCountInput.value);
-            const tLimit = parseInt(timeLimitInput.value);
-            const max = originalQuizData.length;
-
-            if (isNaN(qCount) || qCount <= 0 || qCount > max) {
-                // Using console.error instead of alert due to constraints
-                console.error(`Invalid input: Number of questions must be between 1 and ${max}.`);
-                return;
-            }
-            if (isNaN(tLimit) || tLimit <= 0) {
-                console.error('Invalid input: Time limit must be > 0 minutes.');
-                return;
-            }
-
-            mode = 'TEST';
-            score = 0;
-            
-            const shuffledData = [...originalQuizData];
-            shuffleArray(shuffledData);
-            quizData = shuffledData.slice(0, qCount).map(q => ({
-                ...q, 
-                userAnswer: null, 
-                answered: false, 
-                shuffledKeys: null 
-            })); 
-            
-            hideAllAreas();
-            testQuizArea.classList.remove('hidden');
-
-            testQuestionCount.textContent = quizData.length;
-            
-            renderTestQuestions();
-            
-            startTimer(tLimit * 60); 
-        }
-
-        function renderTestQuestions() {
-            testQuestionsContainer.innerHTML = '';
-            
-            quizData.forEach((q, index) => {
-                const questionElement = document.createElement('div');
-                questionElement.classList.add('question-item');
-                
-                const qText = document.createElement('p');
-                qText.classList.add('question-text-test');
-                qText.textContent = `${index + 1}. ${q.question}`;
-                questionElement.appendChild(qText);
-                
-                const answersDiv = document.createElement('div');
-                answersDiv.dataset.questionIndex = index;
-                
-                let answerKeys = Object.keys(q.answers);
-                shuffleArray(answerKeys); 
-                
-                q.shuffledKeys = answerKeys;
-                
-                answerKeys.forEach(originalKey => { 
-                    const answerText = q.answers[originalKey];
-                    const button = document.createElement('button');
-
-                    button.classList.add('answer-btn');
-                    const displayLetter = originalKey; // Use the actual key (A, B, C, D)
-                    
-                    button.textContent = `${displayLetter}. ${answerText}`;
-                    button.dataset.answerKey = originalKey; 
-                    button.dataset.qIndex = index; 
-                    button.addEventListener('click', handleTestAnswerClick);
-
-                    // Check if already answered (for review mode)
-                    if (q.userAnswer === originalKey) {
-                        button.classList.add('selected');
-                    }
-
-                    answersDiv.appendChild(button);
-                });
-                
-                questionElement.appendChild(answersDiv);
-                testQuestionsContainer.appendChild(questionElement);
-            });
-        }
-        
-        function handleTestAnswerClick(event) {
-            const selectedButton = event.target;
-            const selectedKey = selectedButton.dataset.answerKey; 
-            const qIndex = parseInt(selectedButton.dataset.qIndex);
-            
-            const answersDiv = selectedButton.closest('div'); 
-            const allButtons = answersDiv.querySelectorAll('.answer-btn');
-            
-            allButtons.forEach(btn => {
-                btn.classList.remove('selected');
-            });
-            
-            selectedButton.classList.add('selected');
-
-            quizData[qIndex].userAnswer = selectedKey;
-        }
-        
-        function handleSubmitTest() {
-            stopTimer(); 
-            score = 0; 
-            
-            quizData.forEach((q, index) => {
-                const userChoice = q.userAnswer;
-                const correctKey = q.correctAnswer;
-
-                if (userChoice && userChoice === correctKey) {
-                    score++;
-                }
-
-                const answersDiv = document.querySelector(`[data-question-index="${index}"]`);
-                if (answersDiv) {
-                    const allButtons = answersDiv.querySelectorAll('.answer-btn');
-                    
-                    allButtons.forEach(btn => {
-                        const key = btn.dataset.answerKey; 
-                        
-                        btn.disabled = true;
-
-                        if (key === correctKey) {
-                            btn.classList.add('correct');
-                            btn.classList.remove('selected');
-                        } else if (key === userChoice) {
-                            btn.classList.add('incorrect');
-                            btn.classList.remove('selected');
-                        }
-                    });
-                }
-            });
-
-            showResults(true);
-            
-            submitTestBtn.classList.add('hidden');
-        }
-
-        // --- Result and Restart Functions ---
-
-        function showResults(isTestMode) {
-            const finalTimeString = stopTimer(); 
-            
-            hideAllAreas();
-            resultsArea.classList.remove('hidden');
-            
-            const totalQuestions = quizData.length;
-            finalScore.textContent = `You scored ${score} out of ${totalQuestions}!`;
-            finalTime.textContent = `Time taken: ${finalTimeString}`;
-
-            if (isTestMode) {
-                const passThreshold = Math.ceil(totalQuestions * 0.5); 
-                const isPassed = score >= passThreshold && !isOvertime;
-                const percentage = ((score / totalQuestions) * 100).toFixed(1);
-
-                testResultDetails.classList.remove('hidden');
-                resultTitle.textContent = 'Test Results';
-                
-                if (isPassed) {
-                    testModeStatus.textContent = '🎉 TEST PASSED! 🎉';
-                    testModeStatus.className = 'text-3xl font-extrabold mb-4 text-green-700';
-                } else {
-                    testModeStatus.textContent = '❌ TEST FAILED ❌';
-                    testModeStatus.className = 'text-3xl font-extrabold mb-4 text-red-700';
-                }
-
-                let detailsText = `You needed ${passThreshold} correct answers (50%) to pass. You got ${score} (${percentage}%).`;
-                if (isOvertime) {
-                    detailsText += ` You **FAILED** due to **Time Overflow** (Limit was ${formatTime(timeLimitSeconds)}).`;
-                } else if (score < passThreshold) {
-                    detailsText += ` You **FAILED** due to **Insufficient Score**.`;
-                } else {
-                    detailsText += ` You finished within the time limit.`;
-                }
-                
-                testModeDetails.innerHTML = detailsText;
-                reviewTestButton.classList.remove('hidden'); 
-
-            } else {
-                resultTitle.textContent = 'Quiz Complete!';
-                testResultDetails.classList.add('hidden');
-                reviewTestButton.classList.add('hidden');
-            }
-        }
-        
-        function reviewTestAnswers() {
-            hideAllAreas();
-            testQuizArea.classList.remove('hidden');
-            
-            document.querySelectorAll('#test-questions-container .answer-btn').forEach(btn => {
-                btn.disabled = true;
-            });
-            
-            submitTestBtn.classList.add('hidden');
-        }
-
-        function restartQuiz() {
-            currentQuestionIndex = 0;
-            score = 0;
-            isAnswered = false;
-            startTime = 0;
-            mode = 'NORMAL';
-            stopTimer(); 
-            
-            // Ensure the submit button is visible for the next test
-            submitTestBtn.classList.remove('hidden'); 
-
-            loadFileAutomatically(); // Hides all areas and shows status/start
-        }
-
-        function hideAllAreas() {
-            quizArea.classList.add('hidden');
-            testQuizArea.classList.add('hidden');
-            resultsArea.classList.add('hidden');
-            startArea.classList.add('hidden'); 
-            searchArea.classList.add('hidden'); 
-        }
-
-        // --- Search Functions ---
-        
-        function toggleSearchMode() {
-            if (searchArea.classList.contains('hidden')) {
-                // Entering search mode
-                hideAllAreas();
-                searchArea.classList.remove('hidden');
-                searchResultsArea.classList.add('hidden');
-                searchValidationMessage.classList.add('hidden');
-                searchInput.value = '';
-                searchInput.focus();
-            } else {
-                // Exiting search mode
-                searchArea.classList.add('hidden');
-                startArea.classList.remove('hidden'); // Return to the start screen
-            }
-        }
-
-        function performSearch() {
-            const query = searchInput.value.trim().toLowerCase();
-            
-            // 1. Split by whitespace to get words, keeping all words regardless of length (Fix for "in a BLE")
-            const queryWords = query.split(/\s+/).filter(word => word.length > 0); 
-
-            // 2. Check if there are at least 3 words entered (as requested)
-            if (queryWords.length < 3) {
-                searchValidationMessage.textContent = 'Please enter a minimum of 3 words to perform a search.';
-                searchValidationMessage.classList.remove('hidden');
-                searchResultsArea.classList.add('hidden');
-                return;
-            }
-            
-            searchValidationMessage.classList.add('hidden');
-            
-            const searchResults = originalQuizData.map(q => {
-                let score = 0;
-                const questionTextLower = q.question.toLowerCase();
-                
-                // Simple keyword matching for scoring
-                queryWords.forEach(word => {
-                    // Check if the question text includes the word (even short ones like 'in' or 'a')
-                    if (questionTextLower.includes(word)) {
-                        score += 1;
-                    }
-                });
-                
-                return {
-                    question: q.question,
-                    // The correct answer is now found by looking up the key in the answers object
-                    correctAnswer: q.answers[q.correctAnswer], 
-                    score: score
-                };
-            })
-            // Filter out questions with zero score and sort by score descending
-            .filter(result => result.score > 0)
-            .sort((a, b) => b.score - a.score)
-            .slice(0, 3); // Take top 3 results
-
-            displaySearchResults(searchResults);
-        }
-
-        function displaySearchResults(results) {
-            searchResultsArea.classList.remove('hidden');
-            searchResultsArea.innerHTML = '<h3 class="text-lg font-semibold text-gray-800 mb-3 border-b pb-2">Closest Results:</h3>';
-
-            if (results.length === 0) {
-                searchResultsArea.innerHTML += '<p class="text-gray-600">No questions matched your search terms.</p>';
-                return;
-            }
-
-            results.forEach((result, index) => {
-                const resultDiv = document.createElement('div');
-                resultDiv.classList.add('mb-4', 'p-3', 'bg-white', 'rounded-lg', 'border');
-                
-                // Font size increased here to text-lg
-                resultDiv.innerHTML = `
-                    <p class="font-bold text-base text-gray-800 mb-1">Q${index + 1}. ${result.question}</p>
-                    <p class="text-lg font-semibold text-green-700">A: ${result.correctAnswer}</p>
-                `;
-                searchResultsArea.appendChild(resultDiv);
-            });
-        }
-
-        // --- Event Listeners ---
-        document.addEventListener('DOMContentLoaded', loadFileAutomatically); 
-
-        previousButton.addEventListener('click', previousQuestion); 
-        nextButton.addEventListener('click', nextQuestion);
-        restartButton.addEventListener('click', restartQuiz);
-
-        normalStartBtn.addEventListener('click', () => startQuiz(false)); 
-        randomStartBtn.addEventListener('click', () => startQuiz(true));  
-        testStartBtn.addEventListener('click', startTestMode); 
-        submitTestBtn.addEventListener('click', handleSubmitTest);
-        reviewTestButton.addEventListener('click', reviewTestAnswers);
-        
-        // NEW SEARCH LISTENERS
-        searchModeButton.addEventListener('click', toggleSearchMode);
-        executeSearchBtn.addEventListener('click', performSearch);
-    </script>
+    <!-- Load Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
