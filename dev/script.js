@@ -229,7 +229,7 @@ function handleJsonData(jsonData) {
         searchArea.classList.add('hidden'); 
         lectureSelectionArea.classList.add('hidden');
 
-        startFileInfo.textContent = `Ready to start ${originalQuizData.length} questions.`;
+        startFileInfo.textContent = `Ready to start ${originalQuizData.length} questions`;
         maxQuestionsSpan.textContent = originalQuizData.length;
         questionCountInput.max = originalQuizData.length;
         
