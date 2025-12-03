@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IOT Quiz</title>
+    <title>AI Quiz</title>
     <!-- FAVICON: Embedded SVG Checkmark -->
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzEwQjk4MSI+PHBhdGggZD0iTTkgMTYuMTdMNC44MyAxMmwtMS40MiAxLjQxTDkgMTkgMjEgN2wtMS40MS0xLjQxeiIvPjwvc3ZnPg==" type="image/svg+xml">
     
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -74,33 +74,20 @@
             color: #1a202c;
             margin-bottom: 1rem;
         }
-
-        /* Styles for Lecture Review Mode */
-        .review-question-card {
-            background-color: #ffffff;
-            padding: 1.5rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-            margin-bottom: 1.5rem;
-            border: 1px solid #e0e7ff; /* light blue border */
+        
+        /* Ensure buttons are in the flow but aligned */
+        #return-home-button, #search-mode-button {
+            position: static; 
+            top: auto; 
+            left: auto; 
+            z-index: auto;
         }
-        .review-question-text {
-            font-size: 1.125rem;
-            font-weight: 600;
-            color: #1e3a8a; /* dark blue */
-            margin-bottom: 1rem;
+        
+        /* Keep feedback message visible in the flow */
+        #feedback-message {
+            flex-grow: 1; 
+            text-align: center;
         }
-        .review-answer-text {
-            font-size: 1rem;
-            color: #059669; /* green */
-            font-weight: 500;
-            padding: 0.5rem;
-            border-left: 4px solid #10b981; /* green bar */
-            background-color: #ecfdf5; /* lightest green background */
-            border-radius: 0 0.25rem 0.25rem 0;
-            margin-top: 0.5rem;
-        }
-
     </style>
 </head>
 <body class="p-4 md:p-8">
@@ -124,10 +111,10 @@
         </div>
 
         <h1 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2 pt-4">
-            IOT Quiz
+            AI Quiz
         </h1>
         
-        <!-- Search Area -->
+        <!-- Search Area (NEW) -->
         <div id="search-area" class="hidden p-6 bg-purple-50 rounded-xl border border-purple-200 mb-8">
             <h2 class="text-xl font-bold text-purple-800 mb-4">Question Search (Minimum 3 words)</h2>
             <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4">
@@ -158,52 +145,64 @@
         </div>
         
         <!-- Start Options Area -->
-        <div id="start-area" class="hidden text-center p-8 bg-green-50 rounded-xl border border-green-200">
-            <h2 id="start-file-info" class="text-xl font-semibold text-green-700 mb-6"></h2>
+        <div id="start-area" class="hidden text-center p-6 bg-white rounded-xl shadow-lg">
+            <h2 id="start-file-info" class="text-xl font-semibold text-gray-700 mb-6"></h2>
             
-            <p class="text-xl font-bold text-gray-800 mb-4">Quiz Modes</p>
-
-            <!-- Mode Buttons: Normal and Random -->
-            <div class="flex justify-around space-x-4 mb-8 border-b pb-6">
-                <button id="normal-start-btn" class="flex-1 py-3 px-6 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition">
-                    ▶️ Study Mode (Linear)
-                </button>
-                <button id="random-start-btn" class="flex-1 py-3 px-6 bg-yellow-600 text-white font-bold rounded-lg shadow-md hover:bg-yellow-700 transition">
-                    🔀 Random Mode
-                </button>
-            </div>
-
-            <!-- Lecture Review Mode (NEW SECTION) -->
-            <div class="p-6 bg-blue-100 rounded-lg shadow-inner mb-8">
-                <h3 class="text-xl font-bold text-blue-800 mb-4">📖 Lecture Review Mode (All Answers Visible)</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 
-                <label class="block text-sm font-medium text-gray-700 mb-2 text-left">Select Lectures to Review:</label>
-                <div id="lecture-selection-container" class="grid grid-cols-1 sm:grid-cols-2 gap-2 p-3 bg-white border border-gray-300 rounded-lg max-h-48 overflow-y-auto mb-4 text-left">
-                    <!-- Checkboxes will be injected here -->
-                </div>
-
-                <button id="lecture-review-start-btn" class="w-full py-3 px-6 bg-blue-600 text-white font-bold rounded-lg shadow-md hover:bg-blue-700 transition disabled:opacity-50" disabled>
-                    📚 Start Lecture Review
-                </button>
-            </div>
-
-
-            <!-- Test Mode Inputs -->
-            <div class="p-6 bg-red-100 rounded-lg shadow-inner">
-                <h3 class="text-xl font-bold text-red-800 mb-4">⏱️ Test Mode</h3>
-                <div class="flex justify-between space-x-4 mb-4">
-                    <div class="flex-1 text-left">
-                        <label for="question-count-input" class="block text-sm font-medium text-gray-700">Number of Questions (Max: <span id="max-questions">0</span>)</label>
-                        <input type="number" id="question-count-input" min="1" value="30" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+                <!-- 1. Study Mode Column -->
+                <div class="p-5 bg-blue-50 rounded-xl border border-blue-100 flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-blue-800 flex items-center justify-center gap-2">
+                            <span>📚</span> Study Mode
+                        </h3>
+                        <p class="text-sm text-blue-600 mt-1">Select a lecture to start learning.</p>
                     </div>
-                    <div class="flex-1 text-left">
-                        <label for="time-limit-input" class="block text-sm font-medium text-gray-700">Time Limit (Minutes)</label>
-                        <input type="number" id="time-limit-input" min="1" value="15" class="mt-1 block w-full p-2 border border-gray-300 rounded-md">
+                    
+                    <div id="lecture-buttons-container" class="flex-grow space-y-2 overflow-y-auto max-h-80 pr-1 custom-scrollbar">
+                        <!-- Lecture Buttons injected here -->
                     </div>
                 </div>
-                <button id="test-start-btn" class="w-full py-3 px-6 bg-red-600 text-white font-bold rounded-lg shadow-md hover:bg-red-700 transition disabled:opacity-50" disabled>
-                    🏁 Start Test Mode
-                </button>
+
+                <!-- 2. Random Mode Column -->
+                <div class="p-5 bg-yellow-50 rounded-xl border border-yellow-100 flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-yellow-800 flex items-center justify-center gap-2">
+                            <span>🔀</span> Random Mode
+                        </h3>
+                        <p class="text-sm text-yellow-600 mt-1">Practice with shuffled questions from all lectures.</p>
+                    </div>
+                    
+                    <div class="flex-grow flex items-center">
+                        <button id="random-start-btn" class="w-full py-4 px-6 bg-yellow-600 text-white font-bold rounded-lg shadow-md hover:bg-yellow-700 transition transform hover:scale-105">
+                            Start Random Quiz
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. Test Mode Column -->
+                <div class="p-5 bg-red-50 rounded-xl border border-red-100 flex flex-col">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-red-800 flex items-center justify-center gap-2">
+                            <span>⏱️</span> Test Mode
+                        </h3>
+                        <p class="text-sm text-red-600 mt-1">Simulate an exam with time limits.</p>
+                    </div>
+
+                    <div class="flex-grow flex flex-col justify-center space-y-4">
+                        <div class="text-left">
+                            <label for="question-count-input" class="block text-sm font-medium text-gray-700">Questions (Max: <span id="max-questions">0</span>)</label>
+                            <input type="number" id="question-count-input" min="1" value="30" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500">
+                        </div>
+                        <div class="text-left">
+                            <label for="time-limit-input" class="block text-sm font-medium text-gray-700">Time Limit (Minutes)</label>
+                            <input type="number" id="time-limit-input" min="1" value="15" class="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500">
+                        </div>
+                        <button id="test-start-btn" class="w-full py-3 px-6 bg-red-600 text-white font-bold rounded-lg shadow-md hover:bg-red-700 transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            Start Test
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -233,15 +232,6 @@
             </div>
         </div>
         
-        <!-- Lecture Review Area (NEW) -->
-        <div id="lecture-review-area" class="hidden">
-            <h2 id="review-title" class="text-2xl font-bold text-blue-700 mb-6 border-b pb-2"></h2>
-            <div id="review-questions-container">
-                <!-- Questions and answers will be injected here -->
-            </div>
-        </div>
-
-
         <!-- Test Quiz Area -->
         <div id="test-quiz-area" class="hidden">
              <div class="sticky top-0 bg-white z-10 py-3 mb-6 shadow-md rounded-lg border border-gray-200 px-6">
@@ -290,16 +280,17 @@
 
     <script>
         // --- Configuration ---
+        // CHANGED from quiz.xlsx to quiz.json
         const AUTO_LOAD_FILENAME = "quiz.json"; 
 
         // --- State Variables ---
         let originalQuizData = []; 
         let quizData = []; 
+        let lectureMap = new Map(); // NEW: Store questions by lecture
         let currentQuestionIndex = 0;
         let score = 0;
         let isAnswered = false; 
         let mode = 'NORMAL'; 
-        let lectureMap = new Map(); // Stores the original JSON data grouped by lecture
         
         // --- Timer Variables ---
         let startTime = 0;
@@ -313,7 +304,7 @@
         const startArea = document.getElementById('start-area');
         const startFileInfo = document.getElementById('start-file-info');
         const maxQuestionsSpan = document.getElementById('max-questions');
-        const normalStartBtn = document.getElementById('normal-start-btn');
+        // Removed normalStartBtn as it is replaced by dynamic buttons
         const randomStartBtn = document.getElementById('random-start-btn');
         const testStartBtn = document.getElementById('test-start-btn');       
         const questionCountInput = document.getElementById('question-count-input'); 
@@ -346,7 +337,7 @@
         const restartButton = document.getElementById('restart-button');
         const reviewTestButton = document.getElementById('review-test-button');
         
-        // --- Search Elements ---
+        // --- New Search Elements ---
         const searchModeButton = document.getElementById('search-mode-button');
         const searchArea = document.getElementById('search-area');
         const searchInput = document.getElementById('search-input');
@@ -354,12 +345,8 @@
         const searchResultsArea = document.getElementById('search-results-area');
         const searchValidationMessage = document.getElementById('search-validation-message');
 
-        // --- NEW Lecture Review Elements ---
-        const lectureSelectionContainer = document.getElementById('lecture-selection-container');
-        const lectureReviewStartBtn = document.getElementById('lecture-review-start-btn');
-        const lectureReviewArea = document.getElementById('lecture-review-area');
-        const reviewTitle = document.getElementById('review-title');
-        const reviewQuestionsContainer = document.getElementById('review-questions-container');
+        // --- NEW Lecture Selection Elements ---
+        const lectureButtonsContainer = document.getElementById('lecture-buttons-container');
 
 
         // --- Utility Functions ---
@@ -435,6 +422,7 @@
             statusMessage.textContent = `Fetching file: ${AUTO_LOAD_FILENAME}...`;
             statusMessage.className = 'mt-3 text-sm text-yellow-800';
             
+            // Hide all main areas
             hideAllAreas();
 
             fetch(AUTO_LOAD_FILENAME)
@@ -442,9 +430,11 @@
                     if (!response.ok) {
                         throw new Error(`HTTP error! Status: ${response.status}. Please ensure **${AUTO_LOAD_FILENAME}** is correctly uploaded.`);
                     }
+                    // CHANGED: Use response.json() for JSON file
                     return response.json(); 
                 })
                 .then(data => {
+                    // CHANGED: Call the JSON data handler
                     handleJsonData(data);
                 })
                 .catch(error => {
@@ -454,23 +444,21 @@
                 });
         }
         
+        // NEW function to process the nested JSON data structure
         function handleJsonData(jsonData) {
             try {
                 const parsedData = [];
-                lectureMap.clear();
+                lectureMap.clear(); // Reset map
                 let questionId = 1;
 
                 if (!Array.isArray(jsonData)) {
                     throw new Error("JSON file must contain a top-level array of lecture objects.");
                 }
 
+                // Iterate through lectures
                 jsonData.forEach((lecture, lectureIndex) => {
-                    // Determine a usable lecture title:
-                    // Priority: lecture.title (if present), then lecture.lecture (string or number).
-                    // If lecture.lecture is a numeric index (e.g. 0..8) convert to "Lecture N" (1-based).
-                    // Fallback: "Lecture {index+1}" based on the array position.
+                    // Determine a usable lecture title
                     let lectureTitle = '';
-
                     if (lecture.title && String(lecture.title).trim().length > 0) {
                         lectureTitle = String(lecture.title).trim();
                     } else if (lecture.lecture !== undefined && lecture.lecture !== null) {
@@ -487,23 +475,30 @@
                         lectureTitle = `Lecture ${lectureIndex + 1}`;
                     }
 
-                    lectureMap.set(lectureTitle, []);
-                    
+                    // Initialize array for this lecture
+                    if (!lectureMap.has(lectureTitle)) {
+                        lectureMap.set(lectureTitle, []);
+                    }
+
                     if (lecture.questions && Array.isArray(lecture.questions)) {
+                        // Iterate through questions within the lecture
                         lecture.questions.forEach(q => {
+                            // Validate minimum required fields based on the new structure
                             if (q.question && q.options && q.correct_option) {
-                                const questionObject = {
+                                const questionObj = {
+                                    // Use a global counter for ID since the original IDs might restart per lecture
                                     id: questionId++, 
                                     question: String(q.question).trim(), 
+                                    // Map 'options' to 'answers'
                                     answers: q.options, 
+                                    // Map 'correct_option' to 'correctAnswer'
                                     correctAnswer: String(q.correct_option).trim().toUpperCase(),
                                     userAnswer: null, 
                                     answered: false,  
-                                    shuffledKeys: null,
-                                    lecture: lectureTitle // Store the resolved lecture title with the question
+                                    shuffledKeys: null 
                                 };
-                                parsedData.push(questionObject);
-                                lectureMap.get(lectureTitle).push(questionObject);
+                                parsedData.push(questionObj);
+                                lectureMap.get(lectureTitle).push(questionObj);
                             } else {
                                 console.warn(`[Parser Warning] Skipped question in lecture "${lectureTitle}" due to missing fields.`);
                             }
@@ -521,7 +516,7 @@
                 statusArea.classList.add('hidden');
                 startArea.classList.remove('hidden');
                 searchArea.classList.add('hidden'); 
-                startFileInfo.textContent = `Ready to start ${originalQuizData.length}-question quiz from JSON file.`;
+                startFileInfo.textContent = `Ready to start ${originalQuizData.length} questions.`;
 
                 maxQuestionsSpan.textContent = originalQuizData.length;
                 questionCountInput.max = originalQuizData.length;
@@ -531,8 +526,8 @@
                     questionCountInput.value = Math.min(30, originalQuizData.length); 
                 }
                 
-                // NEW: Populate the lecture selection checkboxes
-                populateLectureCheckboxes();
+                // NEW: Populate the lecture buttons
+                renderLectureButtons();
 
             } catch (error) {
                 console.error('Error processing JSON data:', error);
@@ -541,47 +536,49 @@
             }
         }
         
-        function populateLectureCheckboxes() {
-            lectureSelectionContainer.innerHTML = '';
+        function renderLectureButtons() {
+            lectureButtonsContainer.innerHTML = '';
+            
             lectureMap.forEach((questions, title) => {
                 const count = questions.length;
-                const lectureId = 'lecture-' + title.replace(/[^a-zA-Z0-9]/g, '_');
+                if (count === 0) return;
+
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left px-4 py-3 bg-white border border-blue-200 rounded-lg shadow-sm hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-200 group";
                 
-                const checkboxDiv = document.createElement('div');
-                checkboxDiv.classList.add('flex', 'items-center', 'space-x-2');
+                btn.innerHTML = `
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-sm md:text-base">${title}</span>
+                        <span class="text-xs bg-blue-100 text-blue-800 py-1 px-2 rounded-full group-hover:bg-white group-hover:text-blue-600">${count} Qs</span>
+                    </div>
+                `;
                 
-                const checkbox = document.createElement('input');
-                checkbox.type = 'checkbox';
-                checkbox.id = lectureId;
-                checkbox.value = title;
-                checkbox.classList.add('h-4', 'w-4', 'text-blue-600', 'border-gray-300', 'rounded', 'focus:ring-blue-500');
-                checkbox.addEventListener('change', updateReviewButtonState);
+                btn.addEventListener('click', () => startQuiz('NORMAL', title));
                 
-                const label = document.createElement('label');
-                label.htmlFor = lectureId;
-                label.classList.add('text-sm', 'font-medium', 'text-gray-700', 'cursor-pointer');
-                label.textContent = `${title} (${count} Qs)`;
-                
-                checkboxDiv.appendChild(checkbox);
-                checkboxDiv.appendChild(label);
-                lectureSelectionContainer.appendChild(checkboxDiv);
+                lectureButtonsContainer.appendChild(btn);
             });
-            updateReviewButtonState(); // Initial check
         }
         
-        function updateReviewButtonState() {
-            const checkedBoxes = lectureSelectionContainer.querySelectorAll('input[type="checkbox"]:checked');
-            lectureReviewStartBtn.disabled = checkedBoxes.length === 0;
-        }
-
-        function startQuiz(isRandom) {
-            mode = isRandom ? 'RANDOM' : 'NORMAL'; 
-            quizData = JSON.parse(JSON.stringify(originalQuizData)); 
+        function startQuiz(modeType, lectureFilter = null) {
+            mode = modeType; // 'NORMAL' or 'RANDOM'
+            
+            if (mode === 'NORMAL' && lectureFilter) {
+                // Filter for specific lecture
+                const lectureQuestions = lectureMap.get(lectureFilter);
+                if (!lectureQuestions) {
+                    console.error("Lecture not found");
+                    return;
+                }
+                quizData = JSON.parse(JSON.stringify(lectureQuestions));
+            } else {
+                // Random mode or fallback -> use all data
+                quizData = JSON.parse(JSON.stringify(originalQuizData)); 
+            }
 
             hideAllAreas();
             quizArea.classList.remove('hidden');
             
-            if (isRandom) {
+            if (mode === 'RANDOM') {
                 shuffleArray(quizData); 
             }
             
@@ -642,6 +639,7 @@
             let answerKeys = currentQuiz.shuffledKeys;
             
             if (!answerKeys) {
+                // The keys (A, B, C, D) come from the 'answers' object now
                 answerKeys = Object.keys(currentQuiz.answers);
                 
                 if (mode === 'RANDOM' || mode === 'TEST') {
@@ -657,7 +655,7 @@
                 const answerText = currentQuiz.answers[originalKey];
                 const button = document.createElement('button');
                 
-                const displayLetter = originalKey;
+                const displayLetter = originalKey; // Use the actual key (A, B, C, D) as the display letter
                 
                 if (originalKey === currentQuiz.correctAnswer) {
                      correctDisplayLetter = displayLetter; 
@@ -756,82 +754,6 @@
             }
         }
 
-        // --- NEW Lecture Review Mode Functions ---
-
-        function startLectureReview() {
-            mode = 'REVIEW';
-            stopTimer();
-            hideAllAreas();
-            lectureReviewArea.classList.remove('hidden');
-
-            const checkedBoxes = lectureSelectionContainer.querySelectorAll('input[type="checkbox"]:checked');
-            const selectedLectureTitles = Array.from(checkedBoxes).map(cb => cb.value);
-            
-            // Filter questions based on selected lectures
-            let reviewQuestions = [];
-            let combinedTitle = '';
-
-            selectedLectureTitles.forEach(title => {
-                const questions = lectureMap.get(title);
-                if (questions) {
-                    reviewQuestions = reviewQuestions.concat(questions);
-                }
-            });
-
-            if (selectedLectureTitles.length === 1) {
-                combinedTitle = selectedLectureTitles[0];
-            } else if (selectedLectureTitles.length > 1) {
-                combinedTitle = `${selectedLectureTitles.length} Lectures Selected`;
-            } else {
-                combinedTitle = "All Questions";
-                reviewQuestions = originalQuizData;
-            }
-
-            reviewTitle.textContent = `Review Questions: ${combinedTitle} (${reviewQuestions.length} Questions)`;
-            renderReviewQuestions(reviewQuestions);
-        }
-
-        function renderReviewQuestions(questions) {
-            reviewQuestionsContainer.innerHTML = '';
-            
-            if (questions.length === 0) {
-                reviewQuestionsContainer.innerHTML = '<p class="text-xl text-center text-gray-500 p-8">No questions available for the selected lectures.</p>';
-                return;
-            }
-
-            questions.forEach((q, index) => {
-                const card = document.createElement('div');
-                card.classList.add('review-question-card');
-
-                const questionNumText = document.createElement('p');
-                questionNumText.classList.add('text-sm', 'font-mono', 'text-blue-500', 'mb-2');
-                questionNumText.textContent = `${q.lecture}`;
-                
-                const questionTextElement = document.createElement('p');
-                questionTextElement.classList.add('review-question-text');
-                questionTextElement.innerHTML = `<span class="text-gray-900 mr-2">${index + 1}.</span> ${q.question}`;
-
-                const answers = Object.entries(q.answers);
-                let correctAnswerText = 'Error: Answer not found';
-
-                // Find the text of the correct answer
-                const correctEntry = answers.find(([key, text]) => key === q.correctAnswer);
-                if (correctEntry) {
-                    correctAnswerText = `${q.correctAnswer}. ${correctEntry[1]}`;
-                }
-
-                const answerElement = document.createElement('div');
-                answerElement.classList.add('review-answer-text');
-                answerElement.innerHTML = `<strong>Correct Answer:</strong> ${correctAnswerText}`;
-                
-                card.appendChild(questionNumText);
-                card.appendChild(questionTextElement);
-                card.appendChild(answerElement);
-                
-                reviewQuestionsContainer.appendChild(card);
-            });
-        }
-
         // --- Functions for Test Mode ---
         
         function startTestMode() {
@@ -840,6 +762,7 @@
             const max = originalQuizData.length;
 
             if (isNaN(qCount) || qCount <= 0 || qCount > max) {
+                // Using console.error instead of alert due to constraints
                 console.error(`Invalid input: Number of questions must be between 1 and ${max}.`);
                 return;
             }
@@ -895,7 +818,7 @@
                     const button = document.createElement('button');
 
                     button.classList.add('answer-btn');
-                    const displayLetter = originalKey;
+                    const displayLetter = originalKey; // Use the actual key (A, B, C, D)
                     
                     button.textContent = `${displayLetter}. ${answerText}`;
                     button.dataset.answerKey = originalKey; 
@@ -1035,9 +958,10 @@
             mode = 'NORMAL';
             stopTimer(); 
             
+            // Ensure the submit button is visible for the next test
             submitTestBtn.classList.remove('hidden'); 
 
-            loadFileAutomatically();
+            loadFileAutomatically(); // Hides all areas and shows status/start
         }
 
         function hideAllAreas() {
@@ -1046,7 +970,6 @@
             resultsArea.classList.add('hidden');
             startArea.classList.add('hidden'); 
             searchArea.classList.add('hidden'); 
-            lectureReviewArea.classList.add('hidden'); // NEW
         }
 
         // --- Search Functions ---
@@ -1070,8 +993,10 @@
         function performSearch() {
             const query = searchInput.value.trim().toLowerCase();
             
+            // 1. Split by whitespace to get words, keeping all words regardless of length (Fix for "in a BLE")
             const queryWords = query.split(/\s+/).filter(word => word.length > 0); 
 
+            // 2. Check if there are at least 3 words entered (as requested)
             if (queryWords.length < 3) {
                 searchValidationMessage.textContent = 'Please enter a minimum of 3 words to perform a search.';
                 searchValidationMessage.classList.remove('hidden');
@@ -1085,7 +1010,9 @@
                 let score = 0;
                 const questionTextLower = q.question.toLowerCase();
                 
+                // Simple keyword matching for scoring
                 queryWords.forEach(word => {
+                    // Check if the question text includes the word (even short ones like 'in' or 'a')
                     if (questionTextLower.includes(word)) {
                         score += 1;
                     }
@@ -1093,10 +1020,12 @@
                 
                 return {
                     question: q.question,
+                    // The correct answer is now found by looking up the key in the answers object
                     correctAnswer: q.answers[q.correctAnswer], 
                     score: score
                 };
             })
+            // Filter out questions with zero score and sort by score descending
             .filter(result => result.score > 0)
             .sort((a, b) => b.score - a.score)
             .slice(0, 3); // Take top 3 results
@@ -1117,6 +1046,7 @@
                 const resultDiv = document.createElement('div');
                 resultDiv.classList.add('mb-4', 'p-3', 'bg-white', 'rounded-lg', 'border');
                 
+                // Font size increased here to text-lg
                 resultDiv.innerHTML = `
                     <p class="font-bold text-base text-gray-800 mb-1">Q${index + 1}. ${result.question}</p>
                     <p class="text-lg font-semibold text-green-700">A: ${result.correctAnswer}</p>
@@ -1128,24 +1058,17 @@
         // --- Event Listeners ---
         document.addEventListener('DOMContentLoaded', loadFileAutomatically); 
 
-        // Main Quiz Mode
         previousButton.addEventListener('click', previousQuestion); 
         nextButton.addEventListener('click', nextQuestion);
-        
-        // Start Buttons
-        normalStartBtn.addEventListener('click', () => startQuiz(false)); 
+        restartButton.addEventListener('click', restartQuiz);
+
+        // Removed normalStartBtn listener
         randomStartBtn.addEventListener('click', () => startQuiz(true));  
         testStartBtn.addEventListener('click', startTestMode); 
-        lectureReviewStartBtn.addEventListener('click', startLectureReview); // NEW
-
-        // Test Mode
         submitTestBtn.addEventListener('click', handleSubmitTest);
         reviewTestButton.addEventListener('click', reviewTestAnswers);
         
-        // Global
-        restartButton.addEventListener('click', restartQuiz);
-        
-        // Search Mode
+        // NEW SEARCH LISTENERS
         searchModeButton.addEventListener('click', toggleSearchMode);
         executeSearchBtn.addEventListener('click', performSearch);
     </script>
