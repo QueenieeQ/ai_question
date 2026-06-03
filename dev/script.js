@@ -1,5 +1,5 @@
 // --- Configuration ---
-const AUTO_LOAD_FILENAME = "quiz.json"; 
+const AUTO_LOAD_FILENAME = "./quiz.json";
 
 // --- State Variables ---
 let originalQuizData = []; 

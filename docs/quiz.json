@@ -9,9 +9,9 @@
           "A": "VANETs require internet access at all times",
           "B": "VANETs operate in vehicular environments with very high mobility, frequent topology changes, and safety-critical constraints",
           "C": "VANETs use only infrastructure-based communication",
-          "D": "VANETs are static networks with fixed routing tables 6 Correct Answer: B"
+          "D": "VANETs are static networks with fixed routing tables"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 2,
@@ -20,9 +20,9 @@
           "A": "The network ceases to function",
           "B": "Vehicles can still communicate in pure V2V ad hoc mode using OBUs",
           "C": "Cellular coverage automatically replaces RSU functionality",
-          "D": "Vehicles must wait for RSUs to be restored before communicating 6 Correct Answer: B"
+          "D": "Vehicles must wait for RSUs to be restored before communicating"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 3,
@@ -31,9 +31,9 @@
           "A": "CSMA/CD is used in wireless networks; CSMA/CA is used in wired networks",
           "B": "CSMA/CA avoids collisions before transmission using backoff; CSMA/CD detects collisions after they occur",
           "C": "CSMA/CA is faster than CSMA/CD for vehicular use",
-          "D": "CSMA/CD is preferred for DSRC because it has lower overhead 6 Correct Answer: B"
+          "D": "CSMA/CD is preferred for DSRC because it has lower overhead"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 4,
@@ -42,9 +42,9 @@
           "A": "Single-hop transmission always reaches all vehicles",
           "B": "It extends communication range beyond a single node's direct radio reach without requiring infrastructure",
           "C": "It reduces the need for GNSS modules",
-          "D": "It simplifies routing protocols by eliminating the need for certificates 6 Correct Answer: B"
+          "D": "It simplifies routing protocols by eliminating the need for certificates"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 5,
@@ -53,9 +53,9 @@
           "A": "The GNSS module controls braking",
           "B": "The security module is optional in modern OBUs",
           "C": "The V2X communication module handles both DSRC and C-V2X protocols",
-          "D": "The antenna system is only used for cellular communication 6 Correct Answer: C"
+          "D": "The antenna system is only used for cellular communication"
         },
-        "correct_option": ""
+        "correct_option": "C"
       },
       {
         "id": 6,
@@ -64,9 +64,9 @@
           "A": "Higher resolution cameras",
           "B": "V2X communication systems that share data from vehicles and infrastructure beyond sensor line- of-sight",
           "C": "Better LIDAR resolution",
-          "D": "Faster in-vehicle processors 6 Correct Answer: B"
+          "D": "Faster in-vehicle processors"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 7,
@@ -75,9 +75,9 @@
           "A": "Cameras cannot detect color",
           "B": "BSMs transmit brake status, speed, and trajectory data directly ² information cameras can only infer indirectly",
           "C": "V2V has higher resolution than cameras",
-          "D": "V2V operates at night while cameras do not 6 Correct Answer: B"
+          "D": "V2V operates at night while cameras do not"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 8,
@@ -86,9 +86,9 @@
           "A": "They rely on a central server to assign IP addresses",
           "B": "Nodes discover each other and establish routing paths dynamically without pre-configuration",
           "C": "Network administrators configure them before deployment",
-          "D": "They use static IP addresses assigned at manufacturing 6 Correct Answer: B"
+          "D": "They use static IP addresses assigned at manufacturing"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 9,
@@ -97,9 +97,9 @@
           "A": "Reducing highway congestion",
           "B": "Warning pedestrians and cyclists of approaching vehicles at intersections or crossings",
           "C": "Providing cloud-based navigation updates",
-          "D": "Enabling vehicle platooning on motorways 6 Correct Answer: B"
+          "D": "Enabling vehicle platooning on motorways"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 10,
@@ -108,9 +108,9 @@
           "A": "RSUs are the primary control nodes of all V2X traffic",
           "B": "Vehicles remain autonomous and can communicate directly without RSU involvement, preserving the ad hoc nature",
           "C": "RSUs must authenticate every V2V message",
-          "D": "VANETs cannot function without at least one RSU per kilometer 6 Correct Answer: B"
+          "D": "VANETs cannot function without at least one RSU per kilometer"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 11,
@@ -119,9 +119,9 @@
           "A": "Platooning requires cellular connectivity through the Uu interface",
           "B": "Platooning requires direct real-time vehicle-to-vehicle exchange of speed, position, and braking data to maintain tight formation",
           "C": "Platooning works best with RSU coordination only",
-          "D": "Platooning is a V2N application because it requires cloud coordination 6 Correct Answer: B"
+          "D": "Platooning is a V2N application because it requires cloud coordination"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 12,
@@ -130,9 +130,9 @@
           "A": "One designated master node handles all routing",
           "B": "Every node acts as both transmitter and router, forwarding packets on behalf of others",
           "C": "Only RSUs forward packets between vehicles",
-          "D": "Peer-to-peer means direct one-hop communication only ² no forwarding 6 Correct Answer: B"
+          "D": "Peer-to-peer means direct one-hop communication only ² no forwarding"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 13,
@@ -141,9 +141,9 @@
           "A": "To reduce interference between adjacent RSUs",
           "B": "To broadcast coverage equally in all 360° directions so vehicles approaching from any direction receive messages",
           "C": "To increase range beyond 5 km",
-          "D": "Omnidirectional antennas are cheaper than directional ones 6 Correct Answer: B"
+          "D": "Omnidirectional antennas are cheaper than directional ones"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 14,
@@ -152,9 +152,9 @@
           "A": "The network stops working until the node is replaced",
           "B": "Traffic is automatically rerouted through alternative paths without human intervention",
           "C": "A central server assigns new paths to all nodes",
-          "D": "Adjacent nodes must be manually reconfigured 6 Correct Answer: B"
+          "D": "Adjacent nodes must be manually reconfigured"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 15,
@@ -163,9 +163,9 @@
           "A": "GNSS provides connectivity to cellular networks",
           "B": "GNSS provides precise vehicle position data included in BSMs for collision detection algorithms",
           "C": "GNSS manages V2X security certificates",
-          "D": "GNSS communicates directly with RSUs to relay position data 6 Correct Answer: B"
+          "D": "GNSS communicates directly with RSUs to relay position data"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 16,
@@ -174,9 +174,9 @@
           "A": "10 Hz is the maximum rate supported by IEEE 802.11p",
           "B": "At typical highway speeds, 100ms intervals provide sufficient position update frequency for collision avoidance algorithms",
           "C": "10 Hz matches the refresh rate of vehicle dashboards",
-          "D": "The 5.9 GHz spectrum is partitioned into exactly 10 slots per second 6 Correct Answer: B"
+          "D": "The 5.9 GHz spectrum is partitioned into exactly 10 slots per second"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 17,
@@ -185,9 +185,9 @@
           "A": "Routes are pre-computed and stored in each vehicle",
           "B": "Routes change frequently as vehicles move, requiring protocols that can discover and update paths on-the-fly",
           "C": "Topology is managed centrally by the TMC",
-          "D": "Dynamic topology only applies to infrastructure-based networks 6 Correct Answer: B"
+          "D": "Dynamic topology only applies to infrastructure-based networks"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 18,
@@ -196,9 +196,9 @@
           "A": "VANETs use more expensive hardware",
           "B": "Vehicles move much faster and more predictably (road-constrained) but with very short contact durations between nodes",
           "C": "VANETs require more frequency bands than MANETs",
-          "D": "VANETs have smaller network sizes than MANETs 6 Correct Answer: B"
+          "D": "VANETs have smaller network sizes than MANETs"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 19,
@@ -207,9 +207,9 @@
           "A": "Lack of GPS support",
           "B": "No centralized trust anchor for authentication ² requiring distributed security mechanisms like SCMS",
           "C": "Vehicles cannot use OFDM modulation",
-          "D": "Channel access cannot be coordinated at all 6 Correct Answer: B"
+          "D": "Channel access cannot be coordinated at all"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 20,
@@ -218,9 +218,9 @@
           "A": "The warning cannot be sent as DSRC range is 300m",
           "B": "Multi-hop relaying ² intermediate vehicles forward the BSM extending the effective range",
           "C": "The vehicle must use cellular V2N to send the alert",
-          "D": "No mechanism exists for this scenario in VANET design 6 Correct Answer: B"
+          "D": "No mechanism exists for this scenario in VANET design"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -234,9 +234,9 @@
           "A": "Tunnels have better cellular coverage",
           "B": "Tunnels block line-of-sight for sensors and GPS signals, making infrastructure-provided ahead-of- curve warnings critical",
           "C": "RSUs in tunnels use higher power",
-          "D": "V2V works better inside tunnels due to signal reflection 6 Correct Answer: B"
+          "D": "V2V works better inside tunnels due to signal reflection"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 22,
@@ -245,9 +245,9 @@
           "A": "It updates its infotainment map display",
           "B": "It uses signal phase and timing to optimize speed for green light passage or prepare to stop",
           "C": "It reports the data to the TMC for logging",
-          "D": "It re-broadcasts the SPaT to nearby vehicles via V2V 6 Correct Answer: B"
+          "D": "It re-broadcasts the SPaT to nearby vehicles via V2V"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 23,
@@ -256,9 +256,9 @@
           "A": "CAVs have more sensors than AVs",
           "B": "CAVs combine internal sensing (automation) with external V2X communication for information beyond sensor range",
           "C": "AVs use cellular networks while CAVs use DSRC",
-          "D": "CAVs do not require any internal sensors 6 Correct Answer: B"
+          "D": "CAVs do not require any internal sensors"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 24,
@@ -267,9 +267,9 @@
           "A": "Every vehicle must confirm receipt of each BSM",
           "B": "Safety applications must tolerate occasional packet loss and use redundant periodic transmission to compensate",
           "C": "BSMs are encrypted point-to-point to the nearest RSU",
-          "D": "TCP is used to guarantee delivery of each BSM 6 Correct Answer: B"
+          "D": "TCP is used to guarantee delivery of each BSM"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 25,
@@ -278,9 +278,9 @@
           "A": "Individual vehicles have more processing power",
           "B": "Multiple vehicles contribute overlapping sensor data from different angles, reducing cumulative localization error",
           "C": "Cooperative maps use satellite data only",
-          "D": "Individual mapping is more accurate because it avoids data conflicts 6 Correct Answer: B"
+          "D": "Individual mapping is more accurate because it avoids data conflicts"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 26,
@@ -289,9 +289,9 @@
           "A": "TMC is a physical roadside device; RSU is a remote data center",
           "B": "RSU handles local wireless V2X communication; TMC is a centralized system coordinating traffic management using remote communications",
           "C": "TMC broadcasts safety messages; RSU manages cellular handover",
-          "D": "Both perform identical functions at different geographic scales 6 Correct Answer: B"
+          "D": "Both perform identical functions at different geographic scales"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 27,
@@ -300,9 +300,9 @@
           "A": "Detecting a vehicle directly in front at 10m",
           "B": "Detecting brake lights of a vehicle two cars ahead blocked by a truck (non-line-of-sight)",
           "C": "Measuring precise vehicle speed",
-          "D": "Detecting lane markings on wet roads 6 Correct Answer: B"
+          "D": "Detecting lane markings on wet roads"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 28,
@@ -311,9 +311,9 @@
           "A": "It identifies the vehicle's license plate over V2X",
           "B": "It identifies which application a V2X message belongs to, allowing devices to filter relevant messages",
           "C": "It encrypts the V2I message payload",
-          "D": "It assigns a radio channel for the V2I communication 6 Correct Answer: B"
+          "D": "It assigns a radio channel for the V2I communication"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 29,
@@ -322,9 +322,9 @@
           "A": "Better antenna gain",
           "B": "Vehicles share their sensor perceptions (position, speed, hazard data) via V2X, creating a collective sensing range larger than any individual sensor",
           "C": "RSUs amplify radar signals from vehicles",
-          "D": "Cellular networks relay sensor data between vehicles 6 Correct Answer: B"
+          "D": "Cellular networks relay sensor data between vehicles"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 30,
@@ -333,9 +333,9 @@
           "A": "Radar is illegal on rural roads",
           "B": "Oncoming vehicles beyond the visual horizon can proactively share position/speed via BSM, while radar requires line-of-sight",
           "C": "V2V operates at longer range frequencies on rural roads",
-          "D": "Rural roads have more RSUs than urban roads 6 Correct Answer: B"
+          "D": "Rural roads have more RSUs than urban roads"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 31,
@@ -344,9 +344,9 @@
           "A": "It matches the GPS update rate of 10 Hz",
           "B": "At 100km/h, a vehicle travels 2.8m per 100ms ² frequent updates are needed to maintain accurate neighboring vehicle models for collision assessment",
           "C": "10 Hz matches the human reaction time threshold",
-          "D": "IEEE 1609.3 mandates exactly 10 Hz for all V2X messages 6 Correct Answer: B"
+          "D": "IEEE 1609.3 mandates exactly 10 Hz for all V2X messages"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 32,
@@ -355,9 +355,9 @@
           "A": "All safety functions cease immediately",
           "B": "V2V communication continues unaffected ² V2I loss degrades infrastructure-based services but not peer-to-peer safety messaging",
           "C": "The vehicle automatically switches to satellite",
-          "D": "BSM transmission automatically stops without RSU coverage 6 Correct Answer: B"
+          "D": "BSM transmission automatically stops without RSU coverage"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 33,
@@ -366,9 +366,9 @@
           "A": "Better camera resolution",
           "B": "A fixed elevated vantage point that can monitor traffic without being blocked by other vehicles, providing persistent coverage",
           "C": "Lower latency than in-vehicle sensors",
-          "D": "Longer range radar than OBU-mounted systems 6 Correct Answer: B"
+          "D": "Longer range radar than OBU-mounted systems"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 34,
@@ -377,9 +377,9 @@
           "A": "The RSU decides which alerts to show",
           "B": "The OBU application layer evaluates threat severity and context to determine whether to warn the driver or trigger an automated response",
           "C": "The TMC sends display instructions to each vehicle individually",
-          "D": "All received BSMs trigger dashboard alerts automatically 6 Correct Answer: B"
+          "D": "All received BSMs trigger dashboard alerts automatically"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 35,
@@ -388,9 +388,9 @@
           "A": "Cameras on RSUs replace signal timing",
           "B": "Vehicles can communicate position and intent via V2X, allowing real-time cooperative negotiation of intersection passage without fixed signal phases",
           "C": "RSUs replace physical traffic lights with audio signals",
-          "D": "Connected vehicles simply ignore traffic lights 6 Correct Answer: B"
+          "D": "Connected vehicles simply ignore traffic lights"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 36,
@@ -399,9 +399,9 @@
           "A": "The sender vehicle's fuel consumption",
           "B": "A trajectory prediction of the sending vehicle's future path for proactive collision threat assessment",
           "C": "The insurance status of the sending vehicle",
-          "D": "The sending vehicle's destination for routing purposes 6 Correct Answer: B"
+          "D": "The sending vehicle's destination for routing purposes"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 37,
@@ -410,9 +410,9 @@
           "A": "RSUs cannot receive V2V messages",
           "B": "Most V2I is one-ZD\\\u0003EURDGFDVW\u0003\u000b568\u0003:\u0003YHKLFOHV\f\u0003EXW\u0003VRPH\u0003VHUYLFHV\u0003OLNH\u0003WROOLQJ\u0003UHTXLUH\u0003ELGLUHFWLRQDO\u0003 data exchange",
           "C": "Two-way transactions require cellular networks, not DSRC",
-          "D": "Broadcast-only V2I is mandated by IEEE 1609.4 6 Correct Answer: B"
+          "D": "Broadcast-only V2I is mandated by IEEE 1609.4"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 38,
@@ -421,9 +421,9 @@
           "A": "Highly automated vehicles override lower-automation ones",
           "B": "V2X provides a common communication layer ² a fully automated vehicle can receive intent/position from a manually driven vehicle that has an OBU",
           "C": "Automation level is automatically detected by RSUs",
-          "D": "Vehicles with different automation levels cannot share V2X messages 6 Correct Answer: B"
+          "D": "Vehicles with different automation levels cannot share V2X messages"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 39,
@@ -432,9 +432,9 @@
           "A": "The TMC uses it to control the vehicle remotely",
           "B": "Infrastructure aggregates vehicle probe data to monitor traffic conditions and improve dynamic signal timing and hazard detection",
           "C": "The RSU retransmits vehicle data back to the same vehicle",
-          "D": "Vehicle data is stored in OBU memory only and never transmitted 6 Correct Answer: B"
+          "D": "Vehicle data is stored in OBU memory only and never transmitted"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 40,
@@ -443,9 +443,9 @@
           "A": "Total number of RSUs deployed",
           "B": "End-to-end latency of SPaT and MAP messages ² lower latency means vehicles receive signal timing in time to adjust speed appropriately",
           "C": "Channel bandwidth available to the RSU",
-          "D": "Number of vehicles with infotainment displays 6 Correct Answer: B"
+          "D": "Number of vehicles with infotainment displays"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -459,9 +459,9 @@
           "A": "It uses a different frequency band",
           "B": "It eliminates the association/handshake process enabling immediate one-way broadcast ² critical for vehicles passing at high speed",
           "C": "It increases channel bandwidth to 40 MHz",
-          "D": "It adds TCP reliability to DSRC transmissions 6 Correct Answer: B"
+          "D": "It adds TCP reliability to DSRC transmissions"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 42,
@@ -470,9 +470,9 @@
           "A": "WSMP provides a backup path if IP fails",
           "B": "Safety-critical BSMs bypass the heavier IP stack via WSMP for lower latency, while non-safety apps use IP/UDP",
           "C": "WSMP encrypts IP packets before transmission",
-          "D": "WSMP is only used for RSU-to-TMC communication 6 Correct Answer: B"
+          "D": "WSMP is only used for RSU-to-TMC communication"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 43,
@@ -481,9 +481,9 @@
           "A": "It eliminates the need for a control channel",
           "B": "It allows devices to alternate between the control channel (safety) and service channels (non-safety), preventing safety messages from being displaced by non-safety traffic",
           "C": "It allows all 7 channels to be used simultaneously",
-          "D": "It solves the hidden node problem in dense deployments 6 Correct Answer: B"
+          "D": "It solves the hidden node problem in dense deployments"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 44,
@@ -492,9 +492,9 @@
           "A": "OFDM requires less processing power",
           "B": "OFDM is robust against multipath fading and Doppler spread caused by fast-moving vehicles ² sub-carriers spread the signal across frequency",
           "C": "OFDM provides higher power output",
-          "D": "OFDM eliminates the need for error correction codes 6 Correct Answer: B"
+          "D": "OFDM eliminates the need for error correction codes"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 45,
@@ -503,9 +503,9 @@
           "A": "Service channels do not support BSM format",
           "B": "Guaranteed airtime on the control channel ensures safety messages are not delayed by competing non-safety service channel traffic",
           "C": "The control channel has higher transmit power",
-          "D": "Service channels are encrypted and cannot carry unencrypted BSMs 6 Correct Answer: B"
+          "D": "Service channels are encrypted and cannot carry unencrypted BSMs"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 46,
@@ -514,9 +514,9 @@
           "A": "DSRC has twice the data rate of Wi-Fi",
           "B": "Lower bandwidth means lower data rate but better coverage and robustness in high-mobility, high- Doppler vehicular environments",
           "C": "DSRC cannot carry safety messages due to low bandwidth",
-          "D": "10 MHz allows DSRC to operate at longer range than Wi-Fi 6 Correct Answer: B"
+          "D": "10 MHz allows DSRC to operate at longer range than Wi-Fi"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 47,
@@ -525,9 +525,9 @@
           "A": "End-to-end encryption of BSM payload",
           "B": "Digital signatures using pseudonym certificates to authenticate the message sender without revealing permanent identity",
           "C": "Firewall functions for RSU-to-vehicle communication",
-          "D": "Symmetric key encryption for all V2V messages 6 Correct Answer: B"
+          "D": "Symmetric key encryption for all V2V messages"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 48,
@@ -536,9 +536,9 @@
           "A": "5.9 GHz provides the best range for vehicular communication",
           "B": "The 75 MHz allocation (5.850±5.925 GHz) was specifically licensed for safety-critical ITS use, isolating it from general consumer Wi-Fi interference",
           "C": "5.9 GHz is cheaper to license than other bands",
-          "D": "5.9 GHz was chosen because it has no existing users 6 Correct Answer: B"
+          "D": "5.9 GHz was chosen because it has no existing users"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 49,
@@ -547,9 +547,9 @@
           "A": "TCP requires more bandwidth than DSRC can provide",
           "B": "TCP's handshake, acknowledgment, and retransmission overhead add latency incompatible with sub-50ms safety alert requirements",
           "C": "TCP cannot operate in the 5.9 GHz band",
-          "D": "TCP is not supported in IEEE 802.11p at all 6 Correct Answer: B"
+          "D": "TCP is not supported in IEEE 802.11p at all"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 50,
@@ -558,9 +558,9 @@
           "A": "It detects collisions after they occur and retransmits immediately",
           "B": "Each node listens for channel activity and, if busy, waits a random backoff period before attempting transmission",
           "C": "CSMA/CA uses time slots assigned by an RSU",
-          "D": "CSMA/CA prioritizes messages by vehicle speed 6 Correct Answer: B"
+          "D": "CSMA/CA prioritizes messages by vehicle speed"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 51,
@@ -569,9 +569,9 @@
           "A": "It advertises available road services to drivers via dashboard display",
           "B": "It allows service providers to announce available services and parameters, enabling devices to discover and join service channels",
           "C": "It is a security advertisement broadcast by SCMS",
-          "D": "WSA is used only for toll payment services 6 Correct Answer: B"
+          "D": "WSA is used only for toll payment services"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 52,
@@ -580,9 +580,9 @@
           "A": "They operate at higher power",
           "B": "They are reserved for safety-only service communications, not general non-safety applications, maintaining safety message prioritization",
           "C": "They use a different modulation scheme",
-          "D": "They are shared with DSRC's control channel 6 Correct Answer: B"
+          "D": "They are shared with DSRC's control channel"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 53,
@@ -591,9 +591,9 @@
           "A": "Wider channels are not supported by IEEE 802.11",
           "B": "Narrower channels improve robustness under Doppler shift at high vehicle speeds and allow more channels within the 75 MHz allocation",
           "C": "10 MHz provides the highest data rate for V2X",
-          "D": "Regulatory bodies mandated 10 MHz before the standard was written 6 Correct Answer: B"
+          "D": "Regulatory bodies mandated 10 MHz before the standard was written"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 54,
@@ -602,9 +602,9 @@
           "A": "It is used for RSU-to-TMC backhaul",
           "B": "It acts as a guard band to prevent interference with adjacent spectrum allocations below 5.850 GHz",
           "C": "It is reserved for future 5G deployment",
-          "D": "Emergency vehicles use this 5 MHz exclusively 6 Correct Answer: B"
+          "D": "Emergency vehicles use this 5 MHz exclusively"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 55,
@@ -613,9 +613,9 @@
           "A": "Certificates expire after 30 days regardless",
           "B": "A stable long-term identifier allows observers to link all messages to one vehicle, enabling tracking and privacy violation",
           "C": "Long-lived certificates are computationally expensive to verify",
-          "D": "The SCMS mandates certificate changes for billing purposes 6 Correct Answer: B"
+          "D": "The SCMS mandates certificate changes for billing purposes"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 56,
@@ -624,9 +624,9 @@
           "A": "All V2X communication stops",
           "B": "The vehicle continues V2V communication via PC5 ² RSU is only needed for V2I services, not V2V safety messages",
           "C": "The vehicle automatically switches to 4G LTE for V2V",
-          "D": "The OBU enters sleep mode to conserve power 6 Correct Answer: B"
+          "D": "The OBU enters sleep mode to conserve power"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 57,
@@ -635,9 +635,9 @@
           "A": "It eliminates all latency for safety messages",
           "B": "If a BSM arrives during a SCH interval, it must wait until the next CCH interval ² potentially adding 50ms+ delay",
           "C": "Channel switching takes 0ms in 802.11p hardware",
-          "D": "Safety messages always interrupt SCH to avoid delay 6 Correct Answer: B"
+          "D": "Safety messages always interrupt SCH to avoid delay"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 58,
@@ -646,9 +646,9 @@
           "A": "Acknowledgment reduces latency",
           "B": "In V2V safety messaging, the overhead of unicast acknowledgment from hundreds of neighbors would overwhelm the channel ² reliable delivery relies on high-frequency repetition instead",
           "C": "IEEE 802.11p does not support acknowledgment frames",
-          "D": "Acknowledgment is handled by the application layer in DSRC 6 Correct Answer: B"
+          "D": "Acknowledgment is handled by the application layer in DSRC"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 59,
@@ -657,9 +657,9 @@
           "A": "It allows different modulation schemes per 1609.x standard",
           "B": "It modularizes the stack ² upper-layer protocols (security, networking, applications) can evolve independently without changing the radio hardware",
           "C": "It reduces the cost of OBU manufacturing",
-          "D": "Separation forces all V2X to use the same frequency 6 Correct Answer: B"
+          "D": "Separation forces all V2X to use the same frequency"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 60,
@@ -668,9 +668,9 @@
           "A": "Dense environments have too many RSUs",
           "B": "As vehicle density increases, more nodes compete for the shared channel simultaneously, increasing collision probability and channel load despite CSMA/CA's backoff mechanism",
           "C": "DSRC uses a fixed number of time slots that cannot scale",
-          "D": "Dense environments cause GNSS interference with DSRC 6 Correct Answer: B"
+          "D": "Dense environments cause GNSS interference with DSRC"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -684,9 +684,9 @@
           "A": "PRR is easier to measure than throughput",
           "B": "Safety depends on what fraction of transmitted safety messages are successfully received ² a high throughput system with low PRR may still fail to prevent collisions",
           "C": "Throughput cannot be measured in broadcast systems",
-          "D": "PRR is mandated by IEEE standards while throughput is not 6 Correct Answer: B"
+          "D": "PRR is mandated by IEEE standards while throughput is not"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 62,
@@ -695,9 +695,9 @@
           "A": "Channel bandwidth is insufficient",
           "B": "Doppler spread is very high, degrading OFDM subcarrier orthogonality ² requiring specific Doppler compensation in the PHY layer",
           "C": "BSMs cannot be transmitted at vehicle speeds above 200 km/h",
-          "D": "GPS accuracy degrades at speeds above 200 km/h 6 Correct Answer: B"
+          "D": "GPS accuracy degrades at speeds above 200 km/h"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 63,
@@ -706,9 +706,9 @@
           "A": "RSUs block line-of-sight between vehicles",
           "B": "Vehicle A and Vehicle C cannot detect each other's transmissions but both transmit to Vehicle B simultaneously, causing a collision at B that neither A nor C detects",
           "C": "GNSS errors cause incorrect position reporting",
-          "D": "Encryption overhead delays transmission enough to cause timing collisions 6 Correct Answer: B"
+          "D": "Encryption overhead delays transmission enough to cause timing collisions"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 64,
@@ -717,9 +717,9 @@
           "A": "Lower message rate increases encryption overhead",
           "B": "Reducing beacon rate in high-density scenarios means position updates are less frequent, potentially degrading tracking accuracy for fast-moving vehicles",
           "C": "Adaptive rate control increases RSU processing load",
-          "D": "Lower message rates reduce GPS power consumption 6 Correct Answer: B"
+          "D": "Lower message rates reduce GPS power consumption"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 65,
@@ -728,9 +728,9 @@
           "A": "Congestion causes RSUs to shut down",
           "B": "High channel load degrades exactly the safety messages that high-traffic (high-density) scenarios most urgently require ² congestion peaks when safety is most critical",
           "C": "Congestion only affects non-safety service channels",
-          "D": "Congestion increases latency for cellular V2N services 6 Correct Answer: B"
+          "D": "Congestion increases latency for cellular V2N services"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 66,
@@ -739,9 +739,9 @@
           "A": "Wi-Fi uses more power than DSRC",
           "B": "Wi-Fi devices use aggressive CSMA/CA without DSRC-specific prioritization, potentially disrupting safety messages and fragmenting the band if DSRC and Wi-Fi must coexist",
           "C": "5.9 GHz Wi-Fi is illegal in all V2X deployment regions",
-          "D": "Wi-Fi and DSRC use different modulation schemes incompatible at the physical layer 6 Correct Answer: B"
+          "D": "Wi-Fi and DSRC use different modulation schemes incompatible at the physical layer"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 67,
@@ -750,9 +750,9 @@
           "A": "RSUs do not synchronize their channel switching",
           "B": "IEEE 1609.4 mandates alternating CCH and SCH intervals ² if a safety event occurs during an SCH interval, the BSM must wait until the next CCH interval to be transmitted",
           "C": "The OBU hardware requires 10ms to physically change frequency",
-          "D": "Service channel switching only affects non-safety applications 6 Correct Answer: B"
+          "D": "Service channel switching only affects non-safety applications"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 68,
@@ -761,9 +761,9 @@
           "A": "Higher power increases range and helps dense networks",
           "B": "Reducing transmit power limits the radio range ² fewer vehicles 'hear' each transmission, reducing contention on the shared channel",
           "C": "Adaptive power control is mandated by IEEE 1609.2",
-          "D": "Power control increases PRR by boosting signal strength 6 Correct Answer: B"
+          "D": "Power control increases PRR by boosting signal strength"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 69,
@@ -772,9 +772,9 @@
           "A": "All latency is from propagation delay",
           "B": "Total latency includes: channel access wait time (CSMA/CA backoff) + transmission time + processing time ² backoff can dominate under congestion",
           "C": "Latency is fixed at exactly 50ms by IEEE 802.11p",
-          "D": "Latency only matters for V2I applications, not V2V 6 Correct Answer: B"
+          "D": "Latency only matters for V2I applications, not V2V"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 70,
@@ -783,9 +783,9 @@
           "A": "Urban buildings reflect signals, improving range",
           "B": "Buildings, trucks, and obstacles create non-line-of-sight (NLOS) conditions that introduce multipath fading and can block safety-critical messages at the exact locations (intersections) where they are most needed",
           "C": "Urban environments have better RSU coverage to compensate",
-          "D": "DSRC antennas in urban environments can be raised to overcome building blockage 6 Correct Answer: B"
+          "D": "DSRC antennas in urban environments can be raised to overcome building blockage"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 71,
@@ -794,9 +794,9 @@
           "A": "It reduces the number of RSUs needed",
           "B": "It selectively forwards only the most relevant messages (e.g., nearby vehicles) and assigns higher priority to safety vs non-safety, reducing effective channel load without reducing safety message delivery",
           "C": "Message filtering is applied at the RSU level only",
-          "D": "Prioritization ensures all 7 DSRC channels are used equally 6 Correct Answer: B"
+          "D": "Prioritization ensures all 7 DSRC channels are used equally"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 72,
@@ -805,9 +805,9 @@
           "A": "CSMA/CA cannot detect transmissions from more than 5 neighbors",
           "B": "As density grows, backoff periods become insufficient ² multiple nodes simultaneously exit backoff and transmit, causing collisions that CSMA/CA cannot prevent (only reduce)",
           "C": "CSMA/CA was not designed for vehicular environments",
-          "D": "High density causes GNSS errors that corrupt BSMs 6 Correct Answer: B"
+          "D": "High density causes GNSS errors that corrupt BSMs"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 73,
@@ -816,9 +816,9 @@
           "A": "GPS position data becomes inaccurate",
           "B": "CCH/SCH channel switching in IEEE 1609.4 requires synchronized timeslots across all devices ² without sync, devices switch channels at different times and miss messages from neighbors",
           "C": "BSM transmission rate drops below 10 Hz",
-          "D": "Security certificates cannot be validated without synchronized clocks 6 Correct Answer: B"
+          "D": "Security certificates cannot be validated without synchronized clocks"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 74,
@@ -827,9 +827,9 @@
           "A": "Message range is reduced",
           "B": "Data rate is limited (3±27 Mbps) and channel bandwidth is narrow (10 MHz) to optimize for robustness and low latency at the cost of throughput",
           "C": "Security services are disabled",
-          "D": "V2I communication is disabled in safety priority mode 6 Correct Answer: B"
+          "D": "V2I communication is disabled in safety priority mode"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 75,
@@ -838,9 +838,9 @@
           "A": "High latency means RSUs reject the message",
           "B": "A collision warning received 300ms after the collision trigger point provides insufficient time for driver response or automated braking ² timing and reliability must both be met",
           "C": "High latency automatically reduces PRR",
-          "D": "DSRC hardware cannot operate with latency above 100ms 6 Correct Answer: B"
+          "D": "DSRC hardware cannot operate with latency above 100ms"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 76,
@@ -849,9 +849,9 @@
           "A": "Vehicle count cannot be controlled by communication systems",
           "B": "Channel load directly determines PRR and latency ² it can be controlled by adjusting beacon rate and power per vehicle, regardless of total vehicle count",
           "C": "Channel load and vehicle count are always equal",
-          "D": "Limiting vehicle count is the primary solution in current standards 6 Correct Answer: B"
+          "D": "Limiting vehicle count is the primary solution in current standards"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 77,
@@ -860,9 +860,9 @@
           "A": "Trucks use different frequency bands",
           "B": "Trucks obstruct radio signals between vehicles in different lanes or behind them (NLOS blockage), requiring careful antenna placement on the vehicle to maintain LOS to nearby OBUs",
           "C": "Platooning requires directional antennas not supported by DSRC",
-          "D": "Truck-mounted OBUs use higher power automatically 6 Correct Answer: B"
+          "D": "Truck-mounted OBUs use higher power automatically"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 78,
@@ -871,9 +871,9 @@
           "A": "Event-driven BSMs use a different certificate",
           "B": "Event-driven BSMs require immediate transmission with higher priority ² they cannot wait for the next scheduled periodic slot as the safety event may resolve in milliseconds",
           "C": "Event-driven BSMs are transmitted on service channels",
-          "D": "Periodic and event-driven BSMs are identical in DSRC ² no distinction is made 6 Correct Answer: B"
+          "D": "Periodic and event-driven BSMs are identical in DSRC ² no distinction is made"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 79,
@@ -882,9 +882,9 @@
           "A": "Too few vehicles and high RSU density",
           "B": "High vehicle density creating channel congestion + building blockage creating NLOS conditions ² both factors simultaneously degrade PRR at intersections",
           "C": "Insufficient transmit power and low vehicle density",
-          "D": "Security certificate overhead consuming channel capacity 6 Correct Answer: B"
+          "D": "Security certificate overhead consuming channel capacity"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 80,
@@ -893,9 +893,9 @@
           "A": "DSRC is optimized for maximum data throughput",
           "B": "DSRC is designed for time-critical safety message delivery where both the probability of reception AND the timeliness of reception jointly determine whether a safety warning is effective",
           "C": "Throughput is irrelevant in all V2X systems",
-          "D": "Latency in DSRC is always zero due to direct radio transmission 6 Correct Answer: B"
+          "D": "Latency in DSRC is always zero due to direct radio transmission"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -909,9 +909,9 @@
           "A": "Random selection is prohibited by 3GPP Release 14",
           "B": "Sensing allows the UE to monitor occupied resources and select unoccupied ones, reducing collision probability compared to random selection",
           "C": "Mode 4 sensing requires RSU coordination",
-          "D": "Sensing-based selection reduces Doppler shift effects 6 Correct Answer: B"
+          "D": "Sensing-based selection reduces Doppler shift effects"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 82,
@@ -920,9 +920,9 @@
           "A": "New standards take longer to develop than LTE extensions",
           "B": "Leveraging LTE's existing infrastructure, chipset ecosystem, frequency bands, and operator relationships dramatically accelerated deployment and reduced cost",
           "C": "LTE has better modulation than DSRC",
-          "D": "3GPP mandated that all V2X must be LTE-based 6 Correct Answer: B"
+          "D": "3GPP mandated that all V2X must be LTE-based"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 83,
@@ -931,9 +931,9 @@
           "A": "PC5 and DSRC share exactly the same channels, creating guaranteed interference",
           "B": "PC5 uses the same 5.9 GHz ITS band allocation as DSRC ² in deployments requiring coexistence, spectrum sharing between C-V2X and DSRC becomes a critical technical and regulatory challenge",
           "C": "PC5 uses a different part of the 5.9 GHz band with no overlap",
-          "D": "PC5 operates at 3.5 GHz, not 5.9 GHz 6 Correct Answer: B"
+          "D": "PC5 operates at 3.5 GHz, not 5.9 GHz"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 84,
@@ -942,9 +942,9 @@
           "A": "Always routing messages through the eNodeB",
           "B": "Using PC5 direct communication ² routing through eNodeB (Uu) adds network delays that exceed the 10ms target for safety-critical applications",
           "C": "Using TCP for reliable delivery",
-          "D": "Increasing transmission power to reduce propagation delay 6 Correct Answer: B"
+          "D": "Increasing transmission power to reduce propagation delay"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 85,
@@ -953,9 +953,9 @@
           "A": "Mode 3, because the eNodeB coordinates rural traffic",
           "B": "Mode 4, because it requires no network infrastructure ² vehicles autonomously select resources through sensing",
           "C": "Both modes work equally well without cellular coverage",
-          "D": "Neither mode works without cellular coverage in LTE-V2X 6 Correct Answer: B"
+          "D": "Neither mode works without cellular coverage in LTE-V2X"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 86,
@@ -964,9 +964,9 @@
           "A": "Emergency braking between adjacent vehicles",
           "B": "HD map updates and wide-area traffic coordination ² services requiring large data volumes or aggregating information from many vehicles across a region",
           "C": "Collision avoidance at 10m distance",
-          "D": "Pedestrian alerts at crosswalks 6 Correct Answer: B"
+          "D": "Pedestrian alerts at crosswalks"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 87,
@@ -975,9 +975,9 @@
           "A": "OFDM simplifies security certificate management",
           "B": "OFDM's multi-subcarrier structure provides robustness against frequency-selective fading and Doppler spread caused by vehicle mobility",
           "C": "OFDM allows C-V2X to operate without a GNSS module",
-          "D": "OFDM is required because the 5.9 GHz band mandates it 6 Correct Answer: B"
+          "D": "OFDM is required because the 5.9 GHz band mandates it"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 88,
@@ -986,9 +986,9 @@
           "A": "Resources change randomly every BSM transmission",
           "B": "The UE semi-persistently occupies selected resources for multiple consecutive BSM transmissions, with periodic re-evaluation ² reducing overhead compared to fully dynamic selection",
           "C": "The eNodeB pre-assigns resources that never change",
-          "D": "SPS only applies to V2N communication via the Uu interface 6 Correct Answer: B"
+          "D": "SPS only applies to V2N communication via the Uu interface"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 89,
@@ -997,9 +997,9 @@
           "A": "C-V2X uses more channels than DSRC",
           "B": "C-V2X's sensing-based resource allocation (Mode 4) and network-coordinated scheduling (Mode 3) are more sophisticated than DSRC's CSMA/CA, reducing resource collision probability",
           "C": "C-V2X has higher transmit power limits",
-          "D": "C-V2X uses TCP to guarantee delivery 6 Correct Answer: B"
+          "D": "C-V2X uses TCP to guarantee delivery"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 90,
@@ -1008,9 +1008,9 @@
           "A": "LTE-V2X could not support BSM transmission",
           "B": "LTE-V2X latency (20ms) and reliability (>90%) were insufficient for cooperative autonomous driving which requires <1ms latency and 99.999% reliability",
           "C": "LTE-V2X could not operate in the 5.9 GHz band",
-          "D": "LTE-V2X did not support the PC5 interface 6 Correct Answer: B"
+          "D": "LTE-V2X did not support the PC5 interface"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 91,
@@ -1019,9 +1019,9 @@
           "A": "PC5 uses satellite as fallback when cellular is unavailable",
           "B": "PC5 is a device-to-device direct link ² it never passes through the cellular base station infrastructure, so cellular coverage is irrelevant for PC5 operation",
           "C": "Out-of-coverage PC5 uses higher power automatically",
-          "D": "PC5 switches to Wi-Fi Direct when cellular coverage is lost 6 Correct Answer: B"
+          "D": "PC5 switches to Wi-Fi Direct when cellular coverage is lost"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 92,
@@ -1030,9 +1030,9 @@
           "A": "PC5 communication stops entirely",
           "B": "The vehicle must switch to Mode 4 (autonomous sensing-based resource selection) to continue direct V2X communication without eNodeB coordination",
           "C": "The vehicle automatically uses Uu to continue V2V communication",
-          "D": "Mode 3 creates a resource reservation that persists after coverage loss 6 Correct Answer: B"
+          "D": "Mode 3 creates a resource reservation that persists after coverage loss"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 93,
@@ -1041,9 +1041,9 @@
           "A": "LTE-V2X and NR-V2X share identical hardware",
           "B": "LTE-V2X's PC5 and Uu interface concepts, resource management approaches, and protocol structures were designed to be upgradeable to 5G NR ² Release 16 extends rather than replaces them",
           "C": "5G uses the same modulation as LTE-V2X",
-          "D": "Evolution is possible because LTE-V2X and 5G use the same frequencies 6 Correct Answer: B"
+          "D": "Evolution is possible because LTE-V2X and 5G use the same frequencies"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 94,
@@ -1052,9 +1052,9 @@
           "A": "Both use identical MAC protocols that guarantee coexistence",
           "B": "DSRC uses CSMA/CA while C-V2X PC5 does not ² they have incompatible channel access mechanisms, so co-deployment in the same channels causes asymmetric interference",
           "C": "Regulatory bodies prohibit both in the same country",
-          "D": "DSRC uses 75 MHz while C-V2X uses 20 MHz of a different band 6 Correct Answer: B"
+          "D": "DSRC uses 75 MHz while C-V2X uses 20 MHz of a different band"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 95,
@@ -1063,9 +1063,9 @@
           "A": "C-V2X uses cameras while radar uses radio waves",
           "B": "C-V2X enables proactive sharing of intent, trajectory, and braking data between cooperating vehicles ² radar is reactive (measures distance to detected objects without their cooperation)",
           "C": "Radar operates at longer range than C-V2X",
-          "D": "C-V2X collision avoidance only works at intersections 6 Correct Answer: B"
+          "D": "C-V2X collision avoidance only works at intersections"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 96,
@@ -1074,9 +1074,9 @@
           "A": "V2N applications do not need low latency",
           "B": "V2N use cases (traffic updates, HD maps, cloud analytics) are latency-tolerant ² their utility does not degrade significantly with 50-200ms delays, unlike safety-critical V2V applications",
           "C": "Uu latency is identical to PC5 latency",
-          "D": "V2N applications use edge computing to eliminate Uu latency 6 Correct Answer: B"
+          "D": "V2N applications use edge computing to eliminate Uu latency"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 97,
@@ -1085,9 +1085,9 @@
           "A": "C-V2X uses the same PHY/MAC as DSRC",
           "B": "Application-layer message sets (like SAE J2735 BSMs) and higher-layer protocols developed for DSRC can run over C-V2X without modification ² only the lower radio layers change",
           "C": "C-V2X hardware is backward compatible with DSRC certificates",
-          "D": "DSRC and C-V2X share the same security credential management system 6 Correct Answer: B"
+          "D": "DSRC and C-V2X share the same security credential management system"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 98,
@@ -1096,9 +1096,9 @@
           "A": "LTE-V2X uses more channels than DSRC",
           "B": "C-V2X's resource allocation (sensing/scheduling) is more collision-resistant than DSMA/CA under high vehicle densities, maintaining acceptable PRR where CSMA/CA degrades",
           "C": "LTE-V2X uses higher power in dense environments",
-          "D": "LTE-V2X automatically limits the number of connected vehicles 6 Correct Answer: B"
+          "D": "LTE-V2X automatically limits the number of connected vehicles"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 99,
@@ -1107,9 +1107,9 @@
           "A": "Mode 4 operation eliminates the need for security certificates",
           "B": "Mode 4 still requires vehicles to use pseudonym certificates from the SCMS to sign BSMs ² the resource allocation mode is independent of the security layer",
           "C": "Mode 4 uses symmetric encryption instead of certificates",
-          "D": "Out-of-coverage Mode 4 operation uses pre-shared keys not from SCMS 6 Correct Answer: B"
+          "D": "Out-of-coverage Mode 4 operation uses pre-shared keys not from SCMS"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 100,
@@ -1118,9 +1118,9 @@
           "A": "Regulatory requirements mandate both interfaces",
           "B": "Safety-critical local interactions (V2V via PC5) and cloud-based services (V2N via Uu) have fundamentally different latency/range requirements that a single interface cannot satisfy ² dual interfaces address both",
           "C": "PC5 is for downlink and Uu is for uplink",
-          "D": "Simultaneous operation is required to maintain backward compatibility with DSRC 6 Correct Answer: B"
+          "D": "Simultaneous operation is required to maintain backward compatibility with DSRC"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -1134,9 +1134,9 @@
           "A": "The Control Function is installed in vehicles; the Application Server is in RSUs",
           "B": "The V2X Control Function performs service authorization and parameter provisioning; the V2X Application Server hosts the actual application logic ² they are separate core network entities with distinct roles",
           "C": "Both are RSU-level components that differ only in geographic coverage",
-          "D": "The Application Server handles security; the Control Function handles routing 6 Correct Answer: B"
+          "D": "The Application Server handles security; the Control Function handles routing"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 102,
@@ -1145,9 +1145,9 @@
           "A": "It reduces the need for RSUs",
           "B": "It allows safety-critical V2X traffic (requiring <10ms, 99.999% reliability) and infotainment traffic (tolerant of 200ms, 90% reliability) to coexist without the former being degraded by the latter",
           "C": "Network slicing eliminates the need for QoS classification",
-          "D": "It allows different vehicles to use different frequency bands 6 Correct Answer: B"
+          "D": "It allows different vehicles to use different frequency bands"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 103,
@@ -1156,9 +1156,9 @@
           "A": "The application layer does not know message content",
           "B": "MAC-layer prioritization acts closest to the radio channel ² it directly controls which messages access the channel first, which is more effective than higher-layer queuing for real-time safety message delivery",
           "C": "IP-layer prioritization is more effective for V2X",
-          "D": "The security module overrides MAC-layer decisions 6 Correct Answer: B"
+          "D": "The security module overrides MAC-layer decisions"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 104,
@@ -1167,9 +1167,9 @@
           "A": "Tunnel MEC servers replace the base station function",
           "B": "Vehicles can continue exchanging safety messages with each other directly through the tunnel without needing cellular coverage, which is often unavailable underground",
           "C": "Satellite connectivity automatically activates in tunnels",
-          "D": "Tunnel infrastructure includes embedded PC5 base stations 6 Correct Answer: B"
+          "D": "Tunnel infrastructure includes embedded PC5 base stations"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 105,
@@ -1178,9 +1178,9 @@
           "A": "Downloading HD maps",
           "B": "Emergency braking at very high speed ² at 200km/h, 10ms corresponds to 55cm of travel; future platooning with gaps under 5m may require sub-5ms latency",
           "C": "Traffic signal optimization",
-          "D": "Cloud-based vehicle diagnostics 6 Correct Answer: B"
+          "D": "Cloud-based vehicle diagnostics"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 106,
@@ -1189,9 +1189,9 @@
           "A": "Vehicles would switch to DSRC",
           "B": "Without resource coordination, all vehicles would randomly contend for the same resources simultaneously, causing destructive interference similar to DSRC congestion but without CSMA/CA's backoff mitigation",
           "C": "RSUs would centrally coordinate all transmissions",
-          "D": "Bandwidth would automatically increase to accommodate more users 6 Correct Answer: B"
+          "D": "Bandwidth would automatically increase to accommodate more users"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 107,
@@ -1200,9 +1200,9 @@
           "A": "A full OBU with GNSS",
           "B": "A C-V2X-capable module (PC5 interface) or a V2N connection via Uu to receive the proximity alert ² a standard smartphone without V2X capability cannot directly receive PC5 messages",
           "C": "The pedestrian's phone receives the alert via Bluetooth from nearby vehicles",
-          "D": "V2P alerts are only displayed on vehicle dashboards, not pedestrian devices 6 Correct Answer: B"
+          "D": "V2P alerts are only displayed on vehicle dashboards, not pedestrian devices"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 108,
@@ -1211,9 +1211,9 @@
           "A": "All V2X communication pauses during handover",
           "B": "The 5G core (AMF/SMF) manages seamless handover ² session continuity is maintained by migrating the UE context to the new cell with minimal interruption to ongoing V2X services",
           "C": "Vehicles must reconnect to V2X servers after each handover",
-          "D": "PC5 communication stops during Uu handover 6 Correct Answer: B"
+          "D": "PC5 communication stops during Uu handover"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 109,
@@ -1222,9 +1222,9 @@
           "A": "C-V2X uses more bandwidth",
           "B": "C-V2X's sensing-based and scheduled resource allocation actively avoids resource conflicts, while DSRC's CSMA/CA is reactive ² it mitigates but does not prevent collisions",
           "C": "C-V2X uses more transmit power to overcome interference",
-          "D": "DSRC uses intelligent scheduling while C-V2X uses random access 6 Correct Answer: B"
+          "D": "DSRC uses intelligent scheduling while C-V2X uses random access"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 110,
@@ -1233,9 +1233,9 @@
           "A": "The cloud replaces the OBU decision-making processor",
           "B": "Cloud services can aggregate data from many vehicles to provide context-aware services (HD maps, collective perception, predictive routing) that individual vehicles cannot compute alone",
           "C": "The cloud controls vehicle steering and braking remotely",
-          "D": "Decision making always occurs at the cloud, not in the vehicle 6 Correct Answer: B"
+          "D": "Decision making always occurs at the cloud, not in the vehicle"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 111,
@@ -1244,9 +1244,9 @@
           "A": "DSRC does not support platooning",
           "B": "Platooning at close gaps (<10m) requires very reliable, low-latency, high-density-capable communication ² C-V2X's superior congestion handling and reliability make tight platooning more feasible than DSRC",
           "C": "DSRC platooning requires RSU approval",
-          "D": "Platooning only works on highways, not in urban areas 6 Correct Answer: B"
+          "D": "Platooning only works on highways, not in urban areas"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 112,
@@ -1255,9 +1255,9 @@
           "A": "The infotainment system would restart",
           "B": "A vehicle's emergency brake alert transmitted via unreliable PC5 might not be received by following vehicles, eliminating any warning time and preventing automated safety responses",
           "C": "The Uu interface automatically takes over",
-          "D": "Unreliable sidelink would increase latency to 100ms 6 Correct Answer: B"
+          "D": "Unreliable sidelink would increase latency to 100ms"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 113,
@@ -1266,9 +1266,9 @@
           "A": "The infrastructure can display speed on road signs",
           "B": "Infrastructure aggregating multiple vehicles' speeds can detect dangerous speed differentials (e.g., sudden slowdowns), issue targeted warnings, and adapt signal timing in real-time",
           "C": "RSUs use vehicle speed data for toll calculations",
-          "D": "Vehicle speed data is stored for law enforcement 6 Correct Answer: B"
+          "D": "Vehicle speed data is stored for law enforcement"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 114,
@@ -1277,9 +1277,9 @@
           "A": "GNSS provides network connectivity",
           "B": "GNSS provides absolute vehicle position (lat/lon/elevation) with sub-meter accuracy ² this position data is essential for BSMs and location-based V2X services and cannot be replaced by cellular or V2X signals alone",
           "C": "GNSS manages certificate retrieval from SCMS",
-          "D": "GNSS provides timing synchronization for MAC-layer scheduling 6 Correct Answer: B"
+          "D": "GNSS provides timing synchronization for MAC-layer scheduling"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 115,
@@ -1288,9 +1288,9 @@
           "A": "V2V has insufficient range for map distribution",
           "B": "Hazard maps are generated by aggregating data from many vehicles at a cloud server, then distributed wide-area ² this requires the V2N cloud connectivity of Uu, not direct PC5 links",
           "C": "PC5 supports higher data rates than Uu for map transfers",
-          "D": "Map updates are sent directly between vehicles via PC5 broadcast 6 Correct Answer: B"
+          "D": "Map updates are sent directly between vehicles via PC5 broadcast"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 116,
@@ -1299,9 +1299,9 @@
           "A": "Broadcast is simpler to implement",
           "B": "Safety events (collisions, hazards) are relevant to ALL nearby vehicles simultaneously ² broadcast reaches all nodes with one transmission, whereas unicast would require N individual transmissions to N neighbors",
           "C": "Unicast requires certificates that are unavailable in DSRC",
-          "D": "Broadcast is mandated by regulatory bodies for all V2X 6 Correct Answer: B"
+          "D": "Broadcast is mandated by regulatory bodies for all V2X"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 117,
@@ -1310,9 +1310,9 @@
           "A": "PC5 cannot transmit traffic data",
           "B": "Cloud optimization requires vehicles to send data to and receive from a remote cloud server ² PC5 is limited to direct local device-to-device communication and cannot reach internet-based cloud services",
           "C": "The cloud only accepts Uu-formatted packets",
-          "D": "Uu has higher data rates needed for optimization algorithms 6 Correct Answer: B"
+          "D": "Uu has higher data rates needed for optimization algorithms"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 118,
@@ -1321,9 +1321,9 @@
           "A": "Uu interface through the cellular network",
           "B": "PC5 direct sidelink ² the Uu path through the network typically has 30-100ms latency; only the direct PC5 link can achieve sub-10ms for V2V safety applications",
           "C": "The 10ms target applies equally to both PC5 and Uu",
-          "D": "The 10ms target is for cloud processing time, not transmission 6 Correct Answer: B"
+          "D": "The 10ms target is for cloud processing time, not transmission"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 119,
@@ -1332,9 +1332,9 @@
           "A": "PC5 cannot transmit diagnostic data",
           "B": "Remote diagnostics require connection to a distant dealer or OEM server ² this requires internet connectivity via Uu, not direct local PC5 communication to nearby vehicles",
           "C": "Diagnostics require higher bandwidth than PC5 supports",
-          "D": "Remote diagnostics are prohibited on PC5 by 3GPP standards 6 Correct Answer: B"
+          "D": "Remote diagnostics are prohibited on PC5 by 3GPP standards"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 120,
@@ -1343,9 +1343,9 @@
           "A": "RSUs become unnecessary in C-V2X systems",
           "B": "In C-V2X, RSUs serve as V2I communication bridges supporting both PC5 direct communication and potentially Uu backhaul, while also running edge applications ² broader than DSRC RSUs which primarily broadcast V2I safety messages",
           "C": "C-V2X RSUs only support V2N communication",
-          "D": "RSU function is identical in both DSRC and C-V2X 6 Correct Answer: B"
+          "D": "RSU function is identical in both DSRC and C-V2X"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -1359,9 +1359,9 @@
           "A": "Higher transmit power in 5G NR",
           "B": "Mini-slot based transmission ² 5G NR supports transmission durations as short as 2 OFDM symbols (vs. 14 in LTE), enabling sub-millisecond scheduling granularity",
           "C": "5G NR uses a different frequency band with lower propagation delay",
-          "D": "5G NR eliminates the guard periods between transmissions 6 Correct Answer: B"
+          "D": "5G NR eliminates the guard periods between transmissions"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 122,
@@ -1370,9 +1370,9 @@
           "A": "Mode 2 requires less power than Mode 4",
           "B": "NR Mode 2 incorporates UE cooperative scheduling ² vehicles can share resource selection information with neighbors, reducing collision probability compared to purely autonomous sensing",
           "C": "Mode 2 operates only via the Uu interface",
-          "D": "Mode 2 eliminates the need for GNSS synchronization 6 Correct Answer: B"
+          "D": "Mode 2 eliminates the need for GNSS synchronization"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 123,
@@ -1381,9 +1381,9 @@
           "A": "Security certificates are insufficient for sensor data",
           "B": "Sensor data (camera frames, LIDAR point clouds) is orders of magnitude larger than BSMs, requiring high-throughput reliable transmission that exceeds LTE-V2X capabilities but is addressed by 5G NR's higher data rates",
           "C": "Cooperative perception requires cloud processing only",
-          "D": "GNSS accuracy is insufficient for sensor data sharing 6 Correct Answer: B"
+          "D": "GNSS accuracy is insufficient for sensor data sharing"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 124,
@@ -1392,9 +1392,9 @@
           "A": "Higher antenna count in 5G NR",
           "B": "HARQ with very low retransmission rounds, redundant resource transmission (duplication), and link adaptation ² collectively ensuring near-guaranteed delivery within tight latency bounds",
           "C": "5G NR uses error-free quantum encryption",
-          "D": "99.999% reliability is achieved by increasing transmit power 6 Correct Answer: B"
+          "D": "99.999% reliability is achieved by increasing transmit power"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 125,
@@ -1403,9 +1403,9 @@
           "A": "Grant-free access increases data rate",
           "B": "Traditional LTE requires a vehicle to request resources and wait for a grant before transmitting ² this request/grant round trip adds 5-20ms. Grant-free eliminates this, enabling immediate transmission",
           "C": "Grant-free access is only available via Uu interface",
-          "D": "Grant-free access replaces security certificates 6 Correct Answer: B"
+          "D": "Grant-free access replaces security certificates"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 126,
@@ -1414,9 +1414,9 @@
           "A": "Dedicated channels use higher frequency",
           "B": "Dedicated sidelink control channels provide more reliable and frequent resource coordination feedback between neighboring vehicles, improving Mode 2 distributed scheduling effectiveness",
           "C": "Control channels enable BSMs to bypass security checks",
-          "D": "Dedicated control channels eliminate the need for GNSS synchronization 6 Correct Answer: B"
+          "D": "Dedicated control channels eliminate the need for GNSS synchronization"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 127,
@@ -1425,9 +1425,9 @@
           "A": "Unicast is faster than broadcast in all scenarios",
           "B": "Advanced use cases like cooperative driving and sensor sharing require targeted, acknowledged, point-to-point links between specific vehicles ² broadcast is insufficient for these applications requiring reliability guarantees",
           "C": "Unicast reduces interference between vehicles",
-          "D": "Regulatory requirements mandated unicast for 5G sidelink 6 Correct Answer: B"
+          "D": "Regulatory requirements mandated unicast for 5G sidelink"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 128,
@@ -1436,9 +1436,9 @@
           "A": "Teleoperation only works on 5G hardware",
           "B": "A remote human operator controlling a vehicle requires sub-10ms round-trip latency (to feel responsive) and ultra-high reliability ² LTE-V2X's 20ms latency makes teleoperation feel sluggish and unsafe",
           "C": "LTE-V2X does not support video transmission",
-          "D": "Teleoperation requires millimeter-wave frequencies only 6 Correct Answer: B"
+          "D": "Teleoperation requires millimeter-wave frequencies only"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 129,
@@ -1447,9 +1447,9 @@
           "A": "Groupcast is identical to multicast in IP networks",
           "B": "Groupcast allows a message to target a specific defined group (e.g., a platoon) ² more efficient than broadcast (sends to ALL) and more scalable than N unicasts, with optional HARQ feedback from group members",
           "C": "Groupcast is only used for entertainment content in vehicles",
-          "D": "Groupcast in NR-V2X requires RSU coordination for group formation 6 Correct Answer: B"
+          "D": "Groupcast in NR-V2X requires RSU coordination for group formation"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 130,
@@ -1458,9 +1458,9 @@
           "A": "Coverage range increases most at each step",
           "B": "Latency decreases and reliability increases at each generation ² DSRC:~50ms/>90%, LTE- V2X:20ms/>90%, NR-V2X:<1ms/99.999% ² enabling progressively more demanding autonomous driving applications",
           "C": "Data rate is the primary improvement at each step",
-          "D": "Security strength is the primary improvement at each step 6 Correct Answer: B"
+          "D": "Security strength is the primary improvement at each step"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 131,
@@ -1469,9 +1469,9 @@
           "A": "Applications that store vehicle history logs",
           "B": "Applications requiring real-time analytics (cooperative perception, collision prediction) ² by processing at an edge server near the vehicle rather than a distant cloud, round-trip time drops from 100-200ms to 1-5ms",
           "C": "Applications that download HD maps periodically",
-          "D": "Applications that manage security certificate issuance 6 Correct Answer: B"
+          "D": "Applications that manage security certificate issuance"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 132,
@@ -1480,9 +1480,9 @@
           "A": "OFDMA uses different frequencies than OFDM",
           "B": "OFDMA allows different vehicles to transmit simultaneously on orthogonal subcarrier groups ² improving spectrum efficiency and reducing inter-vehicle interference compared to OFDM where only one node transmits at a time in a slot",
           "C": "OFDMA eliminates the need for resource allocation",
-          "D": "OFDMA is mandatory for safety messaging in 3GPP Release 16 6 Correct Answer: B"
+          "D": "OFDMA is mandatory for safety messaging in 3GPP Release 16"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 133,
@@ -1491,9 +1491,9 @@
           "A": "Multicast requires less security overhead",
           "B": "A platoon leader transmitting one multicast frame reaches all following vehicles simultaneously ² N unicast transmissions would consume N× the spectrum resources and have N× higher collision probability",
           "C": "Unicast cannot be used in platooning scenarios",
-          "D": "Multicast has lower latency than unicast per message 6 Correct Answer: B"
+          "D": "Multicast has lower latency than unicast per message"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 134,
@@ -1502,9 +1502,9 @@
           "A": "NR-V2X has more RSUs",
           "B": "Cooperative driving requires vehicles to share high-frequency sensor data and coordinate maneuvers in real-time (<1ms) ² LTE-V2X's 20ms latency and lower reliability make true real-time maneuver coordination unsafe at high speeds",
           "C": "LTE-V2X does not support V2V communication",
-          "D": "Cooperative driving requires satellite connectivity 6 Correct Answer: B"
+          "D": "Cooperative driving requires satellite connectivity"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 135,
@@ -1513,9 +1513,9 @@
           "A": "PC5 interface support",
           "B": "Sidelink HARQ feedback in unicast mode ² LTE-V2X sidelink was broadcast-only with no acknowledgment; NR sidelink supports unicast with HARQ, dramatically improving link reliability for targeted communications",
           "C": "Mode 4 autonomous resource selection",
-          "D": "GNSS-based synchronization for sidelink 6 Correct Answer: B"
+          "D": "GNSS-based synchronization for sidelink"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 136,
@@ -1524,9 +1524,9 @@
           "A": "To reduce OBU cost",
           "B": "Out-of-coverage vehicles cannot receive cellular synchronization ² dedicated sidelink synchronization allows vehicles to maintain timing alignment with each other using GNSS-derived or peer-to-peer synchronization",
           "C": "Network synchronization is insufficient for Uu interface timing",
-          "D": "Synchronization signals are used only for security purposes 6 Correct Answer: B"
+          "D": "Synchronization signals are used only for security purposes"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 137,
@@ -1535,9 +1535,9 @@
           "A": "Sensor data uses different encryption",
           "B": "BSMs contain derived data (position, speed) ² sensor sharing transmits raw perception data (camera frames, LIDAR clouds) enabling other vehicles to perceive the sender's environment, extending their effective sensing range beyond their own sensors",
           "C": "Sensor sharing is done via RSU relay only",
-          "D": "Sensor sharing replaces GPS with collaborative positioning 6 Correct Answer: B"
+          "D": "Sensor sharing replaces GPS with collaborative positioning"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 138,
@@ -1546,9 +1546,9 @@
           "A": "Higher transmit power",
           "B": "Ultra-reliable bidirectional real-time link: the remote operator needs <10ms round-trip control commands (downlink) AND real-time high-quality video from the vehicle (uplink) ² NR-V2X URLLC provides this while LTE-V2X cannot",
           "C": "Satellite communication support",
-          "D": "No special sidelink requirement ² teleoperation uses Uu only 6 Correct Answer: B"
+          "D": "No special sidelink requirement ² teleoperation uses Uu only"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 139,
@@ -1557,9 +1557,9 @@
           "A": "Mode 1 is always preferred in dense environments",
           "B": "Mode 1 is optimal when vehicles are in cellular coverage and coordinated resource management by the gNB can reduce inter-vehicle interference ² especially for vehicles in a managed fleet with predictable communication patterns",
           "C": "Mode 1 is the only option for emergency vehicles",
-          "D": "Mode 1 is chosen when vehicles move faster than 100 km/h 6 Correct Answer: B"
+          "D": "Mode 1 is chosen when vehicles move faster than 100 km/h"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 140,
@@ -1568,9 +1568,9 @@
           "A": "Vehicle identification numbers",
           "B": "Intended future trajectory, planned maneuver (e.g., lane change in 2 seconds), and coordination requests ² enabling neighboring vehicles to proactively adjust their behavior to accommodate the intended action",
           "C": "Engine status and fuel level",
-          "D": "Insurance and registration information 6 Correct Answer: B"
+          "D": "Insurance and registration information"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -1584,9 +1584,9 @@
           "A": "UCNC eliminates the need for base stations",
           "B": "Traditional handover creates coverage gaps and latency spikes at cell edges ² UCNC creates virtual/hyper cells where vehicles are simultaneously served by multiple gNBs, eliminating cell-edge boundaries",
           "C": "UCNC reduces the number of cells needed",
-          "D": "UCNC is only relevant for pedestrians, not vehicles 6 Correct Answer: B"
+          "D": "UCNC is only relevant for pedestrians, not vehicles"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 142,
@@ -1595,9 +1595,9 @@
           "A": "Massive MIMO increases the number of V2X channels",
           "B": "Massive MIMO enables spatial multiplexing ² different vehicles in the same frequency-time resource can be separated using beam steering, dramatically increasing system capacity without additional spectrum",
           "C": "Massive MIMO reduces OBU manufacturing cost",
-          "D": "Massive MIMO increases the range of PC5 direct links 6 Correct Answer: B"
+          "D": "Massive MIMO increases the range of PC5 direct links"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 143,
@@ -1606,9 +1606,9 @@
           "A": "mmWave cannot support OFDM modulation",
           "B": "mmWave has very short propagation range and is highly susceptible to blockage by buildings, trucks, and even rain ² requiring precise beam alignment that is extremely challenging at vehicular speeds",
           "C": "mmWave is too expensive for vehicle deployment",
-          "D": "mmWave frequencies are reserved for military use only 6 Correct Answer: B"
+          "D": "mmWave frequencies are reserved for military use only"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 144,
@@ -1617,9 +1617,9 @@
           "A": "Safety messages are automatically prioritized regardless",
           "B": "A burst of infotainment traffic could temporarily consume network resources intended for safety messages, causing safety message delay ² slicing guarantees isolated resource allocation",
           "C": "Network capacity is always sufficient without slicing",
-          "D": "Safety message traffic is always smaller than infotainment traffic 6 Correct Answer: B"
+          "D": "Safety message traffic is always smaller than infotainment traffic"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 145,
@@ -1628,9 +1628,9 @@
           "A": "Vehicles can use two frequencies simultaneously for higher speed",
           "B": "During 5G coverage gaps, LTE provides seamless fallback ² vehicles maintain V2N connectivity and Uu-based services without interruption, ensuring service continuity during the transition period",
           "C": "Dual connectivity halves the latency of each interface",
-          "D": "Dual connectivity is only used for infotainment streaming 6 Correct Answer: B"
+          "D": "Dual connectivity is only used for infotainment streaming"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 146,
@@ -1639,9 +1639,9 @@
           "A": "MEC is installed inside vehicles",
           "B": "MEC servers are co-located with or near base stations ² the key is reducing the geographic distance data must travel, since speed-of-light propagation over long distances contributes significantly to round-trip latency",
           "C": "MEC is located in the RSU hardware",
-          "D": "Distance matters only for security, not latency 6 Correct Answer: B"
+          "D": "Distance matters only for security, not latency"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 147,
@@ -1650,9 +1650,9 @@
           "A": "SMF transmits the multicast packets to vehicles",
           "B": "SMF establishes and manages the multicast session ² assigning appropriate QoS parameters, selecting transmission paths, and coordinating between the gNB and UPF for efficient one-to-many delivery",
           "C": "SMF handles security certificate validation for multicast",
-          "D": "SMF is a radio frequency management function 6 Correct Answer: B"
+          "D": "SMF is a radio frequency management function"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 148,
@@ -1661,9 +1661,9 @@
           "A": "Higher transmit power for moving targets",
           "B": "Beam tracking ² the beam must continuously follow the moving vehicle, requiring real-time angle estimation and beam steering updates faster than the vehicle moves out of the beam footprint",
           "C": "Beamforming is static once configured for a route",
-          "D": "Moving vehicles automatically return to broadcast mode 6 Correct Answer: B"
+          "D": "Moving vehicles automatically return to broadcast mode"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 149,
@@ -1672,9 +1672,9 @@
           "A": "It reduces the number of certificates needed",
           "B": "A vehicle switching between PC5 direct communication and Uu cellular communication needs consistent QoS treatment ² without unified QoS, the switch could cause service degradation or priority loss for safety messages",
           "C": "Unified QoS eliminates the need for network slicing",
-          "D": "It allows PC5 and Uu to share the same physical frequency 6 Correct Answer: B"
+          "D": "It allows PC5 and Uu to share the same physical frequency"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 150,
@@ -1683,9 +1683,9 @@
           "A": "Sensor data would be sent to the cloud without issue",
           "B": "Without edge processing, all sensor data from 100 vehicles would travel to the distant cloud for aggregation ² the round-trip latency (100-300ms) would make the processed collective perception outdated by the time it returns",
           "C": "Vehicles would stop sharing sensor data automatically",
-          "D": "RSUs would buffer all sensor data locally without processing 6 Correct Answer: B"
+          "D": "RSUs would buffer all sensor data locally without processing"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 151,
@@ -1694,9 +1694,9 @@
           "A": "1 failure per 1,000 transmissions",
           "B": "1 failure per 100,000 transmissions ² in a V2X system with 10 safety messages per second, this means approximately 1 message failure per ~2.8 hours per vehicle",
           "C": "1 failure per 1 million transmissions",
-          "D": "0 failures ² URLLC means perfect reliability 6 Correct Answer: B"
+          "D": "0 failures ² URLLC means perfect reliability"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 152,
@@ -1705,9 +1705,9 @@
           "A": "Virtual cells are smaller than hyper cells",
           "B": "A virtual cell serves an individual vehicle from the most suitable gNB(s) ² it's vehicle-centric. A hyper cell is the aggregated coverage region formed by multiple cells ² it's infrastructure-centric. Together they eliminate edge effects",
           "C": "Virtual cells are only used indoors; hyper cells outdoors",
-          "D": "Virtual and hyper cells are identical ² just different names 6 Correct Answer: B"
+          "D": "Virtual and hyper cells are identical ² just different names"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 153,
@@ -1716,9 +1716,9 @@
           "A": "Higher transmit power",
           "B": "A feedback channel from the receiver to confirm (ACK) or request retransmission (NACK) ² this requires knowing the target receiver's identity and establishing a unicast link, fundamentally changing PC5 from anonymous broadcast to addressed communication",
           "C": "A dedicated SCMS certificate for unicast links",
-          "D": "Unicast over PC5 requires RSU relay 6 Correct Answer: B"
+          "D": "Unicast over PC5 requires RSU relay"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 154,
@@ -1727,9 +1727,9 @@
           "A": "Messages are served in arrival order (FIFO)",
           "B": "The gNB's scheduler prioritizes the safety message for immediate transmission in the next available scheduling opportunity, potentially preempting or delaying the infotainment message ² this is the function of QoS priority classes",
           "C": "Safety and infotainment messages are transmitted simultaneously on different channels",
-          "D": "The OBU decides which message to send first, not the gNB 6 Correct Answer: B"
+          "D": "The OBU decides which message to send first, not the gNB"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 155,
@@ -1738,9 +1738,9 @@
           "A": "They operate at different frequencies, eliminating interference",
           "B": "Massive MIMO provides spatial multiplexing (multiple simultaneous links) while beamforming focuses energy directionally ² combined, they enable multiple high-SNR directional links simultaneously, multiplying both throughput and reliability",
           "C": "They use different security certificates, enabling parallel transmissions",
-          "D": "Combined, they reduce transmission power requirements 6 Correct Answer: B"
+          "D": "Combined, they reduce transmission power requirements"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 156,
@@ -1749,9 +1749,9 @@
           "A": "Always periodic and predictable",
           "B": "Highly variable ² dense intersections alternate with sparse highways; flexible dynamic scheduling adapts resource allocation to instantaneous demand rather than worst-case static allocation",
           "C": "Exclusively non-safety infotainment",
-          "D": "Bounded by DSRC channel allocation 6 Correct Answer: B"
+          "D": "Bounded by DSRC channel allocation"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 157,
@@ -1760,9 +1760,9 @@
           "A": "mmWave beams are too wide to focus",
           "B": "At 200km/h, a vehicle's angular position relative to a base station changes rapidly ² maintaining a narrow mmWave beam precisely aligned with a fast-moving vehicle requires continuous real-time beam tracking with sub-millisecond update rates",
           "C": "Beam alignment requires satellite GPS not available in cities",
-          "D": "mmWave beam alignment is only needed for fixed RSUs 6 Correct Answer: B"
+          "D": "mmWave beam alignment is only needed for fixed RSUs"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 158,
@@ -1771,9 +1771,9 @@
           "A": "Safety messages would automatically preempt infotainment traffic",
           "B": "A surge of accident-related V2X safety messages could compete with ongoing infotainment traffic in the same unsliced network pool ² without isolation guarantees, safety message delivery would depend on whatever resources remain after general traffic",
           "C": "Unsliced networks always give safety messages priority",
-          "D": "Infotainment traffic automatically pauses during accidents 6 Correct Answer: B"
+          "D": "Infotainment traffic automatically pauses during accidents"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 159,
@@ -1782,9 +1782,9 @@
           "A": "Cloud servers cannot process V2X data",
           "B": "Round-trip propagation to a distant cloud server introduces 50-300ms latency ² by the time processed collective perception returns to vehicles, moving objects may have changed position by several meters, making the data too stale for safety decisions",
           "C": "Central cloud servers are too expensive for V2X use",
-          "D": "Cloud servers cannot handle the encryption of V2X sensor data 6 Correct Answer: B"
+          "D": "Cloud servers cannot handle the encryption of V2X sensor data"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 160,
@@ -1793,9 +1793,9 @@
           "A": "Dual connectivity doubles the data rate",
           "B": "The vehicle maintains a connection to both the old and new gNB during handover ² safety-critical V2X sessions are maintained without interruption, eliminating the brief disconnection that single- connection handover creates",
           "C": "Dual connectivity is required for URLLC by 3GPP standard",
-          "D": "Dual connectivity is only used for infotainment during handover 6 Correct Answer: B"
+          "D": "Dual connectivity is only used for infotainment during handover"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -1809,9 +1809,9 @@
           "A": "PC5 sidelink accesses GNSS satellites directly",
           "B": "Vehicles measure signal time-of-arrival, round-trip time, or angle-of-arrival from neighboring UEs' sidelink signals to estimate relative distances and positions ² creating a local positioning network independent of satellites",
           "C": "RSUs provide positioning signals when GNSS fails",
-          "D": "Sidelink positioning uses cellular tower triangulation 6 Correct Answer: B"
+          "D": "Sidelink positioning uses cellular tower triangulation"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 162,
@@ -1820,9 +1820,9 @@
           "A": "Regulatory bodies mandate both modes",
           "B": "During the transition period, the vehicle fleet will contain both legacy LTE-V2X vehicles and newer 5G-V2X vehicles ² dual-mode vehicles can communicate with both, maintaining safety in mixed fleets",
           "C": "Dual mode is required only for platooning applications",
-          "D": "5G-V2X alone is sufficient once deployed in an area 6 Correct Answer: B"
+          "D": "5G-V2X alone is sufficient once deployed in an area"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 163,
@@ -1831,9 +1831,9 @@
           "A": "Satellite GPS signals for all vehicles",
           "B": "Data from ALL vehicles approaching the intersection simultaneously ² individual vehicles only see their own trajectory, while MEC aggregates all trajectories to detect conflict points no individual vehicle can predict",
           "C": "Traffic light timing from the TMC",
-          "D": "Historical accident data for the intersection 6 Correct Answer: B"
+          "D": "Historical accident data for the intersection"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 164,
@@ -1842,9 +1842,9 @@
           "A": "The relay UE must switch to satellite communication",
           "B": "The relay UE must simultaneously maintain a direct PC5 link to the out-of-coverage vehicle AND a Uu link to the cellular network ² requiring radio resource management for two simultaneous half- duplex links on potentially the same or different channels",
           "C": "Relay UEs automatically increase transmit power",
-          "D": "Relay UEs require a special license from the operator 6 Correct Answer: B"
+          "D": "Relay UEs require a special license from the operator"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 165,
@@ -1853,9 +1853,9 @@
           "A": "Uu performance improves inside tunnels due to waveguide effect",
           "B": "Cellular signal typically degrades or disappears in long tunnels without embedded antennas ² V2N services become unavailable, but PC5 V2V communication continues between vehicles in the tunnel without infrastructure",
           "C": "Tunnels always have RSUs that maintain Uu connectivity",
-          "D": "Vehicles automatically switch to Wi-Fi inside tunnels 6 Correct Answer: B"
+          "D": "Vehicles automatically switch to Wi-Fi inside tunnels"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 166,
@@ -1864,9 +1864,9 @@
           "A": "IoV uses different hardware than C-V2X",
           "B": "Full IoV ecosystem integrates V2X with cloud services, AI analytics, smart city infrastructure, and diverse mobility platforms ² not just vehicle-to-vehicle safety messaging but a comprehensive intelligent transportation system",
           "C": "IoV deployment eliminates RSUs entirely",
-          "D": "Full IoV is defined as 100% vehicle penetration rate 6 Correct Answer: B"
+          "D": "Full IoV is defined as 100% vehicle penetration rate"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 167,
@@ -1875,9 +1875,9 @@
           "A": "T-Box replaces OBU in modern vehicles",
           "B": "The T-Box aggregates in-vehicle network data (CAN bus, sensors) and manages external V2X communication interfaces (PC5, Uu, Wi-Fi), acting as the single integration point between internal vehicle systems and external V2X networks",
           "C": "T-Box is a cloud server not installed in vehicles",
-          "D": "T-Box only handles security certificate management 6 Correct Answer: B"
+          "D": "T-Box only handles security certificate management"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 168,
@@ -1886,9 +1886,9 @@
           "A": "Both interfaces protect against the same failure modes",
           "B": "PC5 protects against cellular outages (direct local communication works without infrastructure); Uu protects against PC5 range limitations and provides wide-area services ² failures in one interface are compensated by the other",
           "C": "Uu protects against packet loss; PC5 protects against latency",
-          "D": "PC5 protects against security attacks; Uu protects against congestion 6 Correct Answer: B"
+          "D": "PC5 protects against security attacks; Uu protects against congestion"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 169,
@@ -1897,9 +1897,9 @@
           "A": "RSU MEC has more processing power than cloud servers",
           "B": "RSU-mounted MEC processes vehicle data locally at the intersection ² eliminating the round-trip to a remote cloud server and providing sub-10ms response time for safety coordination impossible with cloud latency",
           "C": "RSU MEC eliminates the need for V2X certificates",
-          "D": "RSU MEC enables encryption not available in cloud 6 Correct Answer: B"
+          "D": "RSU MEC enables encryption not available in cloud"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 170,
@@ -1908,9 +1908,9 @@
           "A": "Uu cannot transmit more than 1 Mbps",
           "B": "Uu requires messages to go through the cellular network infrastructure ² true one-to-all local broadcast (as in PC5) is not native to Uu; achieving broadcast-like V2X safety messaging via Uu requires multicast groups or individual unicasts, adding complexity and latency",
           "C": "Uu broadcasting is limited to 100m range",
-          "D": "Uu cannot carry BSM-formatted messages 6 Correct Answer: B"
+          "D": "Uu cannot carry BSM-formatted messages"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 171,
@@ -1919,9 +1919,9 @@
           "A": "Higher transmit power in both directions",
           "B": "The RSU can receive direct PC5 V2I messages from nearby vehicles AND forward relevant data to the cellular network via Uu ² bridging local V2X communication to wide-area infrastructure services like TMC coordination",
           "C": "Dual interface eliminates the need for security certificates",
-          "D": "Single-interface RSUs can perform all functions using software upgrades 6 Correct Answer: B"
+          "D": "Single-interface RSUs can perform all functions using software upgrades"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 172,
@@ -1930,9 +1930,9 @@
           "A": "Vehicles wait until coverage is restored",
           "B": "PC5 direct communication provides a coverage-independent safety fallback ² when Uu is unavailable, V2V safety messages continue via PC5, ensuring safety communication persists in coverage gaps",
           "C": "Satellite backhaul fills all coverage gaps",
-          "D": "Safety messages are cached and sent when coverage is restored 6 Correct Answer: B"
+          "D": "Safety messages are cached and sent when coverage is restored"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 173,
@@ -1941,9 +1941,9 @@
           "A": "PC5 has higher bandwidth for collision data",
           "B": "Forward collision warning requires sub-100ms end-to-end latency ² Uu's network round-trip adds 30-100ms, while PC5's direct link achieves 1-5ms, providing 10-20x more reaction time in the critical pre-collision window",
           "C": "Uu does not support collision warning messages",
-          "D": "PC5 encryption is stronger for safety-critical data 6 Correct Answer: B"
+          "D": "PC5 encryption is stronger for safety-critical data"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 174,
@@ -1952,9 +1952,9 @@
           "A": "MEC provides more storage for remote driving logs",
           "B": "Remote driving requires <10ms control loop latency ² cloud round-trip is 50-300ms, making the vehicle unresponsive to operator control. MEC processes vehicle sensor data and control commands locally, achieving sub-10ms round trips",
           "C": "MEC provides higher resolution camera feeds",
-          "D": "MEC is needed because remote driving requires IPv6 6 Correct Answer: B"
+          "D": "MEC is needed because remote driving requires IPv6"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 175,
@@ -1963,9 +1963,9 @@
           "A": "GNSS cannot operate above 100 km/h",
           "B": "Urban canyon environments (tall buildings) and tunnels block satellite signals, causing GNSS position errors of 10-50m ² sidelink ranging between nearby vehicles provides sub-meter relative positioning that complements degraded GNSS",
           "C": "GNSS has insufficient update rate for vehicular use",
-          "D": "GNSS cannot function in the 5.9 GHz band 6 Correct Answer: B"
+          "D": "GNSS cannot function in the 5.9 GHz band"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 176,
@@ -1974,9 +1974,9 @@
           "A": "IoT provides higher bandwidth than V2X",
           "B": "IoT integration connects vehicles to non-vehicle infrastructure data ² traffic sensors, environmental monitors, smart traffic lights, pedestrian detection systems ² creating situational awareness from data sources beyond vehicles and RSUs alone",
           "C": "IoT replaces SCMS for certificate management",
-          "D": "IoT provides higher security than V2X 6 Correct Answer: B"
+          "D": "IoT provides higher security than V2X"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 177,
@@ -1985,9 +1985,9 @@
           "A": "MEC stores maps for offline autonomous driving",
           "B": "MEC aggregates V2X data from multiple vehicles/sensors in real-time to generate a collective environmental model (birds-eye view, pedestrian tracking, intersection state), then distributes this enhanced perception to all participating vehicles",
           "C": "MEC controls vehicle actuators directly",
-          "D": "MEC monitors vehicle software for security threats 6 Correct Answer: B"
+          "D": "MEC monitors vehicle software for security threats"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 178,
@@ -1996,9 +1996,9 @@
           "A": "NR-V2X vehicles must use LTE hardware",
           "B": "NR-V2X vehicles must be able to communicate with LTE-V2X vehicles using common message formats and compatible PC5 interface modes ² ensuring safety-critical V2V communication works regardless of whether a neighboring vehicle supports LTE or NR sidelink",
           "C": "LTE-V2X must be disabled when NR-V2X is available",
-          "D": "Backward compatibility only applies to Uu, not PC5 6 Correct Answer: B"
+          "D": "Backward compatibility only applies to Uu, not PC5"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 179,
@@ -2007,9 +2007,9 @@
           "A": "Co-located MEC is more expensive",
           "B": "Co-located MEC at the RSU eliminates backhaul latency between RSU and MEC ² data processing occurs at the point of collection. Nearby MEC at the base station adds backhaul delay (typically 1-5ms) but benefits from more powerful shared infrastructure",
           "C": "Co-located MEC cannot process video data",
-          "D": "RSU-co-located MEC and base-station MEC have identical performance 6 Correct Answer: B"
+          "D": "RSU-co-located MEC and base-station MEC have identical performance"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 180,
@@ -2018,9 +2018,9 @@
           "A": "During rush hour traffic congestion",
           "B": "After a natural disaster or infrastructure failure that destroys RSUs and GPS ground station infrastructure ² vehicles can still determine relative positions to each other using PC5 sidelink ranging, enabling coordinated emergency response and safe maneuvering",
           "C": "When OBU battery is low",
-          "D": "When cellular coverage is at maximum capacity 6 Correct Answer: B"
+          "D": "When cellular coverage is at maximum capacity"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   },
@@ -2034,9 +2034,9 @@
           "A": "Sybil attacks drain vehicle batteries",
           "B": "Fake vehicle identities can generate false sensor data suggesting phantom traffic congestion, accidents, or road blockages ² causing real vehicles to make dangerous maneuvers or emergency stops based on non-existent hazards",
           "C": "Sybil attacks only affect infotainment systems",
-          "D": "Sybil attackers can read encrypted V2X messages 6 Correct Answer: B"
+          "D": "Sybil attackers can read encrypted V2X messages"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 182,
@@ -2045,9 +2045,9 @@
           "A": "Pseudonyms use the same private key but different public keys",
           "B": "Each pseudonym uses a completely independent key pair (private/public) with no mathematical relationship ² proving the same vehicle owns two pseudonyms requires breaking cryptographic assumptions, not just observing message patterns",
           "C": "SCMS keeps pseudonym changes secret",
-          "D": "Pseudonym changes are masked by encrypting the vehicle's real IP address 6 Correct Answer: B"
+          "D": "Pseudonym changes are masked by encrypting the vehicle's real IP address"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 183,
@@ -2056,9 +2056,9 @@
           "A": "Forward secrecy is less important for groups than individuals",
           "B": "In a group with a shared key, if the key is compromised, ALL past group communications are exposed simultaneously ² without forward secrecy, one compromised vehicle retroactively reveals the entire platoon's communication history",
           "C": "Forward secrecy only protects against replay attacks",
-          "D": "Group keys are always short-lived, providing inherent forward secrecy 6 Correct Answer: B"
+          "D": "Group keys are always short-lived, providing inherent forward secrecy"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 184,
@@ -2067,9 +2067,9 @@
           "A": "Vehicles cannot store CRL data",
           "B": "CRLs must reach millions of vehicles in real-time or near-real-time ² a revoked certificate is useless if vehicles haven't received the update, but distributing large CRLs to all vehicles over V2X bandwidth is a significant scalability challenge",
           "C": "CRLs are only needed for RSUs, not vehicles",
-          "D": "Regulatory rules prevent CRL distribution in some countries 6 Correct Answer: B"
+          "D": "Regulatory rules prevent CRL distribution in some countries"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 185,
@@ -2078,9 +2078,9 @@
           "A": "Wormhole attacks consume vehicle battery",
           "B": "Cooperative driving decisions (e.g., whether to yield to a vehicle) depend on believing neighbors are physically nearby ² a wormhole makes a distant vehicle appear adjacent, causing vehicles to yield to or coordinate with vehicles they will never physically encounter",
           "C": "Wormhole attacks only affect GPS accuracy",
-          "D": "Wormhole attackers can modify message content 6 Correct Answer: B"
+          "D": "Wormhole attackers can modify message content"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 186,
@@ -2089,9 +2089,9 @@
           "A": "Vehicles cannot store private keys",
           "B": "V2X requires verifying hundreds of BSMs per second from hundreds of vehicles simultaneously ² the computational overhead of full PKI verification at this rate strains OBU processors, requiring optimized batch verification or implicit certificates",
           "C": "PKI cannot work with DSRC",
-          "D": "Public keys cannot be transmitted in DSRC BSMs 6 Correct Answer: B"
+          "D": "Public keys cannot be transmitted in DSRC BSMs"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 187,
@@ -2100,9 +2100,9 @@
           "A": "Limited lifetime reduces SCMS storage requirements",
           "B": "Short-lived certificates limit the window of opportunity for a compromised certificate to be used ² if a vehicle is compromised, its certificates expire quickly, reducing the damage an attacker can cause using stolen credentials",
           "C": "Certificate lifetime is determined by vehicle speed",
-          "D": "Limited lifetime certificates use less computational resources 6 Correct Answer: B"
+          "D": "Limited lifetime certificates use less computational resources"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 188,
@@ -2111,9 +2111,9 @@
           "A": "Non-repudiation requires exposing the vehicle's permanent identity, which conflicts directly with privacy requirements ² pseudonym systems weaken non-repudiation for regular communication while SCMS preserves accountability for misbehavior investigations by authorities only",
           "B": "Non-repudiation makes V2X messages larger",
           "C": "Non-repudiation requires cellular connectivity",
-          "D": "Non-repudiation only applies to RSU messages, not vehicle BSMs 6 Correct Answer: A"
+          "D": "Non-repudiation only applies to RSU messages, not vehicle BSMs"
         },
-        "correct_option": ""
+        "correct_option": "A"
       },
       {
         "id": 189,
@@ -2122,9 +2122,9 @@
           "A": "DoS requires less sophisticated equipment than jamming",
           "B": "Jamming requires only a radio transmitter capable of flooding the 5.9 GHz band with noise ² available cheaply. DoS via message flooding requires a valid V2X certificate (or many Sybil identities) to inject authenticated messages at high rate ² higher cryptographic access is needed",
           "C": "Both attacks require identical attacker capabilities",
-          "D": "DoS attacks are only possible via the internet, not radio 6 Correct Answer: B"
+          "D": "DoS attacks are only possible via the internet, not radio"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 190,
@@ -2133,9 +2133,9 @@
           "A": "Vehicle speed changes over time",
           "B": "Consistent pseudonyms used across many messages allow observers to track vehicle movement patterns ² even without knowing the real identity, location history and behavior patterns reveal private information about the driver",
           "C": "Encryption certificates link messages automatically",
-          "D": "Linkability is only possible if the attacker knows the vehicle's MAC address 6 Correct Answer: B"
+          "D": "Linkability is only possible if the attacker knows the vehicle's MAC address"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 191,
@@ -2144,9 +2144,9 @@
           "A": "Authenticity is harder to violate",
           "B": "Confidentiality ² DSRC BSMs are not encrypted (confidentiality is not required for safety broadcasts), making eavesdropping trivial. Authenticity is protected by digital signatures, making modification detectable (though not impossible for resource-rich adversaries)",
           "C": "Both are equally easy to violate",
-          "D": "Neither can be violated in DSRC due to physical layer security 6 Correct Answer: B"
+          "D": "Neither can be violated in DSRC due to physical layer security"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 192,
@@ -2155,9 +2155,9 @@
           "A": "The SCMS disables the vehicle's OBU remotely",
           "B": "The SCMS adds the vehicle's pseudonym certificates to the CRL, which is distributed to all V2X participants ² subsequent messages from revoked certificates are rejected by receiving vehicles after they update their CRL",
           "C": "The SCMS notifies law enforcement automatically",
-          "D": "Certificate revocation stops the vehicle from driving 6 Correct Answer: B"
+          "D": "Certificate revocation stops the vehicle from driving"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 193,
@@ -2166,9 +2166,9 @@
           "A": "V2X uses more certificates than other systems",
           "B": "Traditional PKI manages certificates for relatively static users (websites, users) ² V2X must manage millions of rapidly changing pseudonym certificates for fast-moving vehicles while distributing revocation information quickly enough to prevent compromised certificates from being used",
           "C": "V2X security requirements are less strict than internet security",
-          "D": "Traditional PKI is too expensive for V2X deployment 6 Correct Answer: B"
+          "D": "Traditional PKI is too expensive for V2X deployment"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 194,
@@ -2177,9 +2177,9 @@
           "A": "The vehicle's license plate identity",
           "B": "The pseudonym identity ² authentication confirms the message was created by the holder of the private key corresponding to the pseudonym certificate, NOT the real-world vehicle identity. Real identity is hidden and only revealable by SCMS for misbehavior investigations",
           "C": "The driver's identity via biometric certificate",
-          "D": "The vehicle's insurance and registration identity 6 Correct Answer: B"
+          "D": "The vehicle's insurance and registration identity"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 195,
@@ -2188,9 +2188,9 @@
           "A": "Confidentiality is violated, detected by decryption failure",
           "B": "Integrity is violated ² the message's digital signature is computed over the original content using the sender's private key; any modification of message bits causes the signature verification (using the public key) to fail, indicating tampering",
           "C": "Availability is violated, detected by timeout",
-          "D": "Authentication is violated, detected by certificate mismatch 6 Correct Answer: B"
+          "D": "Authentication is violated, detected by certificate mismatch"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 196,
@@ -2199,9 +2199,9 @@
           "A": "Short-lived certificates use shorter encryption keys",
           "B": "A long-lived pseudonym used repeatedly over weeks creates a trackable profile ² observing the same pseudonym at location A and B allows trajectory reconstruction. Short-lived certificates changed frequently limit the temporal window a single pseudonym can be observed, fragmenting tracking attempts",
           "C": "Short-lived certificates cannot be added to CRLs",
-          "D": "Long-lived pseudonyms are prohibited by 3GPP standards 6 Correct Answer: B"
+          "D": "Long-lived pseudonyms are prohibited by 3GPP standards"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 197,
@@ -2210,9 +2210,9 @@
           "A": "An OBU that processes certificates slowly",
           "B": "A revocation notice reaching a vehicle 500ms after a misbehaving neighbor transmits a hazard spoofing message ² the victim vehicle has already acted on the false data before the revocation arrives, illustrating how latency in security infrastructure enables attacks",
           "C": "A cellular network with high ping time",
-          "D": "An RSU that validates certificates slowly 6 Correct Answer: B"
+          "D": "An RSU that validates certificates slowly"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 198,
@@ -2221,9 +2221,9 @@
           "A": "Navigation and mapping applications",
           "B": "Event-driven safety alerts (emergency braking, collision warnings) ² these are non-periodic and critical; a vehicle being jammed at the exact moment it needs to receive an emergency alert misses the only warning with potentially fatal consequences",
           "C": "Weather updates and traffic information",
-          "D": "Over-the-air software update applications 6 Correct Answer: B"
+          "D": "Over-the-air software update applications"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 199,
@@ -2232,9 +2232,9 @@
           "A": "Symmetric keys are easier to intercept over radio",
           "B": "Symmetric authentication requires the verifier to share a secret key with every possible sender ² in V2X, a vehicle must authenticate BSMs from any of millions of unknown nearby vehicles, requiring millions of pre-shared keys. Asymmetric keys allow authentication from any vehicle whose certificate is signed by a trusted CA",
           "C": "Symmetric encryption is not supported by DSRC hardware",
-          "D": "SCMS cannot distribute symmetric keys 6 Correct Answer: B"
+          "D": "SCMS cannot distribute symmetric keys"
         },
-        "correct_option": ""
+        "correct_option": "B"
       },
       {
         "id": 200,
@@ -2243,9 +2243,9 @@
           "A": "Thousands of certificates per city",
           "B": "Hundreds of millions of pseudonym certificates for tens of millions of vehicles, each using multiple short-lived pseudonyms simultaneously ² plus real-time revocation distribution to all active vehicles globally. No traditional PKI was designed for this scale",
           "C": "Certificate distribution only for RSUs and TMCs",
-          "D": "SCMS only handles certificates for emergency vehicles 6 Correct Answer: B"
+          "D": "SCMS only handles certificates for emergency vehicles"
         },
-        "correct_option": ""
+        "correct_option": "B"
       }
     ]
   }
